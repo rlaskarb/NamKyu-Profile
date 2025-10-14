@@ -10,9 +10,9 @@ const navMenuItems = [
 
 
 const headerShortcuts = [
-    { href: "#2section" , src:"./images/nam.jpg" , alt:"프로필 바로가기"},
-    { href: "#3section" , src:"./images/nam.jpg" , alt:"pc 프로젝트 바로가기"},
-    { href: "#5section" , src:"./images/nam.jpg" , alt:"반응형 프로젝트 바로가기"},
+    { href: "#2section" , src:"./images/1.png" , alt:"프로필 바로가기"},
+    { href: "#3section" , src:"./images/2.png" , alt:"pc 프로젝트 바로가기"},
+    { href: "#5section" , src:"./images/5.png" , alt:"반응형 프로젝트 바로가기"},
 ];
 
 
@@ -105,7 +105,7 @@ function createChatListHeader(){
 
     const iconsHTML = headerShortcuts.map(function(shortcut){
         return`      
-        <a href="${shortcut.href}">
+        <a href="${shortcut.href}" >
             <img src="${shortcut.src}" alt="${shortcut.alt}" class="header-shortcut-icon">  
         </a>
         `
@@ -117,7 +117,6 @@ function createChatListHeader(){
     `;
 
 }
-
 
 
 function createChatList(){
