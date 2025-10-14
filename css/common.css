@@ -18,6 +18,20 @@
     --font-18px: 1.13rem;
     --font-16px: 1rem;
     --font-14px: 0.88rem;
+
+
+    --color-main: rgba(44, 0, 62, 1);
+    --color-point1: rgba(0, 174, 255, 1);
+    --color-point2: rgba(255, 0, 128, 1);
+    --color-sub1: rgba(245, 245, 245, 1);
+    --color-sub2: rgba(163, 163, 163, 1);
+    --main-font: #333;
+    --sub-font: rgba(245, 245, 245, 1);
+    --color-7main: #d92629;
+    --color-7point1: #e77e2d;
+    --color-7point2: #017121;
+    --color-7sub2: #faf8f5;
+
 }
 
 
@@ -39,8 +53,8 @@
     }
 
     100% {
-       color: #333;
-       background: #fff;
+        color: #333;
+        background: #fff;
     }
 }
 
@@ -130,7 +144,7 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    box-sizing: border-box;
 }
 
 /* 보험 */
@@ -162,7 +176,7 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit;
+    font-family: "Noto Sans KR", sans-serif;
 
 }
 
