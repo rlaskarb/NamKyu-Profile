@@ -1,57 +1,68 @@
+export function initFullPageScroll() {
+  // --- 1. 준비물 챙기기 ---
+  const sections = document.querySelectorAll(".section"); // 모든 TV 채널(섹션)
+  const buttons = document.querySelectorAll("#menu li"); // 모든 리모컨 버튼
 
-import { navMenuItems } from "./main.js";
+  // --- 2. 기억하기 ---
+  let nowIdx = 0; // 현재 보고 있는 채널 번호
+  let isMoving = false; // 지금 채널 이동 중인지?
 
+  // --- 3. 핵심 동작 만들기: "채널 이동!" ---
+  function move(num) {
+    // 1. isMoving 상태를 여기서 한 번에 관리!
+    isMoving = true;
+    setTimeout(function () {
+      isMoving = false;
+    }, 1000); // 1초의 쿨타임
 
-// 스크롤 기능을  초기화 하고 이벤트를 설정
-export function initFullPageScroll(){
+    // 2. ★★★ 여기가 최종 해결책입니다! ★★★
+    // 이동할 위치 = 화면 높이 * 채널 번호(num)
+    const targetY = window.innerHeight * num;
 
-    const sections = document.querySelectorAll('.section');
-    let currentSectionIndex = 0 ;
-    let isScrolling = false;
+    // 3. 계산된 위치로 부드럽게 스크롤! (틈, 오차 문제 완벽 해결)
+    window.scrollTo({
+      top: targetY,
+      behavior: "smooth",
+    });
 
-    //네이게이션 메뉴 활성 상태를 업데이트 하는 함수
+    // 4. 모든 리모컨 버튼의 불(active) 끄기
+    buttons.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
 
-    function updateActiveNav(index){
-        const navLinks = document.querySelectorAll('#menu li');
-        navLinks.forEach(function(li , i){
-            if( i === index){
-                li.classList.add('active');
-            }else{
-                li.classList.remove('active');
-            }
+    // 5. num번 리모컨 버튼에만 불(active) 켜기
+    buttons[num].classList.add("active");
+  }
 
-        });
-    }
+  // --- 4. 언제 동작할지 알려주기 ---
 
-    // 휠 이벤트 리스너
-    window.addEventListener('wheel', function(event){
-        if(isScrolling) return;
+  // 4-1. 리모컨 버튼을 '클릭'했을 때
+  buttons.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      if (isMoving === false) {
+        nowIdx = index;
+        move(nowIdx);
+      }
+    });
+  });
 
-        isScrolling = true;
-
-        setTimeout(function(){
-          {isScrolling = false;}
-        },800); // 스크롤 중복 방지 시간
-
-        if(event.deltaY > 0){ // 휠 내릴때
-            if(currentSectionIndex < sections.length -1){
-                currentSectionIndex++;
-            }
-        }else{ // 휠 올릴때
-            if(currentSectionIndex > 0){
-                currentSectionIndex--;
-            }
+  // 4-2. 마우스 '휠'을 굴렸을 때
+  window.addEventListener("wheel", function (event) {
+    if (isMoving === false) {
+      if (event.deltaY > 0) {
+        if (nowIdx < sections.length - 1) {
+          nowIdx++;
+          move(nowIdx);
         }
+      } else {
+        if (nowIdx > 0) {
+          nowIdx--;
+          move(nowIdx);
+        }
+      }
+    }
+  });
 
-        // 해당 섹션으로 부드럽게 이동
-        sections[currentSectionIndex].scrollIntoView({
-            behavior:'smooth',
-            block: 'start' // 섹션의 상단을 뷰포트로 상단에 맞춤
-        });
-
-        // 네비게이션 상태 업데이트
-        updateActiveNav(currentSectionIndex);
-    },{passive:false}); // passive : false는 preventDefault 사용을 위함
-
-    updateActiveNav(0);
+  // --- 5. 처음 시작하기 ---
+  move(0); // 첫 번째 채널 보여주기
 }

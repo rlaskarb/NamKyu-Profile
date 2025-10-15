@@ -34,7 +34,7 @@ const chatListData = [
     },
     {
         id: "friend",
-        title: " 친구 4",
+        title: "친구",
         lastMessage: "면접 잘봄?",
         time: "오후 2:40",
         unread: 0,
