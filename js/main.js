@@ -1,22 +1,19 @@
 
-// scroll.js 에서 내보낸 스크롤 초기화 함수 가져오기
-import { initFullPageScroll } from "./scroll.js";
 
-
-export const navMenuItems = [
-    { id: 'section1', text: 'Home' },
-    { id: 'section2', text: 'Profile' },
-    { id: 'section3', text: 'Web Project(PC)' },
-    { id: 'section4', text: 'Web Project(Mobile)' },
-    { id: 'section5', text: 'Responsive Project' },
-    { id: 'section6', text: 'Review' },
+const navMenuItems = [
+    { id: '1section', text: 'Home' },
+    { id: '2section', text: 'Profile' },
+    { id: '3section', text: 'Web Project(PC)' },
+    { id: '4section', text: 'Web Project(Mobile)' },
+    { id: '5section', text: 'Responsive Project' },
+    { id: '6section', text: 'Review' },
 ];
 
 
 const headerShortcuts = [
-    { href: "#section2", src: "./images/1.avif", alt: "프로필 바로가기" },
-    { href: "#section3", src: "./images/2.avif", alt: "pc 프로젝트 바로가기" },
-    { href: "#section5", src: "./images/5.avif", alt: "반응형 프로젝트 바로가기" },
+    { href: "#2section", src: "./images/1.avif", alt: "프로필 바로가기" },
+    { href: "#3section", src: "./images/2.avif", alt: "pc 프로젝트 바로가기" },
+    { href: "#5section", src: "./images/5.avif", alt: "반응형 프로젝트 바로가기" },
 ];
 
 
@@ -80,16 +77,22 @@ const chatListData = [
 
 const kakaotalkData = {
     "portfolio-intro": [ //chatListData 의 id 연결
-        { speaker: '김남규',
+        {
+            speaker: '김남규',
             avatar: "./images/1.avif",
             mediaType: 'image',
-            message: '김남규 포트폴리오를 클릭해주셔서 감사합니다' },
+            message: '김남규 포트폴리오를 클릭해주셔서 감사합니다'
+        },
 
-        { speaker: '김남규1',
-             message: '제 소개를 시작을 하겠습니다.' },
+        {
+            speaker: '김남규1',
+            message: '제 소개를 시작을 하겠습니다.'
+        },
 
-        { speaker: '김남규1',
-            message: '<a href="#section2">프로필 바로가기</a>' }
+        {
+            speaker: '김남규1',
+            message: '<a href="#2section">프로필 바로가기</a>'
+        }
     ],
 };
 
@@ -103,11 +106,11 @@ function createNavigation() {
 
     if (!menuList) return;
 
-    const menuItemsHTML = navMenuItems.map(function (item, index) {
-        const activeClass = (index === 0) ? 'class="active" ' : ' ';
+    const menuItemsHTML = navMenuItems.map(function (item) {
+
         return `
-            <li data-section = "${item.id}" ${activeClass}>
-                <a href = "#${item.id}">
+           <li data-menuanchor="${item.id}"> 
+                <a href="#${item.id}">
                     <h3>${item.text}</h3>
                 </a>
             </li>
@@ -119,14 +122,13 @@ function createNavigation() {
 
 
 
-
 function createChatListHeader() {
     const header = document.querySelector('.chat-list-panel .kakakotalk-header');
     if (!header) return;
 
-    const totalUnread = chatListData.reduce(function(sum,item){
-      return  sum + item.unread
-    },0);
+    const totalUnread = chatListData.reduce(function (sum, item) {
+        return sum + item.unread
+    }, 0);
 
     const iconsHTML = headerShortcuts.map(function (shortcut) {
         return `      
@@ -247,33 +249,33 @@ function createKakaotalkUI(chatroomId) {
 
     let headerAvatarHTML;
 
-    if(chatroomInfo.mediaType==='video'){
+    if (chatroomInfo.mediaType === 'video') {
         headerAvatarHTML = `
             <video autoplay loop muted class="header-avatar">
                 <source src="${chatroomInfo.avatar}" type="video/webm">
             </video>`;
-    }else{
+    } else {
         headerAvatarHTML = `
         <img src="${chatroomInfo.avatar}" alt="${chatroomInfo.title}" class="header-avatar">`;
     }
 
-    conversationHeader.innerHTML =`
+    conversationHeader.innerHTML = `
         ${headerAvatarHTML} 
         <span id="conversation-title">${chatroomInfo.title}</span>
     `
-    
+
     messageContainer.innerHTML = messages.map(function (chat) {
         const messageType = (chat.speaker === '김남규1') ? 'sent' : 'received';
 
         if (messageType === "received") {
 
             let messageAavatarHTML;
-            if( chat.mediaType === 'video'){
+            if (chat.mediaType === 'video') {
                 messageAavatarHTML = `
                     <video autoplay loop muted class="avatar">
                         <source src="${chat.avatar}" type="video/webm">
                     </video>`;
-            }else{
+            } else {
                 messageAavatarHTML = `<img src="${chat.avatar}" alt="${chat.title}" class="header-avatar">`;
             }
 
@@ -300,40 +302,37 @@ function createKakaotalkUI(chatroomId) {
 }
 
 
-function addFilterEvents(){
+function addFilterEvents() {
     const filterAllBtn = document.getElementById('filter-all');
     const filterUnreadBtn = document.getElementById('filter-unread');
 
-    if(!filterAllBtn || !filterUnreadBtn) return;
+    if (!filterAllBtn || !filterUnreadBtn) return;
 
-    filterAllBtn.addEventListener('click' ,function(event){
+    filterAllBtn.addEventListener('click', function (event) {
         event.preventDefault();
         createChatList(chatListData);
     });
 
-    filterUnreadBtn.addEventListener('click' ,function(event){
+    filterUnreadBtn.addEventListener('click', function (event) {
         event.preventDefault();
-        const unreadList = chatListData.filter(function(item){
-           return item.unread > 0;
+        const unreadList = chatListData.filter(function (item) {
+            return item.unread > 0;
         });
         createChatList(unreadList); // 안앍은 목록만 전달
     });
 }
 
 
-function updateHeaderCount(){
+function updateHeaderCount() {
     const filterUnreadBtn = document.getElementById('filter-unread');
-    if(!filterUnreadBtn) return;
+    if (!filterUnreadBtn) return;
 
-    const totalUnread = chatListData.reduce(function(sum , item){
+    const totalUnread = chatListData.reduce(function (sum, item) {
         return sum + item.unread;
-    },0);
+    }, 0);
 
-    const unreadCountSpan = totalUnread > 0 ? `<span class="unread-count">${totalUnread}</span>` : '' ;
+    const unreadCountSpan = totalUnread > 0 ? `<span class="unread-count">${totalUnread}</span>` : '';
     filterUnreadBtn.innerHTML = `안읽음${unreadCountSpan}`;
-
-    
-    //filterUnreadBtn.innerHTML = `안읽음 ${totalUnread > 0 ? `<span class="unread-count"></span>` : ''}`;
 }
 
 
@@ -348,6 +347,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     addFilterEvents(); // 3. 생성된 버튼들에 클릭기능을 추가
 
-    initFullPageScroll();
+
+    // fullpage.js를 초기화하고 옵션을 설정합니다.
+    new fullpage('#fullpage', {
+
+        licenseKey: null,
+        navigation: true,
+        fixedElements: '#headerArea',
+
+        // 메뉴 클릭과 스크롤을 연동하기 위해 반드시 필요!
+        // #menu 안의 링크와 아래 anchors를 연결합니다.
+        menu: '#menu',
+        anchors: ['1section', '2section', '3section', '4section', '5section', '6section'],
+    });
+
 
 });

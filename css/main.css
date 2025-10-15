@@ -1,235 +1,236 @@
+/* section1 home */
 
 
- /* section1 home */
-
- .kakaotalk-app-container {
-     width: 70%;
-     height: 74vh;
-     margin: 0 auto ;
-     display: flex;
-     position: relative;
-     overflow: hidden;
- }
 
 
- .chat-list-panel,
- .conversation-panel {
-     width: 90%;
-     border-radius: 20px;
-     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-     margin: 10px;
-     transition: all 0.5s ease-in-out;
- }
+.kakaotalk-app-container {
+    width: 70%;
+    height: 81vh;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
 
 
- .chat-list-panel .kakakotalk-header {
-     width: 100%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 15px;
-     overflow: hidden;
- }
+.chat-list-panel,
+.conversation-panel {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
 
 
- .chat-list-panel .kakakotalk-header .header-shortcuts {
-     display: flex;
-     gap: 10px;
-     padding: 10px;
- }
+.chat-list-panel .kakakotalk-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    overflow: hidden;
+}
 
 
- .main-title {
-     display: flex;
-     gap: 10px;
-     flex-direction: column;
-
- }
-
- .main-title ul {
-     display: flex;
-     gap: 20px;
- }
-
- .main-title ul li {
-     background-color: #fff;
-     border-radius: 10px;
-     border: 1px solid #333;
- }
-
- .main-title ul li a {
-     font-size: var(--font-18px);
-     font-weight: 600;
-     color: #333;
-     padding: 5px 15px;
-
- }
-
- #filter-unread{
+.chat-list-panel .kakakotalk-header .header-shortcuts {
     display: flex;
     gap: 10px;
- }
-
- .header-title {
-     padding: 10px;
-     font-size: var(--font-30px);
-     font-weight: 600;
- }
-
- .header-shortcut-icon {
-     width: 60px;
-     height: 60px;
-     object-fit: cover;
-     border-radius: 15px;
- }
+    padding: 10px;
+}
 
 
- .chat-list-panel {
-     width: 100%;
- }
+.main-title {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 
+}
 
- .chat-item.active {
-     background: red;
- }
+.main-title ul {
+    display: flex;
+    gap: 20px;
+}
 
+.main-title ul li {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
 
- .chat-list {
-     width: 100%;
-     margin: 0 auto;
- }
-
- .chat-list .chat-item {
-     width: 100%;
-     margin: 0 auto;
-     padding: 17px 20px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 10%;
-     border-bottom: 1px solid #ccc;
- }
-
- .chat-list .chat-item .chat-title{
-    font-size: var(--font-22px);
-    font-weight: 500;
- }
-
- .chat-list .chat-item .chat-preview{
+.main-title ul li a {
     font-size: var(--font-18px);
-   
- }
+    font-weight: 600;
+    color: #333;
+    padding: 5px 15px;
+
+}
+
+#filter-unread {
+    display: flex;
+    gap: 10px;
+}
+
+.header-title {
+    padding: 10px;
+    font-size: var(--font-30px);
+    font-weight: 600;
+}
+
+.header-shortcut-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+}
 
 
- .chat-list .chat-item:first-of-type {
-     border-top: 1px solid #ccc;
-     cursor: pointer;
-     animation: scale 3s infinite;
- }
-
- .chat-list .chat-item:last-of-type {
-     border-bottom: transparent;
- }
+.chat-list-panel {
+    width: 100%;
+}
 
 
- .chat-list .chat-item .chat-left {
-     display: flex;
-     gap: 10px;
- }
-
- .chat-list .chat-item .chat-info {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
+.chat-item.active {
+    background: red;
+}
 
 
- .chat-list .chat-item .chat-meta {
+.chat-list {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.chat-list .chat-item {
+    width: 100%;
+    margin: 0 auto;
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-list .chat-item .chat-title {
+    font-size: var(--font-20px);
+    font-weight: 500;
+}
+
+.chat-list .chat-item .chat-preview {
+    font-size: var(--font-16px);
+
+}
+
+
+.chat-list .chat-item:first-of-type {
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    animation: scale 3s infinite;
+}
+
+.chat-list .chat-item:last-of-type {
+    border-bottom: transparent;
+}
+
+
+.chat-list .chat-item .chat-left {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-list .chat-item .chat-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.chat-list .chat-item .chat-meta {
     width: 11%;
-     padding: 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 5px;
- }
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 
- /* 숫자 */
- #filter-unread .unread-count,
- .chat-list .chat-item .chat-meta .unread-count {
-     width: 25px;
-     height: 25px;
-     padding: 4px 5px 8px;
-     border-radius: 50%;
-     color: #fff;
-     font-size: var(--font-16px);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: var(--color-7main);
- }
+/* 숫자 */
+#filter-unread .unread-count,
+.chat-list .chat-item .chat-meta .unread-count {
+    width: 25px;
+    height: 25px;
+    padding: 4px 5px 8px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: var(--font-16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-7main);
+}
 
- /* 이미지 */
- .chat-list .chat-item .avatar {
-     width: 60px;
-     height: 60px;
-     object-fit: cover;
-     object-position: center;
-     border-radius: 10px;
-     border: 1px solid #ccc;
-     background-color: var(--color-sub1);
- }
-
-
-
- /* 채팅 얼였을때 */
-
- .conversation-panel {
-     width: 50%;
-     height: 72vh;
-     position: absolute;
-     right: 0;
-     transform: translateX(100%);
-     opacity: 0;
-     background-color: rgba(0, 174, 255, 0.3);
-     display: flex;
-     flex-direction: column;
- }
+/* 이미지 */
+.chat-list .chat-item .avatar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: var(--color-sub1);
+}
 
 
- .conversation-panel .kakakotalk-header {
-     flex-shrink: 0;
-     width: 100%;
-     margin: 0 auto;
-     padding: 15px 20px;
-     font-size: var(--font-30px);
-     display: flex;
-     align-items: center;
-     gap: 20px;
-     border-bottom: 1px solid #ccc;
- }
 
-.conversation-panel .kakakotalk-header .header-avatar{
+/* 채팅 얼였을때 */
+
+.conversation-panel {
+    width: 50%;
+    height: 79vh;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: rgba(0, 174, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.conversation-panel .kakakotalk-header {
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    font-size: var(--font-30px);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.conversation-panel .kakakotalk-header .header-avatar {
     width: 75px;
     height: 75px;
     border: 1px solid #ccc;
     border-radius: 15px;
 }
 
-.kakaotalk-messages{
-    flex-grow:1;
-    overflow-y:auto;
+.kakaotalk-messages {
+    flex-grow: 1;
+    overflow-y: auto;
 
 }
 
-.kakaotalk-input-area{
+.kakaotalk-input-area {
     flex-shrink: 0;
     width: 100%;
     display: flex;
     padding: 10px;
 }
 
-.kakaotalk-input-area #messages-text{
+.kakaotalk-input-area #messages-text {
     width: 85%;
     margin: 0 auto;
     padding: 5px;
@@ -238,30 +239,31 @@
     background: #fff;
 }
 
-.kakaotalk-input-area .btn{
+.kakaotalk-input-area .btn {
     width: 10%;
+    font-size: var(--font-14px);
     vertical-align: top;
     border: 0;
-    background: #fae100;;
-    padding: 5px 10px;
-    border-radius: 7%;   
+    background: #fae100;
+    padding: 10px;
+    border-radius: 7px;
     transition: filter 0.5s ease;
     cursor: pointer;
 }
 
 
-.kakaotalk-input-area .btn:hover{
-    filter: brightness(130%);
+.kakaotalk-input-area .btn:hover {
+    filter: brightness(110%);
 }
 
- .kakaotalk-message-row {
-     width: 100%;
+.kakaotalk-message-row {
+    width: 100%;
     padding: 15px 20px;
     display: flex;
-    gap:15px;
- }
+    gap: 15px;
+}
 
-.kakaotalk-message-row .message-content{
+.kakaotalk-message-row .message-content {
     display: flex;
     padding-top: 20px;
     flex-direction: column;
@@ -269,70 +271,42 @@
 }
 
 
- .header-avatar,
- .avatar {
-     width: 70px;
-     height: 70px;
-     object-fit: cover;
-     border: 1px solid #ccc;
-     border-radius: 50%;
- }
+.header-avatar,
+.avatar {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
 
- .message-content .sender-name{
+.message-content .sender-name {
     font-size: var(--font-18px);
     font-weight: 600;
- }
+}
 
- .message-content .kakaotalk-bubble{
-    padding: 5px 20px 8px ;
-    font-size: var(--font-20px);
+.message-content .kakaotalk-bubble {
+    padding: 5px 20px 8px;
+    font-size: var(--font-18px);
     font-size: 500;
     background: #fff;
     border-radius: 1px 15px 15px 15px;
- }
- 
+}
 
- .message-content .kakaotalk-bubble a{
-    color:var(--color-point1);
-    font-weight: bold;
+
+.message-content .kakaotalk-bubble a {
+    color: var(--color-point1);
+    font-weight: 600;
     cursor: pointer;
     animation: bounce 3s infinite;
- }
-
- 
- .kakaotalk-app-container.conversation-active .chat-list-panel {
-     width: 45%;
- }
-
- .kakaotalk-app-container.conversation-active .conversation-panel {
-     transform: translateX(0);
-     opacity: 1;
- }
+}
 
 
- /* section2 profile */
- 
- #section2{
-    background: orangered;
- }
+.kakaotalk-app-container.conversation-active .chat-list-panel {
+    width: 45%;
+}
 
- /* section3 Web Project(PC) */
-
- #section3{
-    background: pink;
- }
-
- /* section4 Web Project(Mobile) */
-  #section4{
-    background: yellow;
- }
-
- /* section5 Responsive Project */
-  #section5{
-    background: green;
- }
-
- /* section6 Review */
- #section6{
-    background: blue;
- }
+.kakaotalk-app-container.conversation-active .conversation-panel {
+    transform: translateX(0);
+    opacity: 1;
+}

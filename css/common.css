@@ -60,25 +60,25 @@
 
 
 @keyframes bounce {
-	0% {
-		transform: scale(1.1) translateY(0);
-	}
+    0% {
+        transform: scale(1.1) translateY(0);
+    }
 
-	25% {
-		transform: scale(1.15) translateY(-2px);
-	}
+    25% {
+        transform: scale(1.15) translateY(-2px);
+    }
 
-	50% {
-		transform: scale(1.1) translateY(0);
-	}
+    50% {
+        transform: scale(1.1) translateY(0);
+    }
 
-	75% {
-		transform: scale(1.15) translateY(-1px);
-	}
+    75% {
+        transform: scale(1.15) translateY(-1px);
+    }
 
-	100% {
-		transform: scale(1.1) translateY(0);
-	}
+    100% {
+        transform: scale(1.1) translateY(0);
+    }
 }
 
 /* CSS Reset */
@@ -186,7 +186,7 @@ section {
 }
 
 html {
-    font-size: 16px;
+    font-size: var(--font-18px);
 }
 
 body {
@@ -201,13 +201,6 @@ select,
 textarea {
     font-family: "Noto Sans KR", sans-serif;
 
-}
-
-/* 용도별 폰트 클래스 */
-.font-eng {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.5px;
 }
 
 ol,
@@ -245,43 +238,14 @@ img {
     color: #fff;
 }
 
-#wrap {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* skip nav (버로가기 메뉴) */
-
-#skipNav {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    z-index: 110;
-}
-
-#skipNav a {
-    height: 1px;
-    margin-bottom: -1px;
-    overflow: hidden;
-    text-align: center;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-#skipNav a:focus {
-    height: auto;
-    padding: 15px 0;
-    background: var(--font-color-main);
-}
 
 
-#headerArea{
+#headerArea {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 9999 !important;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 5px rgba(44, 0, 62, 0.1);
     transition: background-color 0.5s ease;
@@ -289,37 +253,29 @@ img {
 
 
 #headerArea #gnb #menu {
-     font-family: "Roboto", "sans-serif" ;
-     width: 95%;
-     margin: 10px auto;
-     display: flex; 
-     font-size: var(--font-20px);
-     gap: 20px;
- }
+    font-family: "Roboto", "sans-serif";
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    font-size: var(--font-20px);
+    gap: 20px;
+}
 
 #headerArea #gnb #menu li {
     padding: 10px 30px 12px;
-     border-radius: 10px;
- }
-
-
- #headerArea #gnb #menu li:hover,
- #headerArea #gnb #menu li.active {
-     padding: 10px 30px 12px;
-     background: var(--color-point1);
-     border-radius: 10px;
- }
-
- #headerArea #gnb #menu li:hover a,
- #headerArea #gnb #menu li.active a{
-    color: #fff;
-
- }
-
-
- .section{
-    height: 100%;
-    padding-top: 150px;
+    border-radius: 10px;
 }
 
 
+#headerArea #gnb #menu li:hover,
+#headerArea #gnb #menu li.active {
+    padding: 10px 30px 12px;
+    background: var(--color-point1);
+    border-radius: 10px;
+}
+
+#headerArea #gnb #menu li:hover a,
+#headerArea #gnb #menu li.active a {
+    color: #fff;
+
+}
