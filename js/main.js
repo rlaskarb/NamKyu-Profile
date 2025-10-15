@@ -1,18 +1,22 @@
 
-const navMenuItems = [
-    { id: '1section', text: 'Home' },
-    { id: '2section', text: 'Profile' },
-    { id: '3section', text: 'Web Project(PC)' },
-    { id: '4section', text: 'Web Project(Mobile)' },
-    { id: '5section', text: 'Responsive Project' },
-    { id: '6section', text: 'Review' },
+// scroll.js 에서 내보낸 스크롤 초기화 함수 가져오기
+import { initFullPageScroll } from "./scroll.js";
+
+
+export const navMenuItems = [
+    { id: 'section1', text: 'Home' },
+    { id: 'section2', text: 'Profile' },
+    { id: 'section3', text: 'Web Project(PC)' },
+    { id: 'section4', text: 'Web Project(Mobile)' },
+    { id: 'section5', text: 'Responsive Project' },
+    { id: 'section6', text: 'Review' },
 ];
 
 
 const headerShortcuts = [
-    { href: "#2section", src: "./images/1.avif", alt: "프로필 바로가기" },
-    { href: "#3section", src: "./images/2.avif", alt: "pc 프로젝트 바로가기" },
-    { href: "#5section", src: "./images/5.avif", alt: "반응형 프로젝트 바로가기" },
+    { href: "#section2", src: "./images/1.avif", alt: "프로필 바로가기" },
+    { href: "#section3", src: "./images/2.avif", alt: "pc 프로젝트 바로가기" },
+    { href: "#section5", src: "./images/5.avif", alt: "반응형 프로젝트 바로가기" },
 ];
 
 
@@ -85,7 +89,7 @@ const kakaotalkData = {
              message: '제 소개를 시작을 하겠습니다.' },
 
         { speaker: '김남규1',
-            message: '<a href="#2section">프로필 바로가기</a>' }
+            message: '<a href="#section2">프로필 바로가기</a>' }
     ],
 };
 
@@ -202,7 +206,7 @@ function addChatClickEvent() {
 
         chatListData[0].unread = 0;
 
-        updataHeaderCount();
+        updateHeaderCount();
 
         const unreadBadge = firstChatItem.querySelector('.unread-count');
 
@@ -317,7 +321,7 @@ function addFilterEvents(){
 }
 
 
-function updataHeaderCount(){
+function updateHeaderCount(){
     const filterUnreadBtn = document.getElementById('filter-unread');
     if(!filterUnreadBtn) return;
 
@@ -325,7 +329,11 @@ function updataHeaderCount(){
         return sum + item.unread;
     },0);
 
-    filterUnreadBtn.innerHTML = `안읽음 ${totalUnread > 0 ? `<span class="unread-count"></span>` : ''}`;
+    const unreadCountSpan = totalUnread > 0 ? `<span class="unread-count">${totalUnread}</span>` : '' ;
+    filterUnreadBtn.innerHTML = `안읽음${unreadCountSpan}`;
+
+    
+    //filterUnreadBtn.innerHTML = `안읽음 ${totalUnread > 0 ? `<span class="unread-count"></span>` : ''}`;
 }
 
 
@@ -339,5 +347,7 @@ document.addEventListener("DOMContentLoaded", function () {
     createChatList(chatListData); // 2. 처음에는 전체 목록을 보여줌
 
     addFilterEvents(); // 3. 생성된 버튼들에 클릭기능을 추가
+
+    initFullPageScroll();
 
 });
