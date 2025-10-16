@@ -1,6 +1,8 @@
 /* section1 home */
 
-
+.section{
+    padding-top: 35px;
+}
 
 
 .kakaotalk-app-container {
@@ -309,4 +311,147 @@
 .kakaotalk-app-container.conversation-active .conversation-panel {
     transform: translateX(0);
     opacity: 1;
+}
+
+
+/* 프로필 CSS */
+
+
+.profile-wrap{
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+
+.profile-intro{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+       
+    }
+
+.profile-intro img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-intro li:nth-of-type(2){
+    font-size: var(--font-22px);
+    background: #ccc;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.profile-link{
+    width: 100%;
+    padding: 20px ;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    
+}
+
+.profile-link li{
+    font-size: var(--font-26px);
+    font-weight: 600;
+    background: var(--color-point1);
+    padding: 10px 20px 13px;
+    border-radius: 10px;
+}
+
+.profile-link li a{
+    color: var(--color-sub1);
+}
+
+
+.profile-link li:hover{
+    background: var(--color-7main);
+}
+
+.profile-main{
+    width: 80%;
+    height: 67vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.profile-main .visual img{
+    width: 500px;
+    height: 600px;
+}
+
+.profile-introduction{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-philosophy{
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Roboto", "sans-serif";
+    font-size: var(--font-70px);
+    font-weight: 800;
+    border: 1px solid red ;
+}
+
+.profile-philosophy span{
+    color: red;
+}
+
+.profile-stack span{
+    font-family: "Roboto", "sans-serif";
+    width: 13%;
+    display: block;
+    text-align: left;
+    padding:10px 20px;
+    border-radius: 15px;
+    font-size: var(--font-20px);
+    text-align: 700;
+    background: #ccc;
+}
+
+.profile-techStack{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.profile-techStack img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.profile-techStack li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.profile-techStack span{
+     font-family: "Roboto", "sans-serif";
+    font-size: var(--font-20px);
+    font-weight: 600;
+}
+
+.githubimg{
+    width: 90%;
+    margin: 0 auto;
 }
