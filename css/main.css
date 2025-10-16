@@ -1,13 +1,13 @@
 /* section1 home */
 
-.section{
+.section {
     padding-top: 35px;
 }
 
 
 .kakaotalk-app-container {
     width: 70%;
-    height: 81vh;
+    height: 75vh;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -146,7 +146,6 @@
     justify-content: center;
 }
 
-
 .chat-list .chat-item .chat-meta {
     width: 11%;
     padding: 10px;
@@ -184,12 +183,11 @@
 }
 
 
-
 /* 채팅 얼였을때 */
 
 .conversation-panel {
     width: 50%;
-    height: 79vh;
+    height: 73vh;
     position: absolute;
     right: 0;
     transform: translateX(100%);
@@ -290,14 +288,14 @@
 .message-content .kakaotalk-bubble {
     padding: 5px 20px 8px;
     font-size: var(--font-18px);
-    font-size: 500;
+    font-size: 600;
     background: #fff;
     border-radius: 1px 15px 15px 15px;
 }
 
 
 .message-content .kakaotalk-bubble a {
-    color: var(--color-point1);
+    color: #343a40;
     font-weight: 600;
     cursor: pointer;
     animation: bounce 3s infinite;
@@ -317,141 +315,181 @@
 /* 프로필 CSS */
 
 
-.profile-wrap{
+.profile-wrap {
     width: 95%;
     margin: 0 auto;
     position: relative;
-   
 }
 
+.profile-intro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 
-.profile-intro{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-       
-    }
+}
 
-.profile-intro img{
+.profile-intro img {
     width: 100px;
     border-radius: 50%;
 }
 
-.profile-intro li:nth-of-type(2){
+.profile-intro li:nth-of-type(2) {
     font-size: var(--font-22px);
-    background: #ccc;
+    font-weight: 500;
+    background: var(--color-sub1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px 25px;
     border-radius: 20px;
 }
 
-.profile-link{
-    width: 100%;
-    padding: 20px ;
+.profile-link {
+    width: 89%;
+    margin-bottom: 30px;
     display: flex;
     justify-content: end;
     gap: 30px;
-    
+
 }
 
-.profile-link li{
-    font-size: var(--font-26px);
-    font-weight: 600;
-    background: var(--color-point1);
-    padding: 10px 20px 13px;
+.profile-link li {
+    background: #343a40;
+    padding: 7px 20px 9px;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.profile-link li a{
+.profile-link li a {
+    font-family: "Roboto", "sans-serif";
+    font-size: var(--font-24px);
+    font-weight: 500;
     color: var(--color-sub1);
 }
 
 
-.profile-link li:hover{
-    background: var(--color-7main);
+.profile-link li:hover {
+    background: #495057;
 }
 
-.profile-main{
+.profile-main {
     width: 80%;
     height: 67vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    gap: 40px;
 }
 
-.profile-main .visual img{
-    width: 500px;
-    height: 600px;
+.profile-main .visual img {
+    width: 490px;
+    height: 650px;
+    border-radius: 20px;
 }
 
-.profile-introduction{
+.profile-introduction {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 
-.profile-philosophy{
-    width: 90%;
-    margin: 0 auto;
-    font-family: "Roboto", "sans-serif";
-    font-size: var(--font-70px);
-    font-weight: 800;
-    border: 1px solid red ;
-}
-
-.profile-philosophy span{
-    color: red;
-}
-
-.profile-stack span{
-    font-family: "Roboto", "sans-serif";
-    width: 13%;
-    display: block;
-    text-align: left;
-    padding:10px 20px;
-    border-radius: 15px;
-    font-size: var(--font-20px);
-    text-align: 700;
-    background: #ccc;
-}
-
-.profile-techStack{
+.profile-introduction {
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-   
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.profile-techStack img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 10px;
+/* 1. 헤드라인과 자기소개 */
+.profile-identity {
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-size: var(--font-36px);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: var(--font-20px);
+    padding-left: 30px;
+    line-height: 1.6rem;
+    color: #333;
 }
 
 
-.profile-techStack li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-    border: 1px solid black;
+/* 2. 기술 스택 */
+.profile-tech {
+    margin-bottom: 20px;
 }
 
-.profile-techStack span{
-     font-family: "Roboto", "sans-serif";
+.tech-title {
     font-size: var(--font-20px);
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
-.githubimg{
-    width: 90%;
-    margin: 0 auto;
+.tech-category.--frontend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: var(--color-sub1);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    /* 아래 그리드와의 간격 */
+}
+
+
+
+.tech-sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+
+
+
+/* 모든 카테고리에 공통으로 적용될 스타일 */
+.tech-category {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: var(--color-sub1);
+    border-radius: 8px;
+}
+
+
+.tech-category span {
+    font-family: "Roboto", "sans-serif";
+    font-size: var(--font-16px);
+    font-weight: 600;
+    width: 130px;
+    flex-shrink: 0;
+}
+
+.tech-category img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* 3. GitHub 잔디 */
+.profile-github {
+    text-align: center;
+}
+
+.github-caption {
+    font-size: var(--font-16px);
+    margin-bottom: 16px;
+    color: #444;
+}
+
+.profile-github img {
+    width: 100%;
 }

@@ -21,8 +21,8 @@ const headerShortcuts = [
 const chatListData = [
     {
         id: "portfolio-intro",
-        title: " 김남규의 포트폴리오 소개방",
-        lastMessage: "눌러 주실꺼죠!",
+        title: " 김남규의 포트폴리오",
+        lastMessage: "클릭 해 주실꺼죠?",
         time: "방금",
         unread: 2,
         avatar: "./images/rebit6.webm",
@@ -32,7 +32,7 @@ const chatListData = [
     {
         id: "friend",
         title: "친구",
-        lastMessage: "면접 잘봄?",
+        lastMessage: "👍",
         time: "오후 2:40",
         unread: 0,
         avatar: "./images/6.avif",
@@ -42,7 +42,7 @@ const chatListData = [
     {
         id: "7-eleven",
         title: "7-ELEVEn",
-        lastMessage: "Supabase를 사용하셨던데...",
+        lastMessage: "프론트엔드 개발자가 서버 없이 백엔드를 구현했다니, Supabase 활용법이 궁금하네요.",
         time: "오전 12:30",
         unread: 0,
         avatar: "./images/2.avif",
@@ -52,7 +52,7 @@ const chatListData = [
     {
         id: "kakao-pay",
         title: "ZOEY",
-        lastMessage: "이미지와 영상을 144개 사용했는데 Lighthouse 점수가 90..",
+        lastMessage: "LIGHTHOUSE 90... 혹시 이미지/영상 144개 넣으신 거 맞나요? 점수가 믿기지 않아서요.",
         time: "오전 08:21",
         unread: 0,
         avatar: "./images/zoey.avif",
@@ -61,12 +61,12 @@ const chatListData = [
     },
 
     {
-        id: "gunness",
-        title: "GUNNESS",
-        lastMessage: "React로 ERP 프로그램을 만드셨다면서요!",
+        id: "brauhaus",
+        title: "Brauhaus",
+        lastMessage: "React로 ERP요? 배포 안 된 게 아쉬울 정도네요. 그 복잡한 상태 관리, 어떻게 하셨어요?",
         time: "오전 08:00",
         unread: 0,
-        avatar: "./images/gunness.avif",
+        avatar: "./images/bra.png",
         mediaType: 'image',
         isClickable: false
     },
@@ -81,12 +81,12 @@ const kakaotalkData = {
             speaker: '김남규',
             avatar: "./images/1.avif",
             mediaType: 'image',
-            message: '김남규 포트폴리오를 클릭해주셔서 감사합니다'
+            message: '찾아와주셔서 정말 감사해요!'
         },
 
         {
             speaker: '김남규1',
-            message: '제 소개를 시작을 하겠습니다.'
+            message: '차근차근 스크롤을 내리시면 저를 만나실 수 있습니다.'
         },
 
         {

@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <!-- 아이콘 링크 -->
     <script src="https://kit.fontawesome.com/347816e35e.js" crossorigin="anonymous"></script>
@@ -53,36 +53,39 @@
 
         <section class="section sec2" data-anchor="2section">
             <h2 class="hidden">김남규 프로필</h2>
-            
+
             <div class="profile-wrap">
 
                 <ul class="profile-intro">
-                    <li><img src="./images/1.avif" alt="카톡이미지"></li>
-                    <li>저에 대해서 소개하겠습니다</li>
-                 </ul>
+                    <li><img src="./images/nam.jpg" alt="카톡이미지"></li>
+                    <li>오늘도 성장하는 중 🌱</li>
+                </ul>
 
-                
                 <ul class="profile-link">
                     <li><a href="#">Resume</a></li>
-                    <li><a href="#">GitHub</a></li>
+                    <li><a href="https://github.com/rlaskarb">GitHub</a></li>
                     <li><a href="#">Storyoard</a></li>
                 </ul>
-                 
-                    <div class="profile-main">
+
+                <div class="profile-main">
 
                     <div class="visual">
-                        <img src="./images/nam.avif" alt="프로필이미지">
+                        <img src="./images/nam.jpg" alt="프로필이미지">
                     </div>
 
                     <div class="profile-introduction">
-                        
-                        <div class="profile-philosophy" >
-                            <span>hell</span>o world !!!!
+
+                        <div class="profile-identity">
+                            <h3 class="headline">성장을 즐기는 프론트엔드 개발자</h3>
+                            <p class="bio">
+                                사용자 경험에 가치를 더하는 UI를 만들고, 소통과 학습으로 성장합니다.
+                            </p>
                         </div>
-                       
-                        <ul class="profile-techStack">
-                            <li> TECH STACK</li>
-                            <li>
+
+                        <div class="profile-tech">
+                            <h4 class="tech-title">"아이디어를 현실로 만드는 도구들입니다."</h4>
+
+                            <div class="tech-category --frontend">
                                 <span>Frontend</span>
                                 <img src="./images/js.png" alt="jsimg">
                                 <img src="./images/react.png" alt="reactimg">
@@ -91,42 +94,49 @@
                                 <img src="./images/jquery.png" alt="jqueryimg">
                                 <img src="./images/Bootstrap.png" alt="Bootstrapimg">
                                 <img src="./images/thymeleaf.png" alt="thymeleafimg">
-                                
-                            </li>
-                            <li>
-                                <span>Version Control</span>
-                                <img src="./images/git.jpg" alt="gitimg">
-                                <img src="./images/github.png" alt="githubimg">
-                                <img src="./images/sourceTree.png" alt="sourceTree">
-                            </li>
-                            <li>
-                                <span>Design & Collaboration</span>
-                                <img src="./images/figma.png" alt="figma">
-                                <img src="./images/photoshop.png" alt="photoshop">
-                                <img src="./images/nostion.png" alt="nostion">
-                                <img src="./images/postman.png" alt="postman">
-                            </li>
-                            <li>
-                                <span>Backend</span>
-                                <img src="./images/Java-Logo 1.png" alt="javaimg">
-                                <img src="./images/springboot.png" alt="springboot">
-                                <img src="./images/springframwork.png" alt="springframework">
-                                <img src="./images/restapi.png" alt="restapi">
-                            </li>
-                            <li>
-                                <span>Database</span>
-                                <img src="./images/mysql.png" alt="mysql">
-                                <img src="./images/oracle.png" alt="oracle">
-                                <img src="./images/supabase.png" alt="supabase">
-                            </li>
-                        </ul>
-                        <div class="githubimg">
-                            <span>GitHub 잔디!</span>
-                            <span>서당개 3년이면 풍월을 읊는다!! 는 신념으로 매일 매일 꾸준히 공부하고있습니다 </span>
+                            </div>
+
+                            <div class="tech-sub-grid">
+
+                                <div class="tech-category">
+                                    <span>Version Control</span>
+                                    <img src="./images/git.jpg" alt="gitimg">
+                                    <img src="./images/github.png" alt="githubimg">
+                                    <img src="./images/sourceTree.png" alt="sourceTree">
+                                </div>
+
+                                <div class="tech-category">
+                                    <span>Backend</span>
+                                    <img src="./images/Java-Logo 1.png" alt="javaimg">
+                                    <img src="./images/springboot.png" alt="springboot">
+                                    <img src="./images/springframwork.png" alt="springframework">
+                                    <img src="./images/restapi.png" alt="restapi">
+                                </div>
+
+                                <div class="tech-category">
+                                    <span>Design & Collaboration</span>
+                                    <img src="./images/figma.png" alt="figma">
+                                    <img src="./images/photoshop.png" alt="photoshop">
+                                    <img src="./images/nostion.png" alt="nostion">
+                                    <img src="./images/postman.png" alt="postman">
+                                </div>
+
+                                <div class="tech-category">
+                                    <span>Database</span>
+                                    <img src="./images/mysql.png" alt="mysql">
+                                    <img src="./images/oracle.png" alt="oracle">
+                                    <img src="./images/supabase.png" alt="supabase">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-github">
+                            <p class="github-caption">서당개 3년이면 풍월을 읊는다는 신념으로 매일 꾸준히 공부하고있습니다.</p>
                             <img src="https://ghchart.rshah.org/rlaskarb" alt="rlaskarb's Github chart" />
                         </div>
-                  </div>
-            </div>
+
+                    </div>
+                </div>
         </section>
 
         <section class="section" data-anchor="3section">
