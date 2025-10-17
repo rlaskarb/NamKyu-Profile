@@ -2,8 +2,9 @@
 /* section1 home */
 
 .kakaotalk-app-container {
-    width: 70%;
-    height: 84vh;
+    width: 100%;
+    height: 85vh;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -12,10 +13,11 @@
 
 .chat-list-panel,
 .conversation-panel {
-    width: 90%;
+    width: 100%;
+    max-width: 1500px;
     border-radius: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    margin: 2%;
     transition: all 0.5s ease-in-out;
 }
 
@@ -182,7 +184,8 @@
 
 .conversation-panel {
     width: 50%;
-    height: 82vh;
+    max-width: 790px;
+    height: 78vh;
     position: absolute;
     right: 0;
     transform: translateX(100%);
@@ -311,22 +314,9 @@
 
 
 .profile-wrap {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
-}
-
-.profile-intro {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.profile-intro img {
-    width: 100px;
-    border-radius: 50%;
 }
 
 .profile-intro li:nth-of-type(2) {
@@ -339,8 +329,9 @@
 }
 
 .profile-link {
-    width: 89%;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto 40px;
     display: flex;
     justify-content: end;
     gap: 30px;
@@ -367,9 +358,10 @@
 }
 
 .profile-main {
-    width: 80%;
+    width: 100%;
     height: 67vh;
-    margin: 0 auto 50px;
+    max-width: 1500px;
+    margin: 0 auto ;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -437,14 +429,12 @@
 }
 
 
-
 .tech-sub-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 
 }
-
 
 
 /* 모든 카테고리에 공통으로 적용될 스타일 */
@@ -488,3 +478,141 @@
     width: 90%;
     object-fit: contain;
 }
+
+
+
+/* 
+
+section3 Web Project pc
+
+
+*/
+
+.pc-wrap{
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    gap: 30px;
+}
+
+
+.pc-wrap .pc-video{
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+.pc-wrap .pc-video video{
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+}
+
+.pc-wrap .pc-main{
+    flex: 1;
+    margin: 0 auto;
+
+}
+
+.pc-wrap .pc-main .pc-goto{
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-main .pc-goto dt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    
+    span{
+        font-family: "Roboto", "sans-serif";
+        font-size: var(--font-80px);
+        font-weight: 500;
+    }
+
+    div{
+        display: flex;
+        gap: 8px;
+
+    
+        .github-link{
+            position: relative;
+
+             img{
+                width: 45px;
+                height: 45px;
+                object-fit: contain;
+            }
+        }
+
+        a:nth-of-type(2){
+            width: 90px;
+            padding: 8px 3px 3px;
+            font-size: var(--font-16px);
+            font-weight: 600;
+            color: var(--color-sub1);
+            text-align: center; 
+            background-color: var(--color-7main);
+            border-radius: 15px;
+            border: 2px solid transparent;
+        }
+    } 
+}
+
+.github-link::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    background-color: var(--color-7main);
+    color: var(--color-sub1);
+    font-size: var(--font-14px);
+    font-weight: 500;
+    padding:  8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease , transform 0.3s ease;
+}
+
+.github-link::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:-9px;
+    /* 비기 !!*/
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--color-7main) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.pc-main .pc-goto dt a:nth-of-type(2):hover{
+    background-color: var(--color-sub1);
+    border: 2px solid var(--color-7main);
+    color: #333;
+}
+
+
+.github-link:hover::before,
+.github-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px); /* 살짝 위로 떠오르는 효과 */
+}
+
+
+    
+  

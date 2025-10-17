@@ -25,8 +25,8 @@ const chatListData = [
         lastMessage: "클릭 해 주실꺼죠?",
         time: "방금",
         unread: 2,
-        avatar: "./images/rebit6.webm",
-        mediaType: 'video',
+        avatar: "./images/kyu.jpg",
+        mediaType: 'image',
         isClickable: true
     },
     {
