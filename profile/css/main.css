@@ -369,7 +369,7 @@
 .profile-main {
     width: 80%;
     height: 67vh;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     display: flex;
     align-items: center;
     gap: 40px;

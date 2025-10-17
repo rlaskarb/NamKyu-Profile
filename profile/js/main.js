@@ -337,7 +337,9 @@ function updateHeaderCount() {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
+// 문서가 모두 준비되면(로드되면) 코드를 실행합니다.
+$(document).ready(function() {
 
     createNavigation();
 
@@ -348,19 +350,17 @@ document.addEventListener("DOMContentLoaded", function () {
     addFilterEvents(); // 3. 생성된 버튼들에 클릭기능을 추가
 
 
-    // fullpage.js를 초기화하고 옵션을 설정합니다.
-    new fullpage('#fullpage', {
-
-        licenseKey: null,
+    // new fullpage(...) 대신 $('#fullpage').fullpage(...)로 변경
+    $('#fullpage').fullpage({
+        licenseKey: null, // v2에서는 이 옵션이 없지만, 그대로 두어도 문제는 없습니다.
         navigation: true,
         fixedElements: '#headerArea',
-        paddingTop:'75px',
+        paddingTop: '75px',
 
         // 메뉴 클릭과 스크롤을 연동하기 위해 반드시 필요!
         // #menu 안의 링크와 아래 anchors를 연결합니다.
         menu: '#menu',
         anchors: ['1section', '2section', '3section', '4section', '5section', '6section'],
     });
-
 
 });
