@@ -1,0 +1,1444 @@
+/* 와이드 pc  */
+.korea {
+  font-family: "Noto Sans KR", "sans-serif";
+}
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+
+#imgBG {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(44, 0, 62, 0.9);
+  position: relative;
+  padding-bottom: 50px;
+}
+
+
+#content>section {
+  margin: 0 auto;
+}
+
+
+#content h2 {
+  position: absolute;
+  top: -500px;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-70px);
+  color: var(--main-font);
+  text-shadow: 1px 1px 10px rgba(0, 174, 255, 1);
+}
+
+
+/* 예고편 영상 */
+#content .trailer_video {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+#content .trailer_video h3 {
+  font-size: var(--font-60px);
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+
+#content .trailer_video .trailer-swiper {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#content .trailer_video .trailer-swiper .swiper-slide {
+  width: 90%;
+  margin: 0 auto;
+  padding: 60px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+#content .youtube_container .trailer_youtube a,
+#content .trailer_video .trailer-swiper .swiper-slide a {
+  display: block;
+  position: relative;
+  perspective: 1800px;
+  transition: transform 0.5s ease;
+}
+
+
+
+#content .trailer_video .trailer-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  filter: brightness(120%);
+  transition: transform 0.5s ease;
+}
+
+
+#content .trailer_video .trailer-swiper .fa-youtube {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50% -50%);
+  font-size: var(--font-60px);
+  color: #ff0000;
+  transition: transform 0.5s ease;
+}
+
+
+#content .youtube_container .trailer_youtube:hover .fa-youtube,
+#content .trailer_video .trailer-swiper .swiper-slide a:hover .fa-youtube {
+  transform: translate(-50% -50%);
+  transform: scale(1.12);
+}
+
+#content .trailer_video .trailer-swiper .swiper-slide a:hover img {
+  filter: brightness(120%);
+  transform: scale(1.05);
+}
+
+
+#content .trailer_video .trailer-swiper .swiper-slide p {
+  width: 100%;
+  max-width: 650px;
+  font-size: var(--font-24px);
+  line-height: 2.5rem;
+}
+
+
+#content .trailer_video .trailer-swiper .swiper-scrollbar {
+  width: 90%;
+  height: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  color: var(--color-point1);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#content .trailer_video .trailer-swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-point1), var(--color-point2));
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+/* 뮤직비디오  */
+
+#content .youtube_container h3 {
+  width: 90%;
+  font-size: var(--font-60px);
+  margin: 200px auto 0;
+}
+
+#content .youtube_container .trailer_youtube {
+  width: 80%;
+  margin: 70px auto 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+#content .youtube_container .trailer_youtube img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#content .youtube_container .trailer_youtube .fa-youtube {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50% -50%);
+  font-size: var(--font-60px);
+  color: #ff0000;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#content .youtube_container .trailer_youtube:nth-of-type(1) img,
+#content .youtube_container .trailer_youtube:nth-of-type(3) img,
+#content .youtube_container .trailer_youtube:nth-of-type(5) img {
+  transform: translateX(20px) rotateY(20deg);
+}
+
+#content .youtube_container .trailer_youtube:nth-of-type(2) img,
+#content .youtube_container .trailer_youtube:nth-of-type(4) img {
+  transform: translateX(20px) rotateY(-20deg);
+}
+
+#content .youtube_container .trailer_youtube::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#content .youtube_container .trailer_youtube:nth-of-type(1)::before,
+#content .youtube_container .trailer_youtube:nth-of-type(3)::before,
+#content .youtube_container .trailer_youtube:nth-of-type(5)::before {
+  background: linear-gradient(90deg, var(--color-point1), var(--color-sub1));
+}
+
+#content .youtube_container .trailer_youtube:nth-of-type(2)::before,
+#content .youtube_container .trailer_youtube:nth-of-type(4)::before {
+  background: linear-gradient(90deg, var(--color-point2), var(--color-sub1));
+}
+
+
+#content .youtube_container .trailer_youtube:hover::before {
+  width: 150%;
+  border-radius: 20px;
+}
+
+#content .youtube_container .trailer_youtube:hover img {
+  transform: translateY(0px) rotateX(0deg);
+  filter: brightness(110%);
+}
+
+
+#content .youtube_container .trailer_youtube dl {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+#content .youtube_container .trailer_youtube dl dt {
+  font-family: "Orbitron", "sans-serif";
+  color: var(--main-font);
+  font-size: var(--font-44px);
+  line-height: 4rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+
+#content .youtube_container .trailer_youtube dl dd {
+  font-size: var(--font-26px);
+  line-height: 2.4rem;
+}
+
+#content .youtube_container .trailer_youtube:hover:nth-of-type(1) dt,
+#content .youtube_container .trailer_youtube:hover:nth-of-type(3) dt,
+#content .youtube_container .trailer_youtube:hover:nth-of-type(5) dt {
+  background: linear-gradient(360deg, var(--color-point1), var(--color-sub1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+#content .youtube_container .trailer_youtube:hover:nth-of-type(2) dt,
+#content .youtube_container .trailer_youtube:hover:nth-of-type(4) dt {
+  background: linear-gradient(360deg, var(--color-point2), var(--color-sub1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* 음악  */
+
+#content .trailer_music_container {
+  width: 90%;
+  margin: 200px auto 100px;
+  text-align: center;
+}
+
+#content .trailer_music_container h3 {
+  font-size: var(--font-60px);
+  padding-bottom: 70px;
+}
+
+#content .trailer_music_container .trailer_music_content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+#content .trailer_music_container .trailer_music_content .trailer_music {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 2%;
+}
+
+#content .trailer_music_container .trailer_music_content .trailer_music img {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+
+}
+
+
+
+#content .trailer_music_container .trailer_music_content .trailer_music dt {
+  font-size: var(--font-36px);
+  margin: 20px 0;
+}
+
+#content .trailer_music_container .trailer_music_content .trailer_music dd {
+  font-size: var(--font-24px);
+  margin: 20px 0;
+}
+
+#content .trailer_music_container .trailer_music_content .trailer_music .trailer_play {
+  font-size: var(--font-24px);
+
+  i {
+    padding: 5px 10px;
+
+  }
+}
+
+#content .trailer_music .fa-pause,
+#content .trailer_music .fa-stop {
+  display: none;
+}
+
+#content .trailer_music.playing .fa-play {
+  display: none;
+}
+
+#content .trailer_music.playing .fa-pause,
+#content .trailer_music.playing .fa-stop {
+  display: inline-block;
+}
+
+@keyframes layered-glow-effect {
+
+  0%,
+  100% {
+    box-shadow:
+
+      0 0 5px 5px var(--color-sub1),
+
+      0 0 10px 10px var(--color-point2),
+
+      0 0 10px 15px var(--color-point1);
+  }
+
+  50% {
+    box-shadow:
+
+      0 0 20px 10px var(--color-point1),
+
+      0 0 20px 20px var(--color-sub1),
+
+      0 0 20px 30px var(--color-point2);
+  }
+}
+
+#content .trailer_music.playing img {
+  animation: layered-glow-effect 2.5s ease-in-out infinite;
+}
+
+
+
+/* 모달창  */
+#youtube-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 0, 62, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 150;
+}
+
+#youtube-modal #youtube-player-wrapper {
+  width: 90%;
+  max-width: 1500px;
+  position: relative;
+}
+
+#youtube-modal #youtube-player {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+
+}
+
+#youtube-modal #youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+
+}
+
+#youtube-modal #youtube-player-wrapper .close-btn {
+  position: absolute;
+  top: -3rem;
+  right: 1rem;
+  font-size: var(--font-40px);
+  color: #fff;
+  cursor: pointer;
+  z-index: 300;
+  transition: all 0.5s ease-in-out;
+}
+
+#youtube-modal #youtube-player-wrapper .close-btn:hover {
+  background: linear-gradient(90deg, var(--color-point1), var(--color-sub1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: rotate(360deg);
+}
+
+
+
+/* 
+
+
+
+
+
+중간 pc 글씨크기 변경
+
+
+
+
+
+*/
+@media screen and (max-width: 1600px) {
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 100%;
+    max-width: 510px;
+    font-size: var(--font-22px);
+    line-height: 2rem;
+  }
+
+
+  /* 노래 영상 유튜브  */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-60px);
+    margin: 150px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 90%;
+    margin: 70px auto 100px;
+    gap: 2%;
+  }
+
+
+  #content .youtube_container .trailer_youtube dl {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-34px);
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-26px);
+    line-height: 2.2rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+일반 pc 
+
+
+*/
+@media screen and (max-width: 1280px) {
+
+
+  /* 예고편 영상 */
+
+  #content .trailer_video h3 {
+    font-size: var(--font-44px);
+    text-align: center;
+    padding-top: 100px;
+  }
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide {
+    width: 95%;
+    margin: 0 auto;
+    padding: 60px 10px;
+    gap: 2%;
+  }
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 100%;
+    max-width: 400px;
+    font-size: var(--font-22px);
+    line-height: 1.8rem;
+  }
+
+
+  /* 뮤직비디오  */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-44px);
+    margin: 150px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 90%;
+    margin: 70px auto 100px;
+    gap: 1%;
+  }
+
+  #content .youtube_container .trailer_youtube .fa-youtube {
+    font-size: var(--font-60px);
+  }
+
+  #content .youtube_container .trailer_youtube dl {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-30px);
+    line-height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-24px);
+    line-height: 2rem;
+  }
+
+  /* 음악  */
+
+  #content .trailer_music_container {
+    width: 90%;
+    margin: 200px auto 70px;
+    text-align: center;
+  }
+
+  #content .trailer_music_container h3 {
+    font-size: var(--font-50px);
+    padding-bottom: 70px;
+  }
+
+  #content .trailer_music_container .trailer_music_content {
+    width: 95%;
+    gap: 2%;
+  }
+
+
+  #content .trailer_music_container .trailer_music_content .trailer_music img {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+  }
+
+
+  #content .trailer_music_container .trailer_music_content .trailer_music dt {
+    font-size: var(--font-34px);
+    margin: 20px 0;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music dd {
+    font-size: var(--font-22px);
+    margin: 20px 0;
+  }
+
+
+
+}
+
+/* 
+
+
+
+
+
+
+
+
+테블릿 
+
+
+
+
+
+
+
+*/
+@media screen and (max-width: 1150px) {
+  #content h2 {
+    top: -500px;
+    width: 100%;
+    font-size: var(--font-50px);
+  }
+
+
+  /* 예고편 영상 */
+
+  #content .trailer_video {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  #content .trailer_video h3 {
+    font-size: var(--font-44px);
+    text-align: center;
+    padding-top: 80px;
+  }
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+  }
+
+
+  #content .youtube_container .trailer_youtube a,
+  #content .trailer_video .trailer-swiper .swiper-slide a {
+    display: block;
+    position: relative;
+    perspective: 0px;
+    transition: transform 0.5s ease;
+  }
+
+
+  #content .trailer_video .trailer-swiper .fa-youtube {
+    position: absolute;
+    top: 43%;
+    left: 47%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-60px);
+  }
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 90%;
+    max-width: 700px;
+    padding-top: 25px;
+    font-size: var(--font-22px);
+    line-height: 1.8rem;
+  }
+
+
+  /* 뮤직비디오 */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-44px);
+    margin: 150px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 90%;
+    margin: 50px auto 150px;
+    flex-direction: column;
+    gap: 1%;
+  }
+
+  #content .youtube_container .trailer_youtube:nth-of-type(2) a {
+    order: 1;
+  }
+
+  #content .youtube_container .trailer_youtube:nth-of-type(2) dl {
+    order: 2;
+  }
+
+  #content .youtube_container .trailer_youtube:nth-of-type(4) a {
+    order: 1;
+  }
+
+  #content .youtube_container .trailer_youtube:nth-of-type(4) dl {
+    order: 2;
+  }
+
+  #content .youtube_container .trailer_youtube img {
+    max-width: 600px;
+  }
+
+  #content .youtube_container .trailer_youtube .fa-youtube {
+    top: 40%;
+    left: 45%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-60px);
+  }
+
+  #content .youtube_container .trailer_youtube:nth-of-type(1) img,
+  #content .youtube_container .trailer_youtube:nth-of-type(3) img,
+  #content .youtube_container .trailer_youtube:nth-of-type(5) img {
+    transform: translateX(0px) rotateY(0deg);
+  }
+
+  #content .youtube_container .trailer_youtube:nth-of-type(2) img,
+  #content .youtube_container .trailer_youtube:nth-of-type(4) img {
+    transform: translateX(0px) rotateY(0deg);
+  }
+
+  #content .youtube_container .trailer_youtube::before {
+    width: 0;
+    height: 0px;
+  }
+
+
+  #content .youtube_container .trailer_youtube dl {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-34px);
+    line-height: 2rem;
+    margin: 30px 0 15px 0;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-22px);
+    line-height: 1.6rem;
+  }
+
+  #content .youtube_container .trailer_youtube:hover::before {
+    width: 0;
+    border-radius: 20px;
+  }
+
+  #content .youtube_container .trailer_youtube:hover img {
+    transform: translateY(0px) rotateX(0deg);
+    filter: brightness(110%);
+  }
+
+
+
+
+  /* 음악  */
+
+  #content .trailer_music_container {
+    width: 90%;
+    margin: 180px auto 50px;
+    text-align: center;
+  }
+
+  #content .trailer_music_container h3 {
+    font-size: var(--font-44px);
+    padding-bottom: 40px;
+  }
+
+  #content .trailer_music_container .trailer_music_content {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 2%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music dt {
+    font-size: var(--font-30px);
+    margin: 20px 0 5px 0;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music dd {
+    font-size: var(--font-20px);
+    margin: 5px 0 15px 0;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music .trailer_play {
+    font-size: var(--font-22px);
+
+    i {
+      padding: 5px 10px;
+
+    }
+  }
+
+
+
+  /* 모달창  */
+
+
+}
+
+/* 
+
+
+
+
+
+
+
+소형 테블릿 
+
+
+
+
+
+
+
+*/
+@media screen and (max-width: 855px) {
+  #content h2 {
+    top: -500px;
+    width: 100%;
+    font-size: var(--font-40px);
+  }
+
+
+  /* 예고편 영상 */
+
+  #content .trailer_video {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  #content .trailer_video h3 {
+    font-size: var(--font-40px);
+    text-align: center;
+    padding-top: 80px;
+  }
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+  }
+
+  #content .trailer_video .trailer-swiper .fa-youtube {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-60px);
+  }
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 90%;
+    max-width: 700px;
+    padding-top: 25px;
+    font-size: var(--font-20px);
+    line-height: 1.8rem;
+  }
+
+
+  /* 뮤직비디오 */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-40px);
+    margin: 150px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 95%;
+    margin: 50px auto 150px;
+    flex-direction: column;
+    gap: 1%;
+  }
+
+
+  #content .youtube_container .trailer_youtube img {
+    max-width: 450px;
+  }
+
+  #content .youtube_container .trailer_youtube .fa-youtube {
+    top: 40%;
+    left: 41%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-60px);
+  }
+
+
+  #content .youtube_container .trailer_youtube dl {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-34px);
+    line-height: 2.8rem;
+    margin: 30px 0 15px 0;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-22px);
+    line-height: 1.6rem;
+  }
+
+  #content .youtube_container .trailer_youtube:hover::before {
+    width: 0;
+    border-radius: 20px;
+  }
+
+  #content .youtube_container .trailer_youtube:hover img {
+    transform: translateY(0px) rotateX(0deg);
+    filter: brightness(110%);
+  }
+
+
+
+
+  /* 음악  */
+
+  #content .trailer_music_container {
+    width: 90%;
+    margin: 180px auto 50px;
+    text-align: center;
+  }
+
+  #content .trailer_music_container h3 {
+    font-size: var(--font-40px);
+    padding-bottom: 40px;
+  }
+
+  #content .trailer_music_container .trailer_music_content {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music dt {
+    font-size: var(--font-30px);
+    margin: 20px 0 5px 0;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music dd {
+    font-size: var(--font-20px);
+    margin: 5px 0 15px 0;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music .trailer_play {
+    font-size: var(--font-22px);
+
+    i {
+      padding: 5px 10px;
+
+    }
+  }
+
+
+}
+
+/* 
+
+
+
+
+
+
+
+모바일 1
+
+
+
+
+
+
+*/
+@media screen and (max-width: 667px) {
+  #content h2 {
+    top: -450px;
+    width: 100%;
+    font-size: var(--font-40px);
+  }
+
+
+  /* 예고편 영상 */
+
+  #content .trailer_video {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  #content .trailer_video h3 {
+    font-size: var(--font-40px);
+    text-align: center;
+    padding-top: 80px;
+  }
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+  }
+
+  #content .trailer_video .trailer-swiper .fa-youtube {
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-50px);
+  }
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 90%;
+    max-width: 700px;
+    padding-top: 25px;
+    font-size: var(--font-18px);
+    line-height: 1.5rem;
+  }
+
+
+  /* 뮤직비디오 */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-40px);
+    margin: 120px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 95%;
+    margin: 50px auto 100px;
+    flex-direction: column;
+    gap: 1%;
+  }
+
+
+  #content .youtube_container .trailer_youtube img {
+    max-width: 400px;
+  }
+
+  #content .youtube_container .trailer_youtube .fa-youtube {
+    top: 40%;
+    left: 42%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-50px);
+  }
+
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-30px);
+    line-height: 2.5rem;
+    margin: 30px 0 15px 0;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-20px);
+    line-height: 1.4rem;
+  }
+
+
+
+  /* 음악  */
+
+  #content .trailer_music_container {
+    width: 90%;
+    margin: 130px auto 50px;
+    text-align: center;
+  }
+
+  #content .trailer_music_container h3 {
+    font-size: var(--font-40px);
+    padding-bottom: 0px;
+  }
+
+  #content .trailer_music_container .trailer_music_content {
+    width: 90%;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music {
+    margin: 50px 0;
+    width: 90%;
+    gap: 5%;
+  }
+
+
+
+}
+
+/* 
+
+
+
+
+
+
+
+모바일 2
+
+
+
+
+
+
+*/
+@media screen and (max-width: 565px) {
+  #content h2 {
+    top: -450px;
+    width: 100%;
+    font-size: var(--font-36px);
+  }
+
+
+  /* 예고편 영상 */
+
+  #content .trailer_video {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  #content .trailer_video h3 {
+    font-size: var(--font-36px);
+    text-align: center;
+    padding-top: 80px;
+  }
+
+
+  #content .trailer_video .trailer-swiper .swiper-slide {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+  }
+
+  #content .trailer_video .trailer-swiper .fa-youtube {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-44px);
+  }
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 90%;
+    max-width: 700px;
+    padding-top: 25px;
+    font-size: var(--font-18px);
+    line-height: 1.5rem;
+  }
+
+
+  /* 뮤직비디오 */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-36px);
+    margin: 100px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 95%;
+    margin: 50px auto 100px;
+    flex-direction: column;
+    gap: 1%;
+  }
+
+
+  #content .youtube_container .trailer_youtube img {
+    max-width: 350px;
+  }
+
+  #content .youtube_container .trailer_youtube .fa-youtube {
+    top: 40%;
+    left: 42%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-50px);
+  }
+
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-26px);
+    line-height: 2.5rem;
+    margin: 30px 0 15px 0;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-18px);
+    line-height: 1.2rem;
+  }
+
+
+
+  /* 음악  */
+
+  #content .trailer_music_container {
+    width: 90%;
+    margin: 130px auto 50px;
+    text-align: center;
+  }
+
+  #content .trailer_music_container h3 {
+    font-size: var(--font-36px);
+    padding-bottom: 0px;
+  }
+
+  #content .trailer_music_container .trailer_music_content {
+    width: 90%;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music {
+    margin: 50px 0;
+    width: 90%;
+    gap: 5%;
+  }
+
+}
+
+/* 
+
+
+
+
+모바일 3
+
+
+
+
+*/
+@media screen and (max-width: 467px) {
+  #content h2 {
+    top: -450px;
+    width: 100%;
+    font-size: var(--font-36px);
+  }
+
+
+  /* 예고편 영상 */
+
+  #content .trailer_video {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+  #content .trailer_video h3 {
+    font-size: var(--font-30px);
+    text-align: center;
+    padding-top: 80px;
+  }
+
+
+
+
+  #content .trailer_video .trailer-swiper .fa-youtube {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-44px);
+  }
+
+  #content .trailer_video .trailer-swiper .swiper-slide p {
+    width: 90%;
+    max-width: 700px;
+    padding-top: 25px;
+    font-size: var(--font-16px);
+    line-height: 1.3rem;
+  }
+
+
+  /* 뮤직비디오 */
+
+  #content .youtube_container h3 {
+    width: 90%;
+    font-size: var(--font-36px);
+    margin: 100px auto 0;
+  }
+
+  #content .youtube_container .trailer_youtube {
+    width: 95%;
+    margin: 50px auto 100px;
+    flex-direction: column;
+    gap: 1%;
+  }
+
+
+  #content .youtube_container .trailer_youtube img {
+    max-width: 350px;
+  }
+
+  #content .youtube_container .trailer_youtube .fa-youtube {
+    top: 40%;
+    left: 42%;
+    transform: translate(-50% -50%);
+    font-size: var(--font-50px);
+  }
+
+
+  #content .youtube_container .trailer_youtube dl dt {
+    font-size: var(--font-22px);
+    line-height: 2rem;
+    margin: 30px 0 15px 0;
+  }
+
+  #content .youtube_container .trailer_youtube dl dd {
+    font-size: var(--font-16px);
+    line-height: 1.2rem;
+  }
+
+
+
+  /* 음악  */
+
+  #content .trailer_music_container {
+    width: 90%;
+    margin: 130px auto 30px;
+    text-align: center;
+  }
+
+  #content .trailer_music_container h3 {
+    font-size: var(--font-26px);
+    padding-bottom: 0px;
+  }
+
+  #content .trailer_music_container .trailer_music_content {
+    width: 90%;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  #content .trailer_music_container .trailer_music_content .trailer_music {
+    margin: 20px 0;
+    width: 90%;
+    gap: 5%;
+  }
+}

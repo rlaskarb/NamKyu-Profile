@@ -1,0 +1,181 @@
+#content .content_area {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+#content .seven_beans_management {
+    width: 100%;
+}
+
+#content .seven_beans_management h3 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#content .coffee_roasting,
+#content .coffee_bean {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#content .beans_img {
+    width: 80%;
+    margin-bottom: 40px;
+
+}
+
+#content .beans_img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#content .seven_beans_note {
+    margin: 0 auto;
+}
+
+/* 제목 섹션 */
+.title-section {
+    text-align: center;
+    font-weight: bold;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 120px 0 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.title-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#content .coffee_roasting p,
+#content .coffee_bean p,
+#content .title-section p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+
+.coffee-section {
+    margin-bottom: 40px;
+}
+
+#content .coffee_roasting h4,
+#content .coffee_bean h4,
+#content .coffee-section h4 {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 22px;
+    color: var(--font-color-point1);
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.coffee-card {
+    width: 90%;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-card strong {
+    display: block;
+    font-size: 18px;
+    color: var(--font-color-point1);
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+
+.taste-note {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+.blend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.blend-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: #ddd;
+}
+
+.blend-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 아로마 태그 */
+.aroma-tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 6px 10px;
+    border: 2px solid var(--font-color-point1);
+    border-radius: 20px;
+    background: white;
+    color: var(--font-color-point1);
+}
+
+.tag.active {
+    background: var(--font-color-point1);
+    color: white;
+}
+
+/* 이미지 */
+.coffee-image {
+    width: 100%;
+    text-align: center;
+}
+
+.coffee-image img {
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.scroll-target {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.scroll-target.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

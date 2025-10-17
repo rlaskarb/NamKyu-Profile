@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 아이폰 링크 전번막기 -->
+  <meta name="format-detection" content="telephone=no">
+  <title>KPop Demon Hunters</title>
+  <link rel="icon" type="image/x-icon" href="./images/main/logoicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="./images/main/logoicon.ico">
+  <link rel="apple-touch-startup-image" href="./images/main/startup.ico">
+
+  <!-- Noto Sans Korean , Orbitron , Poppins 폰트링크 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;800&family=Orbitron:wght@800;900&family=Poppins:ital,wght@0,500;0,700;0,800;1,500;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/indexani.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- 폰트어썸 링크 -->
+  <script src="https://kit.fontawesome.com/347816e35e.js" crossorigin="anonymous"></script>
+  <!-- url 위로 올리는 스크립트 -->
+  <script>
+    // <![CDATA[ 
+    try {
+      window.addEventListener(
+        "load",
+        function () {
+          setTimeout(scrollTo, 0, 0, 1);
+        },
+        false
+      );
+    } catch (e) { }
+    // ]]>
+  </script>
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+  <div id="skipNav">
+    <a href="#content">본문바로가기</a>
+    <a href="#gnb">네비게이션바로가기</a>
+  </div>
+
+  <div id="wrap">
+    <div class="videoBox">
+      <video autoplay loop muted id="videoBG"></video>
+
+      <img src="./images/main/back.avif" id="imgBG" alt="backgroundimg">
+
+      <a class="down" href="#">
+        <div class="scroll">
+          <img src="./images/main/scrolldown.png" alt="scrolldownimg">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </a>
+    </div>
+
+    <header id="headerArea">
+      <div class="headerInner">
+        <h1 class="logo">
+          <a href="./index.html">케이팝 데몬 헌터스 로고</a>
+        </h1>
+        <a href="#" class="menu_ham"><span>햄버거 네비 영역</span></a>
+        <nav id="gnb">
+          <h2 class="hidden">네비게이션영역</h2>
+          <ul class="main_menu">
+            <li>
+              <h3><a href="./sub1.html?num=1">ABOUT</a></h3>
+            </li>
+            <li>
+              <h3><a href="./sub2.html?num=2">CHARACTERS</a></h3>
+            </li>
+            <li>
+              <h3><a href="./sub3.html?num=3">TRAILER</a></h3>
+            </li>
+            <li>
+              <h3><a href="./sub4.html?num=4">NEWS</a></h3>
+            </li>
+            <li>
+              <h3><a href="./sub5.html?num=5">GALLERY</a></h3>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <article id="content">
+      <canvas id="interactive-canvas"></canvas>
+      <h2 class="hidden">본문콘텐츠영역</h2>
+
+      <section class="about">
+        <div class="section_header">
+          <h3>ABOUT</h3>
+          <a href="./sub1.html?num=1" class="more"><img src="./images/main/more.svg" alt="moreimg">
+            <span class="more-text">MORE</span>
+          </a>
+        </div>
+        <p>Heroes clash with demons in disguise.</p>
+        <div class="about_container">
+          <div class="about_content reveal">
+            <img src="./images/sub1/abut11.avif" alt="huntrxgif">
+          </div>
+          <div class="about_content reveal">
+            <h4>HUNTR/X</h4>
+            <p>
+              Rumi, Mira, and Joy—the global K-pop trio who secretly fight as
+              demon hunters. Guided by Rumi’s voice, Mira’s fierce moves, and
+              Joy’s lyrical fire, they use songs as Soul Gates to seal demons.
+              Behind their stardom lies a sacred duty as the last line of
+              defense for humanity.
+            </p>
+          </div>
+
+          <div class="about_content reveal">
+            <img src="./images/sub1/about22.avif" alt="sajaboysgif">
+          </div>
+          <div class="about_content reveal">
+            <h4>SAJA BOYS</h4>
+            <p>
+              Jinu, Abby, Romance, Baby, and Mystery—the flawless five who
+              conquered the world. Named after death messengers, they charm
+              fans with talent and allure, but hide their true nature as
+              demons harvesting souls. Idol façades mask their mission, making
+              them HUNTR/X’s deadliest rivals.
+            </p>
+          </div>
+          <div class="about_content reveal">
+            <img src="./images/sub1/about33.avif" alt="duffyimg">
+          </div>
+          <div class="about_content reveal">
+            <h4>DUFFY</h4>
+            <p>
+              The blue tiger spirit and Jinwoo’s loyal companion. Intimidating
+              at first with glowing eyes, yet clumsy and lovable—always trying
+              to fix fallen things, always failing with charm. A harmless
+              guardian who can slip through dimensions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="characters">
+        <div class="section_header">
+          <h3>CHARACTERS</h3>
+          <a href="./sub2.html?num=2" class="more"><img src="./images/main/more.svg" alt="moreimg">
+            <span class="more-text">MORE</span>
+          </a>
+        </div>
+        <p>unique souls, each with their own story.</p>
+        <ul class="characters_container">
+          <!-- a 1 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_1.avif" alt="rumimg">
+            <dl>
+              <dt>Rumi</dt>
+              <dd>INFJ</dd>
+            </dl>
+            <span class="description_overlay">
+              "Main Vocal"
+            </span>
+          </li>
+          <!-- b 2 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_4_1.avif" alt="zoeyimg">
+            <dl>
+              <dt>Zoey</dt>
+              <dd>ENFP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Main Rapper"
+            </span>
+          </li>
+          <!-- c 3 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_9.avif" alt="miraimg">
+            <dl>
+              <dt>Mira</dt>
+              <dd>ISTP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Main Visual"
+            </span>
+          </li>
+          <!-- d 4 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/huntrsx.avif" alt="huntreximg">
+            <span class="description_overlay">
+              Huntress ties the group together with fierce energy,<br>
+              turning contrasts into harmony, <br>and igniting a stage
+              presence that feels unstoppable.
+            </span>
+          </li>
+          <!-- e 5 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_19.avif" alt="jinuimg">
+            <dl>
+              <dt>Jinu</dt>
+              <dd>ENTP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Main Vocal"
+            </span>
+          </li>
+          <!-- f 6 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_21.avif" alt="mystsryimg">
+            <dl>
+              <dt>Mystery</dt>
+              <dd>INTP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Sub Vocal"
+            </span>
+          </li>
+          <!-- g 7 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_23.avif" alt="abbyimg">
+            <dl>
+              <dt>Abby</dt>
+              <dd>ESTP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Main Dancer"
+            </span>
+          </li>
+          <!-- h 8 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_25.avif" alt="babyimg">
+            <dl>
+              <dt>Baby</dt>
+              <dd>ISFP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Main Rapper"
+            </span>
+          </li>
+          <!-- i 9 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_27.avif" alt="romanceimg">
+            <dl>
+              <dt>Romance</dt>
+              <dd>ESFP</dd>
+            </dl>
+            <span class="description_overlay">
+              "Lead Vocal"
+            </span>
+          </li>
+          <!-- j 10 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sub2_35.avif" alt="gwimaimg">
+            <dl>
+              <dt>Gwi-Ma</dt>
+              <dd>ENTJ</dd>
+            </dl>
+            <span class="description_overlay">
+              "Producer"
+            </span>
+          </li>
+          <!-- k 11 -->
+          <li class="characters_content reveal">
+            <img src="./images/sub2/sajaboss.avif" alt="sajabosimg">
+            <span class="description_overlay">
+              Saja Boys captivate the world with their dangerous charm,<br>
+              weaving a spell that blurs the lines between idol and demon,<br>
+              turning their lethal artistry into a captivating spectacle.
+            </span>
+          </li>
+
+
+
+
+        </ul>
+      </section>
+
+      <section class="trailer">
+        <div class="section_header">
+          <h3>TRAILER</h3>
+          <a href="./sub3.html?num=3" class="more"><img src="./images/main/more.svg" alt="moreimg">
+            <span class="more-text">MORE</span>
+          </a>
+        </div>
+        <p>Songs that open worlds, voices that save souls.</p>
+
+        <div class="trailer_wrapper"></div>
+      </section>
+
+      <div class="trailer_popup">
+        <div class="youtube_iframe_wrapper">
+          <a href="#" class="close_btn">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="youtube_iframe">
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <section class="news">
+        <div class="section_header">
+          <h3>NEWS</h3>
+          <a href="./sub4.html?num=4" class="more"><img src="./images/main/more.svg" alt="moreimg">
+            <span class="more-text">MORE</span>
+          </a>
+        </div>
+        <p>Songs that open worlds, voices that save souls.</p>
+        <div class="news_container">
+          <div class="news_content reveal">
+            <img src="./images/sub4/sub4_1.avif" alt="Billboardno1img">
+            <h4>HUNTRIX Conquers Billboard Charts</h4>
+          </div>
+
+          <div class="news_content reveal">
+            <img src="./images/sub4/sub4_5.avif" alt="sajaboysnewimg">
+            <h4>Sajaboys Roars into Billboard Top 10</h4>
+          </div>
+
+          <div class="news_content reveal">
+            <img src="./images/sub4/sub4_back1.avif" alt="jinuluminewsimg">
+            <div class="content_text">
+              <h4>A Mysterious Letter Arrive.</h4>
+              <p>
+                A mysterious letter from a young man has arrived from England,
+                carrying an adorable "Hello Friend" message that witnesses
+                claim is part of an ancient chain letter promising
+                extraordinary luck to those who pass it along to ten people
+                within 24 hours. As Lumi holds the curious cartoon-decorated
+                envelope in her trembling hands, local rumors swirl about the
+                consequences of breaking this global phenomenon. Will she risk
+                whatever fate awaits, or become the next link in this
+                mysterious chain?
+              </p>
+            </div>
+          </div>
+
+          <div class="news_content reveal">
+            <img src="./images/sub4/sub4_3.avif" alt="huntrixrameneatnewimg">
+            <h4>HUNTR/X Caught Eating Free?</h4>
+          </div>
+
+          <div class="news_content reveal">
+            <img src="./images/sub4/sub4_6_1.avif" alt="sajaboysmusclenewimg">
+            <h4>Abby's Muscle Mystery Exposed!</h4>
+          </div>
+
+          <div class="news_content reveal">
+            <img src="./images/sub4/zoeymira.avif" alt="zoeymiranewimg">
+            <div class="content_text">
+              <h4>
+                SHOCKING: Lumi Quits? The Truth Behind Her Sudden
+                Disappearance
+              </h4>
+              <p>
+                Panic spread among fans when Lumi was noticeably absent from
+                Joy and Mira's cozy movie night setup, sparking wild
+                speculation about potential group drama or departure rumors
+                across social media platforms. However, the mystery was
+                quickly solved when their manager's Instagram revealed the
+                innocent truth: Lumi had simply gone to bed early after their
+                exhausting concert performance, while Joy and Mira prepared
+                for a well-deserved movie marathon during their official
+                two-week rest period. The heartwarming reality check shows
+                that sometimes the most dramatic headlines hide the most
+                ordinary, relatable moments - even demon hunters need their
+                beauty sleep and downtime with snacks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="section_header">
+          <h3>GALLERY</h3>
+          <a href="./sub5.html?num=5" class="more"><img src="./images/main/more.svg" alt="moreimg">
+            <span class="more-text">MORE</span>
+          </a>
+        </div>
+        <p>Rare captures from their extraordinary journey.</p>
+
+        <div class="gallery_container">
+
+          <!-- a , 1-->
+          <div class="gallery_card reveal">
+            <video autoplay loop muted>
+              <source src="./images/sub5/duffygif.webm" type="video/webm">
+            </video>
+
+          </div>
+
+          <!-- b ,2 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub5/sub5_gh.avif" alt="huntsimg">
+          </div>
+
+          <!-- c ,3 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub2/sub2_3.avif" alt="rumi_img">
+          </div>
+
+          <!-- d ,4 -->
+
+          <div class="gallery_card reveal">
+            <img src="./images/sub5/sub5_10.avif" alt="zoey_img">
+          </div>
+
+          <!-- e , 5 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub2/sub2_8.avif" alt="mirai_mg">
+          </div>
+
+          <!-- f ,6 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub2/sub2_20.avif" alt="jinuimg">
+          </div>
+
+          <!-- g ,7 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub5/sub5_60.avif" alt="misstery_img">
+          </div>
+
+          <!-- h , 8 -->
+          <div class="gallery_card reveal">
+            <video autoplay loop muted>
+              <source src="./images/sub2/sub2_26.webm" type="video/webm">
+            </video>
+          </div>
+
+          <!-- i , 9 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub5/sajaboys6.avif" alt="sajaboysimg">
+          </div>
+
+          <!-- j ,10 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub5/sub5_20.avif" alt="letter_img">
+          </div>
+
+          <!-- k ,11 -->
+          <div class="gallery_card reveal">
+            <img src="./images/sub5/sub5_34.avif" alt="huntrix_img">
+          </div>
+
+        </div>
+
+      </section>
+    </article>
+
+    <footer id="footerArea">
+      <a class="top_move" href="#">
+        <img src="./images/main/scrolldown.png" alt="topimg">
+        <span class="top-text">TOP</span>
+      </a>
+      <div class="footer_inner">
+        <a href="./index.html">
+          <img class="logo" src="./images/main/logo.svg" alt="풋터로고">
+        </a>
+        <p class="copyright">
+          Copyright &copy;2025 K-POP DEMON HUNTERS. <br>
+          All rights reserved. | Inspired by Netflix Original Series
+        </p>
+        <ul class="footer_sns">
+          <li>
+            <a href="https://www.youtube.com/@netflixfamily" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/kpopdemonhuntersnetflix/" target="_blank"><i
+                class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/groups/1009316311329248/" target="_blank">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rlaskarb" target="_blank">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/index_js/video.js"></script>
+  <script src="./js/index_js/trailer.js"></script>
+  <script src="./js/index_js/top_button.js"></script>
+  <script src="./js/index_js/nav.js"></script>
+  <script src="./js/index_js/animation.js"></script>
+  <script src="./js/index_js/mouse.js"></script>
+
+</body>
+
+</html>

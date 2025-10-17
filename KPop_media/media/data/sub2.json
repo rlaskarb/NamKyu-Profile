@@ -1,0 +1,234 @@
+[
+  {
+    "id": "huntrix",
+    "groupName": "HUNTRIX",
+    "characters": [
+      {
+        "name": "RUMI",
+        "age": "24",
+        "mbti": "INFJ",
+        "position": "Main Vocal",
+        "description": "Rumi is a compassionate leader with a strong sense of purpose. She deeply cherishes the Huntrix members and loves to eat gimbap and ramen. She despises having to hide her true identity and the demons that threaten the world. Rumi continues to fight every day to live as her authentic self and to protect the people she holds dear.",
+        "images": [
+          "./images/sub2/sub2_1.avif",
+          "./images/sub2/sub2_1_2.avif",
+          "./images/sub2/sub2_2.webm",
+          "./images/sub2/sub2_3.avif"
+        ]
+      },
+      {
+        "name": "ZOEY",
+        "age": "22",
+        "mbti": "ENFP",
+        "position": "Main Rapper",
+        "description": "Zoey is the cute, bright, and lively youngest member. She cherishes Rumi and Mira, loves baths and snacks. Though a bit oblivious and easily charmed by good looks, her true power emerges when she's performing or battling, revealing an intense charisma as she raps or fights evil spirits.",
+        "images": [
+          "./images/sub2/sub2_4_1.avif",
+          "./images/sub2/sub2_4.avif",
+          "./images/sub2/sub2_5.webm",
+          "./images/sub2/sub2_6.avif"
+        ]
+      },
+      {
+        "name": "MIRA",
+        "age": "23",
+        "mbti": "ISTP",
+        "position": "Main Visual",
+        "description": "Mira is the gutsy, girl crush type member. She cherishes Rumi and Zoey more than family and absolutely loves the Huntrix members' mundane daily lives and sofas. Despite her tough exterior, she actually has very low self-esteem, making her a warm-hearted girl who constantly relies on and protects her fellow Huntrix members.",
+        "images": [
+          "./images/sub2/sub2_7.avif",
+          "./images/sub2/sub2_9.avif",
+          "./images/sub2/sub2_9.webm",
+          "./images/sub2/sub2_8.avif"
+        ]
+      }
+    ],
+    "backImage": [
+      "./images/sub2/sub2_back2.avif",
+      "./images/sub2/sub2_back1.avif"
+    ],
+    "storyTitle": "A Suffocating Silence",
+    "storyDescription": "The moment the truth was revealed, the space once filled with joy and laughter was replaced with despair.",
+    "storyImg": [
+      "./images/sub2/sub2_12.avif",
+      "./images/sub2/sub2_13.avif",
+      "./images/sub2/sub2_14.avif",
+      "./images/sub2/sub2_15.avif",
+      "./images/sub2/sub2_16.avif",
+      "./images/sub2/sub2_17.avif"
+    ],
+    "storyDescription2": "The truth they learned was not of betrayal, but of an unspoken pain. Watching her flee, they could only stare at her retreating back, their hearts breaking. They were left to face the unbearable silence, knowing they couldn't follow her."
+  },
+  {
+    "id": "saja_boys",
+    "groupName": "SAJA BOYS",
+    "characters": [
+      {
+        "name": "JINU",
+        "age": "400",
+        "mbti": "ENTP",
+        "position": "Main Vocal",
+        "description": "Jinwoo is the leader of the Lion Boys and the closest villain to the Demon King, Gwi-Ma. He is the only one who has managed to maintain his humanity. He hates himself for having to abandon his family because of Gwi-Ma and despises the Demon King so much that he wants to destroy him.",
+        "images": [
+          "./images/sub2/sub2_19.avif",
+          "./images/sub2/sub2_19_1.avif",
+          "./images/sub2/sub2_20.webm",
+          "./images/sub2/sub2_20.avif"
+        ]
+      },
+      {
+        "name": "MYSTERY",
+        "age": "375",
+        "mbti": "INTP",
+        "position": "Sub Vocal",
+        "description": "Mystery has a hairstyle that conceals his face and is the individual whom Huntrix's Zoey showed great interest in. As the sub-vocal of  Sajaboyz, Zoey's close observation and strong interest have led many readers to speculate that he is exceptionally handsome. His distinctive feature is his beautiful, clear voice.",
+        "images": [
+          "./images/sub2/sub2_21.avif",
+          "./images/sub2/sub2_21_1.avif",
+          "./images/sub2/sub2_22.webm",
+          "./images/sub2/sub2_22.avif"
+        ]
+      },
+      {
+        "name": "ABBY",
+        "age": "326",
+        "mbti": "ESTP",
+        "position": "Main Dancer",
+        "description": "Abby is a muscular, macho man with a prominent six-pack. He serves as the main dancer and lead rapper for the  Sajaboys. He makes a memorable impression on readers by giving autographs where he places paper on his stomach and sketches his six-pack. ",
+        "images": [
+          "./images/sub2/sub2_23.avif",
+          "./images/sub2/sub2_23_1.avif",
+          "./images/sub2/sub2_23.webm",
+          "./images/sub2/sub2_24.avif"
+        ]
+      },
+      {
+        "name": "BABY",
+        "age": "276",
+        "mbti": "ISFP",
+        "position": "Main Rapper",
+        "description": "Baby serves as the main rapper of the Sajaboys group, and with his very youthful face, he also takes on the position of the youngest member. He handles spicy food well, and in the story, his voice is particularly impressive when he raps, making him a memorable character.",
+        "images": [
+          "./images/sub2/sub2_25.avif",
+          "./images/sub2/sub2_25_1.avif",
+          "./images/sub2/sub2_26.webm",
+          "./images/sub2/sub2_26.avif"
+        ]
+      },
+      {
+        "name": "ROMANCE",
+        "age": "381",
+        "mbti": "ESFP",
+        "position": "Lead Vocal",
+        "description": "Romance is an impressive character with a 5:5 pink heart-shaped hairstyle and a androgynous appearance. He is the lead vocalist for the Sajaboys and is primarily in charge of the high-note sections during performances. With a look that is more popular overseas than in his home country, he is a character with global appeal.",
+        "images": [
+          "./images/sub2/sub2_27.avif",
+          "./images/sub2/sub2_27_1.avif",
+          "./images/sub2/sub2_28.webm",
+          "./images/sub2/sub2_28.avif"
+        ]
+      }
+    ],
+    "backImage": [
+      "./images/sub2/sub2_back3.avif",
+      "./images/sub2/sub2_back4.avif"
+    ],
+    "storyTitle": "Your Idol",
+    "storyDescription": "A loving trap, disguised in a sweet voice to claim your very soul.",
+    "storyImg": [
+      "./images/sub2/sub2_34.avif",
+      "./images/sub2/sub2_32.avif",
+      "./images/sub2/sub2_31.avif",
+      "./images/sub2/sub2_30.avif",
+      "./images/sub2/sub2_33.avif",
+      "./images/sub2/sub2_29.avif"
+    ],
+    "storyDescription2": "The Lion Boys, who appeared to stop the Gate of Souls, are steadily achieving their goals. They are now turning the Huntrix's crisis into an opportunity, preparing to deliver the final blow."
+  },
+  {
+    "id": "other",
+    "groupName": "OTHER",
+    "characters": [
+      {
+        "name": "GWI-MA",
+        "age": "long time",
+        "mbti": "ENTJ",
+        "position": "Producer",
+        "description": "The ultimate villain, an ancient King of Evil Spirits, and ruler of the demon realm, also serving as the Saja boys' producer. He can monitor and forcefully summon evil spirits, making escape impossible. As the final antagonist, Gwima also possesses the power to enchant with whispers.",
+        "images": [
+          "./images/sub2/sub2_35.avif",
+          "./images/sub2/sub2_36.avif",
+          "./images/sub2/sub2_37.webm",
+          "./images/sub2/sub2_37.avif"
+        ]
+      },
+      {
+        "name": "DUFFY",
+        "age": "176",
+        "mbti": "INFP",
+        "position": "Jinu Pat",
+        "description": "Duffy is a blue-glowing tiger that Jinu accompanies. Unlike evil spirits, Duffy is assigned blue-toned colors, similar to the Hunters. Duffy is a loyal companion yokai who delivers letters to Rumi and faithfully follows its master's commands. It possesses the ability to exist in any space and is fundamentally a neutral character. ",
+        "images": [
+          "./images/sub2/sub2_38.avif",
+          "./images/sub2/sub2_38_1.avif",
+          "./images/sub1/duffy1.webm",
+          "./images/sub2/sub2_39.avif"
+        ]
+      },
+      {
+        "name": "SUSSIE",
+        "age": "180",
+        "mbti": "INTJ",
+        "position": "Jinu Pat",
+        "description": "Sussie is a magpie with six eyes in total, three on each side. It is seen wearing Duffy's hat and often has a dumbfounded expression, frequently looking at Duffy with a look of disdain. Like Duffy, Sussie accompanies Jinu. It is fundamentally a neutral character. ",
+        "images": [
+          "./images/sub2/sub2_40.avif",
+          "./images/sub2/sub2_40_1.avif",
+          "./images/sub2/sub2_41.webm",
+          "./images/sub2/sub2_41.avif"
+        ]
+      },
+      {
+        "name": "BOBBY",
+        "age": "36",
+        "mbti": "ESFJ",
+        "position": "Manager",
+        "description": "Bobby is the manager of the Huntrix. Even when the Huntrix members suddenly disappear to fight evil spirits, are late for a live show, or even have a show canceled, he never nags them. Instead, he coolly states, 'Well, this is what I get paid for,' and steps up to handle the aftermath. He is a highly capable manager and is considered a very precious presence by the Huntrix members.",
+        "images": [
+          "./images/sub2/sub2_42.avif",
+          "./images/sub2/sub2_42_1.avif",
+          "./images/sub2/sub2_42.webm",
+          "./images/sub2/sub2_43.avif"
+        ]
+      },
+      {
+        "name": "CELINE",
+        "age": "45",
+        "mbti": "ISTJ",
+        "position": "Former Huntrix",
+        "description": "Celine is a retired member of 'Sunlight Sisters,' a first-generation K-pop group and demon-hunting team. She plays a mother-like role to the protagonist Sumi and adopted and raised Rumi. In the movie, she is portrayed as a mature, principle-driven individual who strives not to reveal her weaknesses.",
+        "images": [
+          "./images/sub2/sub2_44.avif",
+          "./images/sub2/sub2_44_1.avif",
+          "./images/sub2/sub2_c11.webm",
+          "./images/sub2/sub2_45.avif"
+        ]
+      }
+    ],
+    "backImage": [
+      "./images/sub2/sub2_back6.avif",
+      "./images/sub2/sub2_back5.avif"
+    ],
+    "storyTitle": "K-POP Demon Hunters' Fans",
+    "storyDescription": "The fans of Huntrix gather at the concert venue to cheer on their idols. Their cheers are a crucial key to opening the Soul Gate. To complete the Golden Soul Gate, the members of Huntrix sing with passion, moving the hearts of their fans. Can they succeed in creating the Golden Soul Gate?",
+    "storyImg": [
+      "./images/sub2/sub2_48.avif",
+      "./images/sub2/sub2_51.avif",
+      "./images/sub2/sub2_50.avif",
+      "./images/sub2/sub2_49.avif",
+      "./images/sub2/sub2_47.avif",
+      "./images/sub2/sub2_52.avif"
+    ],
+    "storyDescription2": "To prevent the Soul Gate from being completed, the boy group Sajaboyz is formed. They begin a performance to steal Huntrix's fans and thwart the Soul Gate. Can they steal the fans and stop the gate from being completed? What will be the outcome of this rivalry, and how will the fans choose? "
+  }
+]

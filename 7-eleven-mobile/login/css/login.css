@@ -1,0 +1,123 @@
+#content {
+	width: 100%;
+	margin: 100px auto 50px;
+}
+
+
+.login_content {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login_content h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	margin: 40px;
+}
+
+.login_content form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login_content form input {
+	border: 1px solid rgba(1, 113, 33, 0.8);
+	font-size: var(--font-size-no12);
+	width: 80%;
+	height: 50px;
+	border-radius: 7px;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+.login_content form input::placeholder {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: var(--font-size-no12);
+	font-weight: 500;
+	color: #999;
+}
+
+.login_content .login_btn1 {
+	width: 80%;
+	height: 50px;
+	margin-top: 20px;
+	border: 0;
+	border-radius: 7px;
+	background: rgba(1, 113, 33, 0.8);
+	font-size: 18px;
+	color: var(--font-color-sub2);
+	font-weight: 500;
+
+
+}
+
+.login_content .login_btn2 {
+	width: 80%;
+	height: 50px;
+	margin-top: 10px;
+	border: 0;
+	border-radius: 7px;
+	background: #fae100;
+	font-size: 18px;
+	color: var(--font-color-font);
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.login_content .login_btn2 img {
+	width: 11%;
+}
+
+.find_eleven {
+	width: 80%;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.join_eleven {
+	width: 80%;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.join_eleven p {
+	font-size: 16px;
+	text-align: center;
+}
+
+.join_eleven .link_benefit {
+	font-size: 16px;
+	color: var(--font-color-point1);
+}
+
+.join_eleven .its_btn {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	background: rgba(217, 38, 41, 0.9);
+	font-size: 18px;
+	color: var(--font-color-sub2);
+	font-weight: 400;
+
+}

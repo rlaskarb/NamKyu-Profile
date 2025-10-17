@@ -1,0 +1,10 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="20.5242" width="68" height="29.4286" rx="14.7143" stroke="#F5F5F5" stroke-width="2"/>
+<rect x="20.0476" y="69" width="68" height="29.4286" rx="14.7143" transform="rotate(-90 20.0476 69)" stroke="#F5F5F5" stroke-width="2"/>
+<line x1="35.0294" y1="67.6554" x2="35.0294" y2="2.34453" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="67.9723" y1="35.327" x2="1.34141" y2="35.327" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="66.9412" y1="28.5959" x2="27.7647" y2="28.5959" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="42.9216" y1="42.7307" x2="3.7451" y2="42.7307" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="-1" x2="54.8699" y2="-1" transform="matrix(-0.0122835 -0.999924 0.99993 -0.0118157 44.6078 59.2307)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="-1" x2="54.8699" y2="-1" transform="matrix(-0.0122835 -0.999924 0.99993 -0.0118157 28.1372 67.308)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

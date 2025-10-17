@@ -1,0 +1,351 @@
+
+
+#content .content_area {
+	width: 1600px;
+	min-height: 1000px;
+	margin: 100px auto;
+	position: relative;
+}
+
+#content .food_search {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	padding: 5px;
+	margin-top: 100px;
+}
+
+#content .food_search input {
+	width: 800px;
+	height: 50px;
+	font-size: var(--font-size-no11);
+	border: 3px solid var(--font-color-point2);
+	outline: none;
+}
+
+#searchList {
+	background: #fff;
+}
+
+#content .food_search button {
+	width: 150px;
+	height: 55px;
+	margin-top: 2px;
+	vertical-align: top;
+	border: 0;
+	font-size: var(--font-size-no12);
+	color: var(--font-color-sub2);
+	background: rgba(1, 113, 33, 0.8);
+	font-weight: 400;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+#content .food_search button:hover {
+	background: rgba(231, 126, 45, 0.8);
+	font-size: var(--font-size-no12);
+	transform: scale(1.05);
+}
+
+#content .fresh_food_inquiry {
+	width: 100%;
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	font-size: var(--font-size-no12);
+}
+
+#content .fresh_food_inquiry strong {
+	padding: 18px 20px 10px 0;
+	font-size: var(--font-size-no10);
+	border-right: 3px solid var(--font-color-point2);
+}
+
+#content .fresh_food_inquiry ul {
+	display: flex;
+	padding: 10px;
+	gap: 10px;
+}
+
+#content .food_inquiry_btn {
+	display: block;
+	width: 120px;
+	text-align: center;
+	padding: 10px;
+	font-size: var(--font-size-no10);
+	border-radius: 20px 20px 5px 20px;
+	cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+#content .food_inquiry_btn:hover {
+	color: var(--font-color-sub2);
+	background: var(--font-color-point2);
+	transform: scale(1.03) translateY(-5px);
+}
+
+/* 상품 */
+
+#content .new_banner_container {
+	width: 100%;
+	max-width: 1200px;
+	position: relative;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+#content .new_banner_container h3 {
+	text-align: center;
+	font-weight: 700;
+	font-size: var(--font-size-no6);
+	color: rgba(217, 38, 41, 0.8);
+	margin-bottom: 10px;
+}
+
+#content .new_banner_container p {
+	text-align: center;
+	font-size: var(--font-size-no11);
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+#content .new_banner_content {
+	position: relative;
+	display: flex;
+	left: 0;
+	cursor: grab;
+}
+
+#content .new_banner_content li {
+	width: 400px;
+	flex-shrink: 0;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+#content .new_banner_content li img {
+	width: 100%;
+	display: block;
+	user-select: none;
+	pointer-events: none;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+#content .new_banner_content dl {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#content .new_banner_content dt {
+	font-size: var(--font-size-no12);
+	font-weight: 600;
+	/*18px*/
+}
+
+#content .new_banner_content dl dd {
+	font-size: var(--font-size-no13);
+	color: #888;
+	/*16px*/
+}
+
+.banner_slider_arrows {
+	position: absolute;
+	top: 57%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-between;
+	pointer-events: none;
+}
+
+.banner_slider_arrows .banner_arrow {
+	pointer-events: auto;
+	width: 50px;
+	height: 50px;
+	color: #333;
+	font-size: var(--font-size-no8);
+	transition: all 0.3s ease;
+}
+
+.banner_slider_arrows .banner_arrow:hover {
+	color: #000;
+	transform: scale(1.2);
+}
+
+#content .new_product_list {
+	width: 1400px;
+	padding-top: 20px;
+	padding-bottom: 150px;
+	margin: 0 auto;
+	margin-left: 220px;
+}
+
+#content .new_product_list ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 55px;
+}
+
+#content .new_product_list li {
+	text-align: center;
+	line-height: 1.6rem;
+}
+
+#content .new_product_list li img {
+	width: 250px;
+	height: 310px;
+	object-fit: contain;
+}
+
+#content .new_product_list dl dt {
+	margin-top: 10px;
+	font-size: var(--font-size-no11);
+	font-weight: 500;
+}
+
+#content .new_product_list dl dd {
+	margin-top: 10px;
+	font-size: var(--font-size-no12);
+	font-weight: 500;
+}
+
+#content .pop_open {
+	width: 100px;
+	margin-top: 13px;
+	margin-left: 63px;
+	font-size: var(--font-size-no12);
+	padding: 5px 10px;
+	border-radius: 25px;
+	background: rgba(231, 126, 45, 0.8);
+	color: var(--font-color-sub1);
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+#content .pop_open:hover {
+	background: rgba(217, 38, 41, 0.8);
+	transform: translateY(-4px);
+	box-shadow: 1px 1px 15px rgba(217, 38, 41, 0.3);
+}
+
+.new_modal_box {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+
+.new_popup_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 1000px;
+	max-height: 800px;
+	overflow-y: auto;
+	padding: 30px;
+	background-color: var(--font-color-sub2);
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.3);
+	z-index: 11;
+}
+
+.new_popup_con li {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.new_popup_con li dl {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.new_popup_con dl dt {
+	color: rgba(217, 38, 41, 0.8);
+	font-size: var(--font-size-no6);
+	/*40px*/
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.new_popup_con dl dd {
+	width: 400px;
+	font-size: var(--font-size-no11);
+	line-height: 2rem;
+	font-weight: 500;
+}
+
+.new_popup_con dl dd:nth-of-type(4) {
+	color: var(--font-color-point2);
+	font-weight: 600;
+}
+
+.new_popup_con dl dd:nth-of-type(5) {
+	color: var(--font-color-point1);
+}
+
+.new_popup_con li img {
+	width: 500px;
+	object-fit: cover;
+}
+
+.close_pop {
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	color: rgba(217, 38, 41, 0.8);
+	font-weight: 700;
+	font-size: var(--font-size-no11);
+	transition: all 0.3s ease;
+}
+
+/*상품없음*/
+.no_result_container {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.no_result_container img {
+	width: 500px;
+	object-fit: contain;
+}
+
+.no_result_container>div {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	font-size: var(--font-size-no10);
+	font-weight: 500;
+}
+
+.no_result_container>div a {
+	width: 200px;
+	text-align: center;
+	margin-top: 10px;
+	padding: 10px 15px;
+	border-radius: 25px;
+	background: rgba(231, 126, 45, 0.8);
+	color: var(--font-color-sub1);
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.no_result_container>div a:hover {
+	background: rgba(217, 38, 41, 0.8);
+	transform: translateY(-4px);
+	box-shadow: 1px 1px 15px rgba(217, 38, 41, 0.3);
+}

@@ -1,0 +1,166 @@
+#content .content_area {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+#content .history_nav {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#content .history_nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+#content .history_nav li {
+    width: 20%;
+
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+#content .history_nav li a {
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 6px 8px;
+    transition: all 0.5s ease;
+}
+
+#content .history_nav ul li a:hover {
+    background: var(--font-color-main);
+    color: var(--font-color-sub2);
+}
+
+#content .history_nav.fixed {
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background: #fff;
+    z-index: 200;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease-out;
+    margin: 0 10px;
+}
+
+@keyframes slideDown {
+    from {
+        top: -70px;
+        opacity: 0;
+    }
+
+    to {
+        top: 5px;
+        opacity: 1;
+    }
+}
+
+#content .history_nav li.on a {
+    background: var(--font-color-main);
+    color: var(--font-color-sub2);
+    border-radius: 5px;
+}
+
+/* 연혁 ㄱ */
+#content .company_history {
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}
+
+#content .company_history::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 95%;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--font-color-point1);
+    border-radius: 2px;
+    z-index: -1;
+}
+
+#content .history_decade {
+    position: relative;
+    margin-top: 100px;
+}
+
+#content .year_title {
+    color: var(--font-color-point2);
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#content .year_title span {
+    color: var(--font-color-main);
+}
+
+#content .history_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 40px;
+    width: 85%;
+    position: relative;
+}
+
+#content .history_item .text_box,
+#content .history_item .img_box {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#content .history_item .text_box {
+    background-color: var(--font-color-main);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#content .history_item .img_box img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#content .history_item {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
+
+#content .direction-left {
+    transform: translateX(-100px);
+}
+
+#content .direction-right {
+    transform: translateX(100px);
+}
+
+#content .history_item.active {
+    opacity: 1;
+    transform: translateX(0);
+}

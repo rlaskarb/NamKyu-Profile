@@ -1,0 +1,824 @@
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imgBG {
+  position: fixed;
+  /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%;
+  /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%;
+  /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%;
+  /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-47%);
+  z-index: -100;
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(44, 0, 62, 0.9);
+  position: relative;
+  padding-bottom: 100px;
+}
+
+#content>section {
+  margin: 0 auto;
+}
+
+#content h2 {
+  position: absolute;
+  top: -500px;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-70px);
+  color: var(--main-font);
+  text-shadow: 1px 1px 10px rgba(0, 174, 255, 1);
+}
+
+/* story */
+
+#content .story {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+#content .story .story_container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "a b";
+  gap: 0 3%;
+}
+
+#content .story_container .story_content {
+  overflow: hidden;
+}
+
+#content .story_container .story_content dl dt {
+  font-family: "Orbitron", "sans-serif";
+  color: var(--main-font);
+  font-size: var(--font-44px);
+  line-height: 4rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+#content .story_container .story_content dl dd {
+  font-size: var(--font-26px);
+  line-height: 2.4rem;
+}
+
+#content .story_content:nth-of-type(1) {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content .story_content:nth-of-type(2) {
+  grid-area: b;
+}
+
+#content .story_container .story_content img {
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/* huntrx ,saja_boys,duffy */
+
+#content .huntrx_container,
+#content .saja_boys_container,
+#content .duffy_container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+#content .story h3,
+#content .huntrx_container h3,
+#content .saja_boys_container h3,
+#content .duffy_container h3 {
+  font-size: var(--font-60px);
+  margin-bottom: 20px;
+}
+
+#content .huntrx_container .huntrx_content_swiper img,
+#content .saja_boys_container .saja_boys_content_swiper img,
+#content .duffy_container .duffy_content_swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+#content .huntrx_container .huntrx_content_swiper dl,
+#content .saja_boys_container .saja_boys_content_swiper dl,
+#content .duffy_container .duffy_content_swiper dl {
+  width: 100%;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+#content .huntrx_container .huntrx_content_swiper dt,
+#content .saja_boys_container .saja_boys_content_swiper dt,
+#content .duffy_container .duffy_content_swiper dt {
+  font-family: "Orbitron", "sans-serif";
+  color: var(--main-font);
+  font-size: var(--font-36px);
+  line-height: 2rem;
+  padding-bottom: 20px;
+}
+
+#content .huntrx_container .huntrx_content_swiper dd,
+#content .saja_boys_container .saja_boys_content_swiper dd,
+#content .duffy_container .duffy_content_swiper dd {
+  font-size: var(--font-22px);
+  line-height: 1.8rem;
+}
+
+#content .huntrx_container .huntrx_content_swiper .swiper-slide,
+#content .saja_boys_container .saja_boys_content_swiper .swiper-slide,
+#content .duffy_container .duffy_content_swiper .swiper-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content .huntrx_container .huntrx_content,
+#content .duffy_container .duffy_content {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1%;
+  grid-template-areas:
+    "a a b"
+    "a a c"
+    "a a d"
+    "e e e";
+}
+
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(1),
+#content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(1),
+#content .duffy_container .duffy_content .duffy_card:nth-child(1) {
+  grid-area: a;
+  align-self: start;
+  overflow: hidden;
+}
+
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(2),
+#content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(2),
+#content .duffy_container .duffy_content .duffy_card:nth-child(2) {
+  grid-area: b;
+}
+
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(3),
+#content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(3),
+#content .duffy_container .duffy_content .duffy_card:nth-child(3) {
+  grid-area: c;
+}
+
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(4),
+#content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(4),
+#content .duffy_container .duffy_content .duffy_card:nth-child(4) {
+  grid-area: d;
+}
+
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(5),
+#content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(5),
+#content .duffy_container .duffy_content .duffy_card:nth-child(5) {
+  grid-area: e;
+}
+
+#content .huntrx_container .huntrx_content li>video,
+#content .huntrx_container .huntrx_content li>img,
+#content .saja_boys_container .saja_boys_content li>video,
+#content .saja_boys_container .saja_boys_content li>img,
+#content .duffy_container .duffy_content li>video,
+#content .duffy_container .duffy_content li>img {
+  width: 100%;
+  height: 100%;
+  max-height: 270px;
+  min-height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+#content .swiper-wrapper .swiper-slide img,
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(5) img,
+#content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(5) img,
+#content .duffy_container .duffy_content .duffy_card:nth-child(5) img {
+  max-height: 500px;
+  min-height: 200px;
+}
+
+#content .huntrx_container .huntrx_content .huntrx_card:nth-child(1) .huntrx_content_swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#content .saja_boys_container .saja_boys_content {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 0.5%;
+  grid-template-areas:
+    "b a a"
+    "c a a"
+    "d a a"
+    "e e e";
+}
+
+@media screen and (max-width: 1720px) {
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-50px);
+    margin-bottom: 25px;
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-36px);
+    line-height: 3rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-22px);
+    line-height: 1.7rem;
+  }
+
+
+  #content .huntrx_container .huntrx_content_swiper dl,
+  #content .saja_boys_container .saja_boys_content_swiper dl,
+  #content .duffy_container .duffy_content_swiper dl {
+    width: 100%;
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
+
+
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-34px);
+    line-height: 2rem;
+    margin-bottom: 5px;
+
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-18px);
+    line-height: 1.5rem;
+  }
+
+
+}
+
+/*
+
+
+
+
+
+
+일반 pc 
+
+
+
+
+
+
+
+*/
+@media screen and (max-width: 1280px) {
+  #content .story {
+    width: 90%;
+  }
+
+  #content .story .story_container {
+    width: 90%;
+  }
+
+  /* huntrx ,saja_boys,duffy */
+
+  #content .huntrx_container,
+  #content .saja_boys_container,
+  #content .duffy_container {
+    width: 95%;
+  }
+
+  #content .huntrx_container .huntrx_content,
+  #content .saja_boys_container .saja_boys_content,
+  #content .duffy_container .duffy_content {
+    width: 95%;
+  }
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-44px);
+    margin-bottom: 25px;
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-30px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-18px);
+    line-height: 1.6rem;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-30px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dd,
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-18px);
+    line-height: 1.4rem;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+테블릿 
+
+
+
+
+
+
+
+*/
+@media screen and (max-width: 1150px) {
+  #content h2 {
+    font-size: var(--font-50px);
+    color: var(--main-font);
+  }
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-44px);
+    margin-bottom: 25px;
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-30px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-18px);
+    line-height: 1.3rem;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-30px);
+    line-height: 3rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-18px);
+    line-height: 1.5rem;
+  }
+
+  /* story */
+  #content .story {
+    width: 90%;
+    padding-top: 70px;
+  }
+
+  #content .story .story_container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "b"
+      "a";
+    gap: 3% 0;
+  }
+
+  /* huntrx ,saja_boys,duffy */
+
+  #content .huntrx_container,
+  #content .saja_boys_container,
+  #content .duffy_container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  #content .huntrx_container .huntrx_content,
+  #content .saja_boys_container .saja_boys_content,
+  #content .duffy_container .duffy_content {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5%;
+    grid-template-areas:
+      "a a a"
+      "b c d";
+  }
+
+  #content .huntrx_container .huntrx_content .huntrx_card:nth-child(5),
+  #content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(5),
+  #content .duffy_container .duffy_content .duffy_card:nth-child(5) {
+    display: none;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+소형 테블릿 
+
+
+
+
+
+
+
+*/
+@media screen and (max-width: 855px) {
+  #content h2 {
+    top: -500px;
+    font-size: var(--font-44px);
+    color: var(--main-font);
+  }
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-36px);
+    margin-bottom: 25px;
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-28px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-18px);
+    line-height: 1.3rem;
+  }
+
+
+  #content .huntrx_container .huntrx_content_swiper dl,
+  #content .saja_boys_container .saja_boys_content_swiper dl,
+  #content .duffy_container .duffy_content_swiper dl {
+    padding: 15px 0 0 0;
+  }
+
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-28px);
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-16px);
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+모바일 1
+
+
+
+
+
+
+*/
+@media screen and (max-width: 667px) {
+  #content h2 {
+    top: -450px;
+    font-size: var(--font-40px);
+    color: var(--main-font);
+  }
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-36px);
+    margin-bottom: 25px;
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-22px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-16px);
+    line-height: 1.1rem;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dl,
+  #content .saja_boys_container .saja_boys_content_swiper dl,
+  #content .duffy_container .duffy_content_swiper dl {
+    padding: 15px 0 0 0;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-22px);
+    line-height: 2rem;
+    margin-bottom: -10px;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-14px);
+    line-height: 1.1rem;
+  }
+
+  /* story */
+  #content .story {
+    width: 95%;
+    padding-top: 70px;
+  }
+
+  #content .story .story_container {
+    width: 95%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "b"
+      "a";
+    gap: 3% 0;
+  }
+
+  /* huntrx ,saja_boys,duffy */
+
+  #content .huntrx_container,
+  #content .saja_boys_container,
+  #content .duffy_container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  #content .huntrx_container .huntrx_content,
+  #content .saja_boys_container .saja_boys_content,
+  #content .duffy_container .duffy_content {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5%;
+    grid-template-areas: "a a";
+  }
+
+  #content .huntrx_container .huntrx_content .huntrx_card:nth-child(2),
+  #content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(2),
+  #content .duffy_container .duffy_content .duffy_card:nth-child(2) {
+    display: none;
+  }
+
+  #content .huntrx_container .huntrx_content .huntrx_card:nth-child(3),
+  #content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(3),
+  #content .duffy_container .duffy_content .duffy_card:nth-child(3) {
+    display: none;
+  }
+
+  #content .huntrx_container .huntrx_content .huntrx_card:nth-child(4),
+  #content .saja_boys_container .saja_boys_content .saja_boys_card:nth-child(4),
+  #content .duffy_container .duffy_content .duffy_card:nth-child(4) {
+    display: none;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+모바일 2
+
+
+
+
+
+
+*/
+@media screen and (max-width: 565px) {
+  #content h2 {
+    top: -450px;
+    font-size: var(--font-36px);
+    color: var(--main-font);
+  }
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-36px);
+    /* margin-bottom: 20px; */
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-22px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-14px);
+    line-height: 1.1rem;
+  }
+
+
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-20px);
+    line-height: 2rem;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-16px);
+    line-height: 1.2rem;
+  }
+
+  /* story */
+  #content .story {
+    width: 95%;
+    padding-top: 50px;
+  }
+
+  /* huntrx ,saja_boys,duffy */
+
+  #content .huntrx_container,
+  #content .saja_boys_container,
+  #content .duffy_container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+모바일 3
+
+
+
+
+
+
+*/
+@media screen and (max-width: 467px) {
+
+  #content h2 {
+    top: -450px;
+    font-size: var(--font-36px);
+    color: var(--main-font);
+  }
+
+  #content .story h3,
+  #content .huntrx_container h3,
+  #content .saja_boys_container h3,
+  #content .duffy_container h3 {
+    font-size: var(--font-36px);
+    /* margin-bottom: 20px; */
+  }
+
+  #content .story_container .story_content dl dt {
+    font-size: var(--font-22px);
+    line-height: 2rem;
+  }
+
+  #content .story_container .story_content dl dd {
+    font-size: var(--font-14px);
+    line-height: 1.1rem;
+  }
+
+
+
+  #content .huntrx_container .huntrx_content_swiper dt,
+  #content .saja_boys_container .saja_boys_content_swiper dt,
+  #content .duffy_container .duffy_content_swiper dt {
+    font-size: var(--font-18px);
+    line-height: 2rem;
+  }
+
+  #content .huntrx_container .huntrx_content_swiper dd,
+  #content .saja_boys_container .saja_boys_content_swiper dd,
+  #content .duffy_container .duffy_content_swiper dd {
+    font-size: var(--font-16px);
+    line-height: 1.2rem;
+  }
+
+  /* story */
+  #content .story {
+    width: 95%;
+    padding-top: 50px;
+  }
+
+  /* huntrx ,saja_boys,duffy */
+
+  #content .huntrx_container,
+  #content .saja_boys_container,
+  #content .duffy_container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}

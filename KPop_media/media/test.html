@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavy Lines Background</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0c0014;
+            /* 어두운 보라색 배경 */
+            overflow: hidden;
+            /* 스크롤바 제거 */
+        }
+
+        #wavy-canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="wavy-canvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('wavy-canvas');
+        const ctx = canvas.getContext('2d');
+
+        // 1. 기본 설정
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initLines(); // 창 크기 변경 시 선 다시 그리기
+        });
+
+        const LINE_DENSITY = 15; // 선의 촘촘함 (값이 작을수록 촘촘)
+        const POINT_DENSITY = 10; // 각 선을 구성하는 점의 촘촘함
+        const LINE_COLOR = "rgba(0, 174, 255, 0.5)";
+
+        let lines = [];
+        let ripples = [];
+
+        // 2. 선 데이터 생성 함수
+        function initLines() {
+            lines = [];
+            for (let y = 0; y < canvas.height; y += LINE_DENSITY) {
+                let line = [];
+                for (let x = 0; x <= canvas.width; x += POINT_DENSITY) {
+                    // 각 점의 원래 y좌표를 저장하는 것이 핵심
+                    line.push({ x: x, y: y, originalY: y });
+                }
+                lines.push(line);
+            }
+        }
+
+        // 3. 클릭 이벤트: 클릭 위치에 물결(Ripple) 정보 추가
+        canvas.addEventListener('click', (event) => {
+            ripples.push({
+                x: event.clientX,
+                y: event.clientY,
+                radius: 0, // 물결의 현재 반지름
+                maxRadius: 300, // 물결의 최대 반지름
+                strength: 50 // 물결의 세기(높이)
+            });
+        });
+
+        // 4. 애니메이션 루프
+        function animate() {
+            // 이전 프레임 지우기
+            ctx.fillStyle = '#0c0014';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 모든 물결 상태 업데이트
+            for (let i = ripples.length - 1; i >= 0; i--) {
+                let ripple = ripples[i];
+                ripple.radius += 2; // 물결이 퍼져나가는 속도
+
+                // 물결이 최대 크기를 넘으면 배열에서 제거
+                if (ripple.radius > ripple.maxRadius) {
+                    ripples.splice(i, 1);
+                }
+            }
+
+            // 모든 선 그리기
+            ctx.strokeStyle = LINE_COLOR;
+            ctx.lineWidth = 1;
+
+            lines.forEach(line => {
+                // 각 점의 y좌표를 물결에 따라 계산
+                line.forEach(point => {
+                    point.y = point.originalY; // y좌표를 원래 위치로 초기화
+
+                    ripples.forEach(ripple => {
+                        const dx = point.x - ripple.x;
+                        const dy = point.originalY - ripple.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        // 점이 물결의 영향권 안에 있을 때
+                        if (distance < ripple.radius) {
+                            // 물결의 중심에 가까울수록 강하고, 멀어질수록 약해지는 파동 계산
+                            const waveFactor = (ripple.radius - distance) / ripple.radius;
+                            const waveHeight = ripple.strength * Math.sin(waveFactor * Math.PI) * (1 - waveFactor);
+
+                            point.y += waveHeight;
+                        }
+                    });
+                });
+
+                // 계산된 좌표에 따라 선 그리기
+                ctx.beginPath();
+                ctx.moveTo(line[0].x, line[0].y);
+                for (let i = 1; i < line.length; i++) {
+                    ctx.lineTo(line[i].x, line[i].y);
+                }
+                ctx.stroke();
+            });
+
+            requestAnimationFrame(animate); // 다음 프레임 요청
+        }
+
+        initLines(); // 초기 선 생성
+        animate(); // 애니메이션 시작
+    </script>
+
+</body>
+
+</html>

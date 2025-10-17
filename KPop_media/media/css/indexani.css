@@ -1,0 +1,67 @@
+/* index 애니매이션 효과 */
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery_card.reveal {
+  transform: scale(0.5);
+}
+
+.gallery_card.reveal.active {
+  transform: scale(1);
+}
+
+/* about 애니매이션 효과 */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* characters 애니메이션 효과 */
+
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.animate-fade-in-up {
+  transform: translateY(50px);
+}
+
+
+.animate-slide-in-left {
+  transform: translateX(-50px);
+}
+
+
+.animate-slide-in-right {
+  transform: translateX(50px);
+}
+
+
+.animate-zoom-in {
+  transform: scale(0.8);
+}
+
+
+/* 화면에 나타났을 때 적용될 최종 상태 */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
