@@ -1,15 +1,10 @@
+
 /* section1 home */
-
-.section {
-    padding-top: 20px;
-}
-
 
 .kakaotalk-app-container {
     width: 70%;
     height: 84vh;
     margin: 0 auto;
-    padding-top: 35px;
     display: flex;
     position: relative;
 }
@@ -187,7 +182,7 @@
 
 .conversation-panel {
     width: 50%;
-    height: 78vh;
+    height: 82vh;
     position: absolute;
     right: 0;
     transform: translateX(100%);
@@ -391,7 +386,6 @@
     display: flex;
     flex-direction: column;
 }
-
 
 .profile-introduction {
     width: 100%;

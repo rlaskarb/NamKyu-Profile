@@ -354,6 +354,7 @@ document.addEventListener("DOMContentLoaded", function () {
         licenseKey: null,
         navigation: true,
         fixedElements: '#headerArea',
+        paddingTop:'75px',
 
         // 메뉴 클릭과 스크롤을 연동하기 위해 반드시 필요!
         // #menu 안의 링크와 아래 anchors를 연결합니다.
