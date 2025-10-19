@@ -1,0 +1,32 @@
+{
+  "sectionClass": "sec5",
+  "anchor": "5section",
+  "hiddenTitle": "Responsive Project",
+  "videoSource": "./images/ResponsiveVideoPlaceholder.webm",
+  "projectTitle": "Responsive Project Title",
+  "projectSubtitle": "(Responsive Project)",
+  "githubLink": "#",
+  "siteLink": "#",
+  "merits": [
+    "반응형 프로젝트 장점 1 (내일 수정)",
+    "반응형 프로젝트 장점 2",
+    "반응형 프로젝트 장점 3",
+    "반응형 프로젝트 장점 4",
+    "반응형 프로젝트 장점 5",
+    "반응형 프로젝트 장점 6"
+  ],
+  "skills": "HTML5, CSS3, JavaScript(ES6+), ...",
+  "colors": [
+    "보라",
+    "민트"
+  ],
+  "colorCodes": [
+    "#6f42c1",
+    "#20c997"
+  ],
+  "fonts": [
+    "Roboto",
+    "Lato"
+  ],
+  "personnel": "1인 기여도(100%)"
+}

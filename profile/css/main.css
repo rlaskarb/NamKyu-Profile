@@ -2,8 +2,8 @@
 
 .kakaotalk-app-container {
     width: 100%;
-    height: 75vh;
-    max-width: 1600px;
+    height: 83%;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -12,8 +12,6 @@
 
 .chat-list-panel,
 .conversation-panel {
-    width: 100%;
-    max-width: 1600px;
     border-radius: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     margin: 2%;
@@ -178,7 +176,7 @@
 
 .conversation-panel {
     width: 40%;
-    height: 69vh;
+    height: 76vh;
     position: absolute;
     right: 0;
     transform: translateX(100%);
@@ -186,6 +184,7 @@
     background-color: rgba(0, 174, 255, 0.3);
     display: flex;
     flex-direction: column;
+    margin-top: -2px;
 }
 
 
@@ -295,6 +294,8 @@
 
 .kakaotalk-app-container.conversation-active .chat-list-panel {
     width: 53%;
+    height: 76vh;
+    margin-top: -2px;
 }
 
 .kakaotalk-app-container.conversation-active .conversation-panel {
@@ -323,7 +324,7 @@
 
 .profile-link {
     width: 100%;
-    max-width: 1560px;
+    max-width: 1400px;
     margin: 0 auto 30px;
     display: flex;
     justify-content: end;
@@ -351,8 +352,8 @@
 }
 
 .profile-main {
-    width: 98%;
-    max-width: 1600px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
@@ -364,20 +365,20 @@
 
 
 .profile-main .visual {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding-left: 20px;
 }
 
 .profile-main .visual img {
     width: 100%;
-    height: 630px;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
 
 .profile-introduction {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -492,24 +493,34 @@ section3 Web Project pc
 
 .pc-wrap {
     width: 100%;
+    height: 80%;
     margin: 0 auto;
-    max-width: 1600px;
+    padding: 0 30px;
+    max-width: 1400px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    border: 1px solid red;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
 }
 
 
 .pc-wrap .pc-video {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
-    padding: 10px;
+
+
 
 }
 
 .pc-wrap .pc-video video {
     width: 100%;
     object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+
 }
 
 .pc-wrap .pc-main {
@@ -524,23 +535,30 @@ section3 Web Project pc
 }
 
 .pc-main .pc-goto dt {
+    width: 90%;
+    max-width: 800px;
     display: flex;
+    margin: 70px 0 40px;
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 
 
     span {
         font-family: "Roboto", "sans-serif";
-        font-size: var(--font-80px);
-        font-weight: 500;
+        font-size: var(--font-40px);
+        font-weight: 600;
+    }
+
+    em {
+        font-size: var(--font-24px);
     }
 
     div {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
 
 
         .github-link {
@@ -606,7 +624,8 @@ section3 Web Project pc
 .pc-main .pc-goto dt a:nth-of-type(2):hover {
     background-color: var(--color-sub1);
     border: 3px solid var(--color-7main);
-    color: #333;
+    color: var(--color-7point1);
+    font-weight: 700;
 }
 
 
@@ -615,4 +634,138 @@ section3 Web Project pc
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-5px);
+}
+
+
+.pc-main .pc-goto .pc-merit {
+    font-size: var(--font-16px);
+    font-weight: 700;
+    line-height: 2rem;
+
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 2px;
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 24px;
+            height: 24px;
+            padding: 5px;
+            border-radius: 50%;
+            background: var(--color-7main);
+            color: var(--color-sub1); */
+            font-size: var(--font-14px) !important;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.pc-main .pc-ect {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    gap: 20%;
+
+
+
+    dt {
+        font-size: var(--font-20px);
+        font-weight: 700;
+    }
+
+    .pc-skill-dl {
+        position: relative;
+        cursor: pointer;
+
+        i {
+            font-size: var(--font-20px);
+            font-weight: bold;
+            color: var(--color-7main);
+            animation: scale2 2s infinite;
+        }
+
+        .pc-skill {
+            opacity: 0;
+            display: flex;
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+            transform: translateY(90%);
+            padding: 10px 30px;
+            font-size: var(--font-16px);
+            background: #343a40;
+            color: var(--color-sub1);
+            border-radius: 15px;
+            display: flex;
+            transform: opacity 0.5s ease;
+
+
+        }
+    }
+
+    .pc-color {
+        dd {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+
+        }
+
+        dd:nth-of-type(1) {
+
+            span {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: block;
+                text-indent: -9999px;
+                overflow: hidden;
+
+
+                &:nth-of-type(1) {
+                    background-color: var(--color-7main);
+                }
+
+
+                &:nth-of-type(2) {
+                    background-color: var(--color-7point1);
+                }
+
+
+                &:nth-of-type(3) {
+                    background-color: var(--color-7point2);
+                }
+
+                &:nth-of-type(4) {
+                    background-color: var(--color-7sub2);
+                    border: 0.5px solid #ccc;
+                }
+            }
+        }
+
+        dd:nth-of-type(2) {
+            font-family: "Roboto", "sans-serif";
+            font-size: var(--font-16px);
+            font-weight: 500;
+        }
+
+    }
+
+    .pc-personnel dd {
+        margin-top: 10px;
+        font-size: var(--font-16px);
+        font-weight: 500;
+    }
+}
+
+
+
+.pc-main .pc-ect .pc-skill-dl:hover .pc-skill {
+    opacity: 1;
 }
