@@ -1,12 +1,12 @@
 {
   "sectionClass": "sec5",
   "anchor": "5section",
-  "hiddenTitle": "Responsive Project",
+  "hiddenTitle": "KPop Demon Hunters",
   "videoSource": "./images/ResponsiveVideoPlaceholder.webm",
-  "projectTitle": "Responsive Project Title",
-  "projectSubtitle": "(Responsive Project)",
-  "githubLink": "#",
-  "siteLink": "#",
+  "projectTitle": "",
+  "projectSubtitle": "",
+  "githubLink": "https://github.com/rlaskarb/7-ELEVEn",
+  "siteLink": "https://rlaskarb20.mycafe24.com/media",
   "merits": [
     "반응형 프로젝트 장점 1 (내일 수정)",
     "반응형 프로젝트 장점 2",
@@ -17,16 +17,20 @@
   ],
   "skills": "HTML5, CSS3, JavaScript(ES6+), ...",
   "colors": [
-    "보라",
-    "민트"
+    " 진한보라",
+    "밝은하늘",
+    "밝은핑크",
+    "아이보리"
   ],
   "colorCodes": [
-    "#6f42c1",
-    "#20c997"
+    "#2C003E",
+    "#00AEFF",
+    "#FF0080",
+    "#F5F5F5"
   ],
   "fonts": [
-    "Roboto",
-    "Lato"
+    "Orbitron",
+    "Poppins"
   ],
   "personnel": "1인 기여도(100%)"
 }
