@@ -25,7 +25,7 @@ const chatListData = [
         lastMessage: "클릭 해 주실꺼죠?",
         time: "방금",
         unread: 2,
-        avatar: "./images/kyu.jpg",
+        avatar: "./images/kyu.avif",
         mediaType: 'image',
         isClickable: true
     },
@@ -66,7 +66,7 @@ const chatListData = [
         lastMessage: "React로 ERP요? 배포 안 된 게 아쉬울 정도네요. 그 복잡한 상태 관리, 어떻게 하셨어요?",
         time: "오전 08:00",
         unread: 0,
-        avatar: "./images/bra.png",
+        avatar: "./images/bra.avif",
         mediaType: 'image',
         isClickable: false
     },
@@ -339,7 +339,7 @@ function updateHeaderCount() {
 
 
 // 문서가 모두 준비되면(로드되면) 코드를 실행합니다.
-$(document).ready(function() {
+$(document).ready(function () {
 
     createNavigation();
 
