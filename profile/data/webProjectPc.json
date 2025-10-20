@@ -1,12 +1,6 @@
 {
   "sectionClass": "sec3",
   "anchor": "3section",
-  "hiddenTitle": "Web Project(PC)",
-  "videoSource": "./images/Video2.webm",
-  "projectTitle": "",
-  "projectSubtitle": "",
-  "githubLink": "https://github.com/rlaskarb/7-ELEVEn",
-  "siteLink": "https://rlaskarb20.mycafe24.com/mobile",
   "merits": [
     "BaaS(Supabase)를 연동하여 이미지 업로드가 포함된 실시간 CRUD 게시판 구현",
     "Promise.all과 AJAX로 다중 JSON 병합, 복잡한 검색/필터링 로직 구현",
