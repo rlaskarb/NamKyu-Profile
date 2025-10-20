@@ -44,12 +44,12 @@
 
     30% {
         color: #fff;
-        background: rgba(0, 115, 255, 1);
+        background: rgba(0, 125, 255, 0.7);
     }
 
     60% {
         color: #fff;
-        background: rgba(0, 115, 255, 1);
+        background: rgba(0, 125, 255, 0.7);
     }
 
     100% {
