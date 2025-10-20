@@ -81,12 +81,12 @@ const kakaotalkData = {
             speaker: '김남규',
             avatar: "./images/1.avif",
             mediaType: 'image',
-            message: '찾아와주셔서 정말 감사해요!'
+            message: '찾아와주셔서 정말 감사합니다!'
         },
 
         {
             speaker: '김남규1',
-            message: '차근차근 스크롤을 내리시면 저를 만나실 수 있습니다.'
+            message: '김남규의 포트폴리오를 시작하겠습니다.'
         },
 
         {
@@ -350,12 +350,12 @@ $(document).ready(function () {
     addFilterEvents(); // 3. 생성된 버튼들에 클릭기능을 추가
 
 
-    const videoSections=[
-        {anchor:'3section' , videoId:'videoSec3'},
-        {anchor:'4section' , videoId:'videoSec4'},
-        {anchor:'5section' , videoId:'videoSec5'},
+    const videoSections = [
+        { anchor: '3section', videoId: 'videoSec3' },
+        { anchor: '4section', videoId: 'videoSec4' },
+        { anchor: '5section', videoId: 'videoSec5' },
     ];
-    
+
     $('#fullpage').fullpage({
         navigation: true,
         fixedElements: '#headerArea',
@@ -365,20 +365,20 @@ $(document).ready(function () {
         anchors: ['1section', '2section', '3section', '4section', '5section', '6section'],
 
         //fullPage.js 의 도착알림 서비스 설정
-        afterLoad: function(anchorLink , index){
+        afterLoad: function (anchorLink, index) {
 
             // 비디오 목록 전체 확인
-            videoSections.forEach(function(videoInfo){
+            videoSections.forEach(function (videoInfo) {
                 // 지금 도착한 섹션 이름표랑 목록에 있는 이름표랑 같은가?
-                if(anchorLink === videoInfo.anchor){
+                if (anchorLink === videoInfo.anchor) {
                     // 같다면 HTML 에서 그 비디오를 찾아와!
                     const videoElement = document.getElementById(videoInfo.videoId);
                     // 비디오 있고 + 지금 멈춰있다면?
-                    if(videoElement && videoElement.paused){
+                    if (videoElement && videoElement.paused) {
                         // 재생시켜!!!!!!!
-                        videoElement.play().catch(function(error){
+                        videoElement.play().catch(function (error) {
 
-                            console.error(`비디오 자동 재생 실패 (${videoInfo.videoId}):` , error);
+                            console.error(`비디오 자동 재생 실패 (${videoInfo.videoId}):`, error);
                         });
                     }
                 }
@@ -386,30 +386,30 @@ $(document).ready(function () {
         }
     });
 
-            // 처음 페이지 열렸을때 비디오 재생시키는 함수만들기
-            function initialVideo(){
-                // 지금 화면에 보이고 있는 섹션의 이름표(data-anchor) 가져와!
-                const activeSection = document.querySelector('.section.active');
+    // 처음 페이지 열렸을때 비디오 재생시키는 함수만들기
+    function initialVideo() {
+        // 지금 화면에 보이고 있는 섹션의 이름표(data-anchor) 가져와!
+        const activeSection = document.querySelector('.section.active');
 
-                // 찾았다면?
-                if(activeSection){
-                    // 그 섹션의 이름표(data-anchor)  가져와!
-                    const activeAnchor = activeSection.dataset.anchor;
-                    // 다시 비디오 목록 전체 확인!
-                    videoSections.forEach(function(videoInfo){
-                        if(activeAnchor === videoInfo.anchor){
-                            const video =document.getElementById(videoInfo.videoId);
+        // 찾았다면?
+        if (activeSection) {
+            // 그 섹션의 이름표(data-anchor)  가져와!
+            const activeAnchor = activeSection.dataset.anchor;
+            // 다시 비디오 목록 전체 확인!
+            videoSections.forEach(function (videoInfo) {
+                if (activeAnchor === videoInfo.anchor) {
+                    const video = document.getElementById(videoInfo.videoId);
 
-                            if(video && video.paused){
-                                video.play().catch(
-                                    function(error){
-                                        return console.log(`초기 비디오재생 실패(${videoInfo.videoId}) :` , error);
-                                    });
-                            }
-                      
-                        }
-                    });
+                    if (video && video.paused) {
+                        video.play().catch(
+                            function (error) {
+                                return console.log(`초기 비디오재생 실패(${videoInfo.videoId}) :`, error);
+                            });
+                    }
+
                 }
-            }
-       setTimeout(initialVideo,500); 
+            });
+        }
+    }
+    setTimeout(initialVideo, 500);
 });
