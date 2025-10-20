@@ -2,14 +2,14 @@
   "sectionClass": "sec5",
   "anchor": "5section",
   "merits": [
-    "반응형 프로젝트 장점 1 (내일 수정)",
-    "반응형 프로젝트 장점 2",
-    "반응형 프로젝트 장점 3",
-    "반응형 프로젝트 장점 4",
-    "반응형 프로젝트 장점 5",
-    "반응형 프로젝트 장점 6"
+    "미디어 쿼리 & Grid Layout 기반, 전 해상도 최적화 레이아웃",
+    "순수 JS 동적 렌더링: 순수 JS & fetch(AJAX)로 JSON 기반 페이지 전체 생성/관리",
+    "성능 최적화: Intersection Observer 활용, 144개 이상 미디어에도 Lighthouse 90점 확보",
+    "데이터 기반 UI: 핵심 UI 전체를 JSON 기반 설계하여 유지보수성/확장성 확보",
+    "반응형 제어 및 애니매에션 직접 구현",
+    "웹 표준 준수: W3C(HTML5/CSS3) 표준 준수"
   ],
-  "skills": "HTML5, CSS3, JavaScript(ES6+), ...",
+  "skills": "HTML5, CSS3, 순수 JavaScript (ES6+), JSON, Lighthouse ",
   "colors": [
     " 진한보라",
     "밝은하늘",

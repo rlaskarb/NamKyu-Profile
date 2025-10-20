@@ -52,7 +52,7 @@ const chatListData = [
     {
         id: "kakao-pay",
         title: "ZOEY",
-        lastMessage: "LIGHTHOUSE 90... 혹시 이미지/영상 144개 넣으신 거 맞나요? 점수가 믿기지 않아서요.",
+        lastMessage: "LIGHTHOUSE 98... 혹시 이미지/영상 144개 넣으신 거 맞나요? 점수가 믿기지 않아서요.",
         time: "오전 08:21",
         unread: 0,
         avatar: "./images/zoey.avif",
@@ -350,17 +350,66 @@ $(document).ready(function () {
     addFilterEvents(); // 3. 생성된 버튼들에 클릭기능을 추가
 
 
-    // new fullpage(...) 대신 $('#fullpage').fullpage(...)로 변경
+    const videoSections=[
+        {anchor:'3section' , videoId:'videoSec3'},
+        {anchor:'4section' , videoId:'videoSec4'},
+        {anchor:'5section' , videoId:'videoSec5'},
+    ];
+    
     $('#fullpage').fullpage({
-        licenseKey: null, // v2에서는 이 옵션이 없지만, 그대로 두어도 문제는 없습니다.
         navigation: true,
         fixedElements: '#headerArea',
         paddingTop: '75px',
-
-        // 메뉴 클릭과 스크롤을 연동하기 위해 반드시 필요!
-        // #menu 안의 링크와 아래 anchors를 연결합니다.
         menu: '#menu',
+
         anchors: ['1section', '2section', '3section', '4section', '5section', '6section'],
+
+        //fullPage.js 의 도착알림 서비스 설정
+        afterLoad: function(anchorLink , index){
+
+            // 비디오 목록 전체 확인
+            videoSections.forEach(function(videoInfo){
+                // 지금 도착한 섹션 이름표랑 목록에 있는 이름표랑 같은가?
+                if(anchorLink === videoInfo.anchor){
+                    // 같다면 HTML 에서 그 비디오를 찾아와!
+                    const videoElement = document.getElementById(videoInfo.videoId);
+                    // 비디오 있고 + 지금 멈춰있다면?
+                    if(videoElement && videoElement.paused){
+                        // 재생시켜!!!!!!!
+                        videoElement.play().catch(function(error){
+
+                            console.error(`비디오 자동 재생 실패 (${videoInfo.videoId}):` , error);
+                        });
+                    }
+                }
+            });
+        }
     });
 
+            // 처음 페이지 열렸을때 비디오 재생시키는 함수만들기
+            function initialVideo(){
+                // 지금 화면에 보이고 있는 섹션의 이름표(data-anchor) 가져와!
+                const activeSection = document.querySelector('.section.active');
+
+                // 찾았다면?
+                if(activeSection){
+                    // 그 섹션의 이름표(data-anchor)  가져와!
+                    const activeAnchor = activeSection.dataset.anchor;
+                    // 다시 비디오 목록 전체 확인!
+                    videoSections.forEach(function(videoInfo){
+                        if(activeAnchor === videoInfo.anchor){
+                            const video =document.getElementById(videoInfo.videoId);
+
+                            if(video && video.paused){
+                                video.play().catch(
+                                    function(error){
+                                        return console.log(`초기 비디오재생 실패(${videoInfo.videoId}) :` , error);
+                                    });
+                            }
+                      
+                        }
+                    });
+                }
+            }
+       setTimeout(initialVideo,500); 
 });

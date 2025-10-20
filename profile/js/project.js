@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded" ,function(){
    if (skills && data.skills) skills.textContent = data.skills;
 
     // 색 채우기
-    if(colors && data.colors && Array.isArray(data.colors)){
-        colors.innerHTML = data.colors.map(
+    if(colors && data.colorCodes && Array.isArray(data.colorCodes)){
+        colors.innerHTML = data.colorCodes.map(
             function(colorCode , index){
                 return`
                 <span style="background-color:${colorCode};

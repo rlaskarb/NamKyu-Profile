@@ -2,7 +2,7 @@
 
 .kakaotalk-app-container {
     width: 100%;
-    height: 83%;
+    height: 85%;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
@@ -176,7 +176,7 @@
 
 .conversation-panel {
     width: 40%;
-    height: 76vh;
+    height: 78vh;
     position: absolute;
     right: 0;
     transform: translateX(100%);
@@ -294,7 +294,7 @@
 
 .kakaotalk-app-container.conversation-active .chat-list-panel {
     width: 53%;
-    height: 76vh;
+    height: 78vh;
     margin-top: -2px;
 }
 
@@ -495,7 +495,7 @@ section3 Web Project pc
     width: 100%;
     height: 80%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 10px;
     max-width: 1400px;
     display: flex;
     justify-content: center;
@@ -508,7 +508,7 @@ section3 Web Project pc
 
 
 .pc-wrap .pc-video {
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
 
 
@@ -516,10 +516,12 @@ section3 Web Project pc
 }
 
 .pc-wrap .pc-video video {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%; 
+    height: 100%;
+    max-height: 500px;
+    object-fit: contain;
     border-radius: 20px;
+    
 
 }
 
@@ -645,7 +647,7 @@ section3 Web Project pc
     ul li {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 13px;
         padding-bottom: 2px;
 
         i {
@@ -669,7 +671,7 @@ section3 Web Project pc
     width: 100%;
     margin: 30px auto;
     display: flex;
-    gap: 20%;
+    gap: 14%;
 
 
 
@@ -696,7 +698,7 @@ section3 Web Project pc
             bottom: 50%;
             left: 0;
             transform: translateY(90%);
-            padding: 10px 30px;
+            padding: 10px 15px;
             font-size: var(--font-16px);
             background: #343a40;
             color: var(--color-sub1);
@@ -768,4 +770,11 @@ section3 Web Project pc
 
 .pc-main .pc-ect .pc-skill-dl:hover .pc-skill {
     opacity: 1;
+}
+
+
+/*  6section Review */
+
+ .sec6p{
+    font-size: var(--font-30px);
 }
