@@ -1,3 +1,48 @@
+
+#headerArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100 !important;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(44, 0, 62, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+
+#headerArea #gnb #menu {
+    font-family: "Roboto", "sans-serif";
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    font-size: var(--font-20px);
+    gap: 20px;
+}
+
+#headerArea #gnb #menu li {
+    padding: 10px 30px 12px;
+    border-radius: 10px;
+}
+
+
+#headerArea #gnb #menu li:hover,
+#headerArea #gnb #menu li.active {
+    padding: 10px 30px 12px;
+    background-color: #343a40;
+    border-radius: 10px;
+}
+
+#headerArea #gnb #menu li:hover a,
+#headerArea #gnb #menu li.active a {
+    color: #fff;
+
+}
+
+
+
+
+
 /* section1 home */
 
 .kakaotalk-app-container {
@@ -494,7 +539,7 @@ section3 Web Project pc
 
 */
 
-.pc-wrap {
+.pc-wrap { 
     width: 100%;
     height: 80%;
     margin: 0 auto;
@@ -507,33 +552,48 @@ section3 Web Project pc
     gap: 30px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    position: relative;
 
 }
 
 
 .pc-wrap .pc-video {
     width: 45%;
-    margin: 30px auto 0px;
+    padding-left: 10px;
+    margin: 50px auto 0px;
     position: relative;
 }
 
 .pc-wrap .pc-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    flex-shrink: 0;
+    width: 90%;
+    height: 66%;
+    object-fit: cover;
     position: absolute;
-    top:0%;
-    left: 0%;
+    top:5%;
+    left: 5%;
+    z-index: -1;
 }
+
+.pc-wrap .mobile-video{
+    width: 45%;
+    
+}
+
+.pc-wrap .mobile-video video{
+    width: 100%;
+    height: 600px;
+} 
+
+
 
 
 .pc-wrap .pc-video img{
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    flex-shrink: 0;
+    max-width: 600px;
+    height:auto;
+    z-index: 2;
+  
 }
 
 .pc-wrap .pc-main {
@@ -716,6 +776,7 @@ section3 Web Project pc
             border-radius: 15px;
             display: flex;
             transform: opacity 0.5s ease;
+            z-index: 10;
 
 
         }
@@ -781,6 +842,44 @@ section3 Web Project pc
 
 .pc-main .pc-ect .pc-skill-dl:hover .pc-skill {
     opacity: 1;
+}
+
+
+.mobile-qr{
+    position: absolute;
+    bottom:10px;
+    left: 650px;
+
+}
+
+.mobile-qr img{
+    width: 130px
+}
+
+.media-imgs{
+    margin: 0 45px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap:230px
+}
+
+.media-imgs li:nth-of-type(1) img{
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+.media-imgs li:nth-of-type(2) img{
+    width: 100%;
+    max-width: 130px;
+    object-fit: cover;
+    flex-shrink: 0;
+    padding-top: 45px;
 }
 
 
