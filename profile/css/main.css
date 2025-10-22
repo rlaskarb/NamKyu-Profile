@@ -690,10 +690,10 @@ section3 Web Project pc
   width: 100%;
   margin: 30px auto;
   display: flex;
-  gap: 14%;
+  gap: 8%;
 
   dt {
-    font-size: var(--font-20px);
+    font-size: var(--font-18px);
     font-weight: 700;
   }
 
@@ -715,7 +715,7 @@ section3 Web Project pc
       bottom: 50%;
       left: 0;
       transform: translateY(90%);
-      padding: 10px 15px;
+      padding: 10px;
       font-size: var(--font-16px);
       background: #343a40;
       color: var(--color-sub1);
@@ -769,6 +769,7 @@ section3 Web Project pc
     }
   }
 
+  .pc-period dd,
   .pc-personnel dd {
     margin-top: 10px;
     font-size: var(--font-16px);
@@ -782,7 +783,7 @@ section3 Web Project pc
 
 .mobile-qr {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 650px;
 }
 

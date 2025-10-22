@@ -8,7 +8,6 @@
     "직관적인 모바일 탐색: 햄버거 메뉴, 아코디언 GNB, Top 버튼 구현",
     "웹 표준 준수: 모바일 환경에서도 W3C(HTML5/CSS3) 표준 준수",
     "SEO/접근성 설계: 시맨틱 마크업 및 명확한 아웃라인 설계"
-    
   ],
   "skills": "HTML5, CSS3, JavaScript(ES6+), jQuery, AJAX, JSON, BaaS(Supabase)",
   "colors": [
@@ -27,5 +26,6 @@
     "Noto Sans KR",
     "Roboto"
   ],
-  "personnel": "1인 기여도(100%)"
+  "personnel": "1인 기여도(100%)",
+  "period": "약 2주"
 }
