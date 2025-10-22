@@ -1,536 +1,498 @@
-
 #headerArea {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100 !important;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 5px rgba(44, 0, 62, 0.1);
-    transition: background-color 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100 !important;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(44, 0, 62, 0.1);
+  transition: background-color 0.5s ease;
 }
 
-
 #headerArea #gnb #menu {
-    font-family: "Roboto", "sans-serif";
-    width: 95%;
-    margin: 10px auto;
-    display: flex;
-    font-size: var(--font-20px);
-    gap: 20px;
+  font-family: "Roboto", "sans-serif";
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  font-size: var(--font-20px);
+  gap: 20px;
 }
 
 #headerArea #gnb #menu li {
-    padding: 10px 30px 12px;
-    border-radius: 10px;
+  padding: 10px 30px 12px;
+  border-radius: 10px;
 }
-
 
 #headerArea #gnb #menu li:hover,
 #headerArea #gnb #menu li.active {
-    padding: 10px 30px 12px;
-    background-color: #343a40;
-    border-radius: 10px;
+  padding: 10px 30px 12px;
+  background-color: #343a40;
+  border-radius: 10px;
 }
 
 #headerArea #gnb #menu li:hover a,
 #headerArea #gnb #menu li.active a {
-    color: #fff;
-
+  color: #fff;
 }
-
-
-
-
 
 /* section1 home */
 
 .kakaotalk-app-container {
-    width: 100%;
-    height: 85%;
-    max-width: 1400px;
-    min-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    position: relative;
+  width: 100%;
+  height: 85%;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
 }
-
 
 .chat-list-panel,
 .conversation-panel {
-    border-radius: 20px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    margin: 2%;
-    transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  margin: 2%;
+  transition: all 0.5s ease-in-out;
 }
-
 
 .chat-list-panel .kakakotalk-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  overflow: hidden;
 }
-
 
 .chat-list-panel .kakakotalk-header .header-shortcuts {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
 
-
 .main-title {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .main-title ul {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .main-title ul li {
-    background-color: #fff;
-    border-radius: 10px;
-    border: 1px solid #333;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #333;
 }
 
 .main-title ul li a {
-    font-size: var(--font-18px);
-    font-weight: 600;
-    color: #333;
-    padding: 5px 15px;
-
+  font-size: var(--font-18px);
+  font-weight: 600;
+  color: #333;
+  padding: 5px 15px;
 }
 
 #filter-unread {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .header-title {
-    padding: 10px;
-    font-size: var(--font-30px);
-    font-weight: 600;
+  padding: 10px;
+  font-size: var(--font-30px);
+  font-weight: 600;
 }
 
 .header-shortcut-icon {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 15px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 15px;
 }
-
 
 .chat-list-panel {
-    width: 100%;
+  width: 100%;
 }
 
-
 .chat-list {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .chat-list .chat-item {
-    width: 100%;
-    margin: 0 auto;
-    padding: 17px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10%;
-    border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin: 0 auto;
+  padding: 17px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  border-bottom: 1px solid #ccc;
 }
 
 .chat-list .chat-item .chat-title {
-    font-size: var(--font-20px);
-    font-weight: 500;
+  font-size: var(--font-20px);
+  font-weight: 500;
 }
 
 .chat-list .chat-item .chat-preview {
-    font-size: var(--font-16px);
-
+  font-size: var(--font-16px);
 }
 
-
 .chat-list .chat-item:first-of-type {
-    border-top: 1px solid #ccc;
-    cursor: pointer;
-    animation: scale 3s infinite;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
+  animation: scale 3s infinite;
 }
 
 .chat-list .chat-item:last-of-type {
-    border-bottom: transparent;
+  border-bottom: transparent;
 }
 
-
 .chat-list .chat-item .chat-left {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .chat-list .chat-item .chat-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .chat-list .chat-item .chat-meta {
-    width: 11%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  width: 11%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 /* 숫자 */
 #filter-unread .unread-count,
 .chat-list .chat-item .chat-meta .unread-count {
-    width: 25px;
-    height: 25px;
-    padding: 4px 5px 8px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: var(--font-16px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-7main);
+  width: 25px;
+  height: 25px;
+  padding: 4px 5px 8px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: var(--font-16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-7main);
 }
 
 /* 이미지 */
 .chat-list .chat-item .avatar {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: var(--color-sub1);
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: var(--color-sub1);
 }
-
 
 /* 채팅 얼였을때 */
 
 .conversation-panel {
-    width: 40%;
-    height: 78vh;
-    position: absolute;
-    right: 0;
-    transform: translateX(100%);
-    opacity: 0;
-    background-color: #E3F2FD;
-    display: flex;
-    flex-direction: column;
-    margin-top: -2px;
+  width: 40%;
+  height: 78vh;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  background-color: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
 }
 
-
 .conversation-panel .kakakotalk-header {
-    flex-shrink: 0;
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px 20px;
-    font-size: var(--font-30px);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 1px solid #ccc;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 20px;
+  font-size: var(--font-30px);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
 .conversation-panel .kakakotalk-header .header-avatar {
-    width: 75px;
-    height: 75px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
 }
 
 .kakaotalk-messages {
-    flex-grow: 1;
-    overflow-y: auto;
-
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .kakaotalk-input-area {
-    flex-shrink: 0;
-    width: 100%;
-    display: flex;
-    padding: 10px;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  padding: 10px;
 }
 
 .kakaotalk-input-area #messages-text {
-    width: 85%;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 10px;
-    border: 0;
-    background: #fff;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0;
+  background: #fff;
 }
 
 .kakaotalk-input-area .btn {
-    width: 10%;
-    font-size: var(--font-14px);
-    vertical-align: top;
-    border: 0;
-    background: #fae100;
-    padding: 10px;
-    border-radius: 7px;
-    transition: filter 0.5s ease;
-    cursor: pointer;
+  width: 10%;
+  font-size: var(--font-14px);
+  vertical-align: top;
+  border: 0;
+  background: #fae100;
+  padding: 10px;
+  border-radius: 7px;
+  transition: filter 0.5s ease;
+  cursor: pointer;
 }
 
-
 .kakaotalk-input-area .btn:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .kakaotalk-message-row {
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
-    gap: 15px;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  gap: 15px;
 }
 
 .kakaotalk-message-row .message-content {
-    display: flex;
-    padding-top: 20px;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  gap: 15px;
 }
-
 
 .header-avatar,
 .avatar {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border: 1px solid #ccc;
-    border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 
 .message-content .sender-name {
-    font-size: var(--font-18px);
-    font-weight: 600;
+  font-size: var(--font-18px);
+  font-weight: 600;
 }
 
 .message-content .kakaotalk-bubble {
-    padding: 13px 23px 15px;
-    font-size: var(--font-20px);
-    font-size: 600;
-    background: #fff;
-    border-radius: 3px 17px 17px 17px;
+  padding: 13px 23px 15px;
+  font-size: var(--font-20px);
+  font-size: 600;
+  background: #fff;
+  border-radius: 3px 17px 17px 17px;
 }
-
 
 .message-content .kakaotalk-bubble a {
-    color: #343a40;
-    font-weight: 600;
-    cursor: pointer;
-    animation: bounce 3s infinite;
+  color: #343a40;
+  font-weight: 600;
+  cursor: pointer;
+  animation: bounce 3s infinite;
 }
 
-
 .kakaotalk-app-container.conversation-active .chat-list-panel {
-    width: 53%;
-    height: 78vh;
-    margin-top: -2px;
+  width: 53%;
+  height: 78vh;
+  margin-top: -2px;
 }
 
 .kakaotalk-app-container.conversation-active .conversation-panel {
-    transform: translateX(0);
-    opacity: 1;
+  transform: translateX(0);
+  opacity: 1;
 }
-
 
 /* 프로필 CSS */
 
-
 .profile-wrap {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .profile-intro li:nth-of-type(2) {
-    font-size: var(--font-22px);
-    font-weight: 500;
-    background: var(--color-sub1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 25px;
-    border-radius: 20px;
+  font-size: var(--font-22px);
+  font-weight: 500;
+  background: var(--color-sub1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  border-radius: 20px;
 }
 
 .profile-link {
-    width: 100%;
-    max-width: 1400px;
-    min-width: 1400px;
-    margin: 0 auto 30px;
-    display: flex;
-    justify-content: end;
-    gap: 30px;
-
+  width: 100%;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: end;
+  gap: 30px;
 }
 
 .profile-link li {
-    background: #343a40;
-    padding: 7px 20px 9px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+  background: #343a40;
+  padding: 7px 20px 9px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .profile-link li a {
-    font-family: "Roboto", "sans-serif";
-    font-size: var(--font-24px);
-    font-weight: 500;
-    color: var(--color-sub1);
+  font-family: "Roboto", "sans-serif";
+  font-size: var(--font-24px);
+  font-weight: 500;
+  color: var(--color-sub1);
 }
 
-
 .profile-link li:hover {
-    background: #495057;
+  background: #495057;
 }
 
 .profile-main {
-    width: 100%;
-    max-width: 1400px;
-    min-width: 1400px;
-    margin: 0 auto;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 2%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
-
 .profile-main .visual {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 .profile-main .visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .profile-introduction {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-introduction {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .profile-identity {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .headline {
-    font-size: var(--font-40px);
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-size: var(--font-40px);
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .bio {
-    font-size: var(--font-22px);
-    padding-left: 30px;
-    line-height: 1.6rem;
-    color: #333;
+  font-size: var(--font-22px);
+  padding-left: 30px;
+  line-height: 1.6rem;
+  color: #333;
 }
-
 
 /* 2. 기술 스택 */
 .profile-tech {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .tech-title {
-    font-size: var(--font-20px);
-    font-weight: 600;
-    margin-bottom: 15px;
+  font-size: var(--font-20px);
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .tech-category.--frontend {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-    background-color: var(--color-sub1);
-    border-radius: 8px;
-    margin-bottom: 10px;
-    /* 아래 그리드와의 간격 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background-color: var(--color-sub1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  /* 아래 그리드와의 간격 */
 }
-
 
 .tech-sub-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
-
 
 .tech-category {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    background-color: var(--color-sub1);
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: var(--color-sub1);
+  border-radius: 8px;
 }
 
-
 .tech-category span {
-    font-family: "Roboto", "sans-serif";
-    font-size: var(--font-16px);
-    font-weight: 600;
-    width: 130px;
-    flex-shrink: 0;
+  font-family: "Roboto", "sans-serif";
+  font-size: var(--font-16px);
+  font-weight: 600;
+  width: 130px;
+  flex-shrink: 0;
 }
 
 .tech-category img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    border-radius: 8px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* 3. GitHub 잔디 */
 .profile-github {
-    text-align: center;
+  text-align: center;
 }
 
 .github-caption {
-    font-size: var(--font-16px);
-    margin-bottom: 16px;
-    color: #444;
+  font-size: var(--font-16px);
+  margin-bottom: 16px;
+  color: #444;
 }
 
 .profile-github img {
-    width: 90%;
-    object-fit: contain;
+  width: 90%;
+  object-fit: contain;
 }
-
-
 
 /* 
 
@@ -539,422 +501,392 @@ section3 Web Project pc
 
 */
 
-.pc-wrap { 
-    width: 100%;
-    height: 80%;
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1400px;
-    min-width: 1400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    position: relative;
-
+.pc-wrap {
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1400px;
+  min-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
 }
 
-
 .pc-wrap .pc-video {
-    width: 45%;
-    padding-left: 10px;
-    margin: 50px auto 0px;
-    position: relative;
+  width: 45%;
+  padding-left: 10px;
+  margin: 50px auto 0px;
+  position: relative;
 }
 
 .pc-wrap .pc-video video {
-    width: 90%;
-    height: 66%;
-    object-fit: cover;
-    position: absolute;
-    top:5%;
-    left: 5%;
-    z-index: -1;
+  width: 90%;
+  height: 66%;
+  object-fit: cover;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: -1;
 }
 
-.pc-wrap .mobile-video{
-    width: 45%;
-    
+.pc-wrap .mobile-video {
+  width: 45%;
 }
 
-.pc-wrap .mobile-video video{
-    width: 100%;
-    height: 600px;
-} 
+.pc-wrap .mobile-video video {
+  width: 100%;
+  height: 600px;
+}
 
-
-
-
-.pc-wrap .pc-video img{
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    height:auto;
-    z-index: 2;
-  
+.pc-wrap .pc-video img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  z-index: 2;
 }
 
 .pc-wrap .pc-main {
-    flex: 1;
-    margin: 0 auto;
-
+  flex: 1;
+  margin: 0 auto;
 }
 
 .pc-wrap .pc-main .pc-goto {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .pc-main .pc-goto dt {
-    width: 90%;
-    max-width: 800px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  margin: 70px 0 40px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  span {
+    font-family: "Roboto", "sans-serif";
+    font-size: var(--font-40px);
+    font-weight: 600;
+  }
+
+  em {
+    font-size: var(--font-24px);
+  }
+
+  div {
     display: flex;
-    margin: 70px 0 40px;
     align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+    gap: 20px;
 
+    .github-link {
+      position: relative;
 
-    span {
-        font-family: "Roboto", "sans-serif";
-        font-size: var(--font-40px);
-        font-weight: 600;
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
     }
 
-    em {
-        font-size: var(--font-24px);
+    a:nth-of-type(2) {
+      width: 120px;
+      height: 47px;
+      padding: 6px 10px;
+      font-size: var(--font-18px);
+      font-weight: 600;
+      color: var(--color-sub1);
+      text-align: center;
+      background-color: var(--color-7main);
+      border-radius: 15px;
+      border: 3px solid transparent;
     }
-
-    div {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-
-        .github-link {
-            position: relative;
-
-            img {
-                width: 50px;
-                height: 50px;
-                object-fit: contain;
-            }
-        }
-
-        a:nth-of-type(2) {
-            width: 120px;
-            height: 47px;
-            padding: 6px 10px;
-            font-size: var(--font-18px);
-            font-weight: 600;
-            color: var(--color-sub1);
-            text-align: center;
-            background-color: var(--color-7main);
-            border-radius: 15px;
-            border: 3px solid transparent;
-        }
-    }
+  }
 }
 
 .github-link::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 10px;
-    background-color: var(--color-7main);
-    color: var(--color-sub1);
-    font-size: var(--font-14px);
-    font-weight: 500;
-    padding: 8px 12px;
-    border-radius: 8px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background-color: var(--color-7main);
+  color: var(--color-sub1);
+  font-size: var(--font-14px);
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .github-link::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: -9px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: var(--color-7main) transparent transparent transparent;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -9px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--color-7main) transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 
 .pc-main .pc-goto dt a:nth-of-type(2):hover {
-    background-color: var(--color-sub1);
-    border: 3px solid var(--color-7main);
-    color: var(--color-7point1);
-    font-weight: 700;
+  background-color: var(--color-sub1);
+  border: 3px solid var(--color-7main);
+  color: var(--color-7point1);
+  font-weight: 700;
 }
-
 
 .github-link:hover::before,
 .github-link:hover::after {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(-5px);
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
 }
 
-
 .pc-main .pc-goto .pc-merit {
-    font-size: var(--font-16px);
-    font-weight: 700;
-    line-height: 2rem;
+  font-size: var(--font-16px);
+  font-weight: 700;
+  line-height: 2rem;
 
-    ul li {
-        display: flex;
-        align-items: center;
-        gap: 13px;
-        padding-bottom: 2px;
+  ul li {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 2px;
 
-        i {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* width: 24px;
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* width: 24px;
             height: 24px;
             padding: 5px;
             border-radius: 50%;
             background: var(--color-7main);
             color: var(--color-sub1); */
-            font-size: var(--font-14px) !important;
-            font-weight: bold;
-        }
+      font-size: var(--font-14px) !important;
+      font-weight: bold;
     }
+  }
 }
-
 
 .pc-main .pc-ect {
-    width: 100%;
-    margin: 30px auto;
-    display: flex;
-    gap: 14%;
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  gap: 14%;
 
+  dt {
+    font-size: var(--font-20px);
+    font-weight: 700;
+  }
 
+  .pc-skill-dl {
+    position: relative;
+    cursor: pointer;
 
-    dt {
-        font-size: var(--font-20px);
-        font-weight: 700;
+    i {
+      font-size: var(--font-20px);
+      font-weight: bold;
+      color: var(--color-7main);
+      animation: scale2 2s infinite;
     }
 
-    .pc-skill-dl {
-        position: relative;
-        cursor: pointer;
+    .pc-skill {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      transform: translateY(90%);
+      padding: 10px 15px;
+      font-size: var(--font-16px);
+      background: #343a40;
+      color: var(--color-sub1);
+      border-radius: 15px;
+      display: flex;
+      transform: opacity 0.5s ease;
+      z-index: 10;
+    }
+  }
 
-        i {
-            font-size: var(--font-20px);
-            font-weight: bold;
-            color: var(--color-7main);
-            animation: scale2 2s infinite;
-        }
-
-        .pc-skill {
-            opacity: 0;
-            display: flex;
-            position: absolute;
-            bottom: 50%;
-            left: 0;
-            transform: translateY(90%);
-            padding: 10px 15px;
-            font-size: var(--font-16px);
-            background: #343a40;
-            color: var(--color-sub1);
-            border-radius: 15px;
-            display: flex;
-            transform: opacity 0.5s ease;
-            z-index: 10;
-
-
-        }
+  .pc-color {
+    dd {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
     }
 
-    .pc-color {
-        dd {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 10px;
+    dd:nth-of-type(1) {
+      span {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: block;
+        text-indent: -9999px;
+        overflow: hidden;
 
+        &:nth-of-type(1) {
+          background-color: var(--color-7main);
         }
 
-        dd:nth-of-type(1) {
-
-            span {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                display: block;
-                text-indent: -9999px;
-                overflow: hidden;
-
-
-                &:nth-of-type(1) {
-                    background-color: var(--color-7main);
-                }
-
-
-                &:nth-of-type(2) {
-                    background-color: var(--color-7point1);
-                }
-
-
-                &:nth-of-type(3) {
-                    background-color: var(--color-7point2);
-                }
-
-                &:nth-of-type(4) {
-                    background-color: var(--color-7sub2);
-                    border: 0.5px solid #ccc;
-                }
-            }
+        &:nth-of-type(2) {
+          background-color: var(--color-7point1);
         }
 
-        dd:nth-of-type(2) {
-            font-family: "Roboto", "sans-serif";
-            font-size: var(--font-16px);
-            font-weight: 500;
+        &:nth-of-type(3) {
+          background-color: var(--color-7point2);
         }
 
+        &:nth-of-type(4) {
+          background-color: var(--color-7sub2);
+          border: 0.5px solid #ccc;
+        }
+      }
     }
 
-    .pc-personnel dd {
-        margin-top: 10px;
-        font-size: var(--font-16px);
-        font-weight: 500;
+    dd:nth-of-type(2) {
+      font-family: "Roboto", "sans-serif";
+      font-size: var(--font-16px);
+      font-weight: 500;
     }
+  }
+
+  .pc-personnel dd {
+    margin-top: 10px;
+    font-size: var(--font-16px);
+    font-weight: 500;
+  }
 }
-
-
 
 .pc-main .pc-ect .pc-skill-dl:hover .pc-skill {
-    opacity: 1;
+  opacity: 1;
 }
 
-
-.mobile-qr{
-    position: absolute;
-    bottom:10px;
-    left: 650px;
-
+.mobile-qr {
+  position: absolute;
+  bottom: 10px;
+  left: 650px;
 }
 
-.mobile-qr img{
-    width: 130px
+.mobile-qr img {
+  width: 130px;
 }
 
-.media-imgs{
-    margin: 0 45px 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    gap:230px
+.media-imgs {
+  margin: 0 45px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 230px;
 }
 
-.media-imgs li:nth-of-type(1) img{
-    width: 100%;
-    max-width: 200px;
-    object-fit: cover;
-    flex-shrink: 0;
+.media-imgs li:nth-of-type(1) img {
+  width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
-
-.media-imgs li:nth-of-type(2) img{
-    width: 100%;
-    max-width: 130px;
-    object-fit: cover;
-    flex-shrink: 0;
-    padding-top: 45px;
+.media-imgs li:nth-of-type(2) img {
+  width: 100%;
+  max-width: 130px;
+  object-fit: cover;
+  flex-shrink: 0;
+  padding-top: 45px;
 }
-
 
 /*  6section Review */
 
 .review-content {
-    width: 100%;
-    max-width: 1500px;
-    min-width: 1500px;
-    margin: 0 auto;
-    padding: 5px 30px;
-    border-radius: 20px;
-    background-color: #E3F2FD;
-    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1500px;
+  min-width: 1500px;
+  margin: 0 auto;
+  padding: 5px 30px;
+  border-radius: 20px;
+  background-color: #e3f2fd;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
 }
 
 .review-content ul {
-    padding: 30px 20px 1px;
+  padding: 30px 20px 1px;
 }
 
 .review-content ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    max-width: 75%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 75%;
 }
 
 .review-content img {
-    width: 65px;
-    height: 65px;
-    border-radius: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
-    border: 0.5px solid #ccc;
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 0.5px solid #ccc;
 }
 
 .message-bubble {
-    padding: 15px 20px;
-    border-radius: 18px;
-    font-weight: 400;
-    line-height: 1.7rem;
+  padding: 15px 20px;
+  border-radius: 18px;
+  font-weight: 400;
+  line-height: 1.7rem;
 }
 
 .review-list li[class^="question"] {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .review-list li[class^="question"] img {
-    margin: -40px 15px 0 0;
+  margin: -40px 15px 0 0;
 }
 
 .review-list li[class^="question"] .message-bubble {
-    background-color: #fff;
-    border-radius: 1px 17px 17px 17px;
+  background-color: #fff;
+  border-radius: 1px 17px 17px 17px;
 }
 
 .review-list li[class^="review"] {
-    margin-left: auto;
-    flex-direction: row-reverse;
+  margin-left: auto;
+  flex-direction: row-reverse;
 }
 
 .review1 img {
-    margin: -110px 0 0 15px;
+  margin: -110px 0 0 15px;
 }
 
 .review2 img {
-    margin: -140px 0 0 15px;
+  margin: -140px 0 0 15px;
 }
 
 .review3 img {
-    margin: -170px 0 0 15px;
+  margin: -170px 0 0 15px;
 }
 
 .review-list li[class^="review"] .message-bubble {
-    background-color: #FFEB33;
-    color: #3C1E1E;
-    border-radius: 17px 1px 17px 17px;
+  background-color: #ffeb33;
+  color: #3c1e1e;
+  border-radius: 17px 1px 17px 17px;
 }
