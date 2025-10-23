@@ -1,28 +1,30 @@
-# WEB PORTFOLIO
+# 안녕하세요 웹개발 포트폴리오 입니다~
+
 기업형 웹(PC), 모바일 웹, 반응형 웹 포트폴리오입니다.<br>
 기획 및 디자인부터 마크업(프로그래밍)까지 100% 기여하였습니다. <br>
 웹표준과 웹접근성 검사를 완료하였습니다. <br>
 
 ## 🔗 PORTFOLIO URL
+* 프로필 및 포트폴리오 링크
+    + https://rlaskarb20.mycafe24.com/profile
 * 기업형 웹 프로젝트(7-ELEVEn)
     + https://rlaskarb20.mycafe24.com/
 * 기업형 모바일 웹 프로젝트(7-ELEVEn) 
     + https://rlaskarb20.mycafe24.com/mobile
 * 반응형 웹 프로젝트(KPop Demon Hunters)
     + https://rlaskarb20.mycafe24.com/media
-* 프로필 및 포트폴리오 링크
-    + https://rlaskarb20.mycafe24.com/profile
+
+
+  
 
 
 ### ⚒️ SKILLS
 * HTML
 * CSS(less/sass)
 * JavaScript(ES6), JQuery, TypeScript, (Ajax & Json)
-* React
-* PHP / My-SQL
-* Firebase(firestore database & hosting) 
+* Baas(Supbase)
 * Git & Github
-* Photoshop/Illustrator/Figma
+* Photoshop/Figma
 
 ### ⚠️ 웹 표준 / 웹 접근성
 * W3C 마크업검사 및 css검사 완료 
