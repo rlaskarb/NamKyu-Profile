@@ -7,6 +7,7 @@
     --font-50px: 3.13rem;
     --font-44px: 2.75rem;
     --font-40px: 2.5rem;
+    --font-38px: 2.38rem;
     --font-36px: 2.25rem;
     --font-34px: 2.13rem;
     --font-30px: 1.88rem;
@@ -261,5 +262,3 @@ img {
     overflow: hidden;
     color: #fff;
 }
-
-

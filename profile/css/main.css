@@ -414,26 +414,31 @@
 }
 
 .headline {
-  font-size: var(--font-40px);
-  font-weight: 700;
+  font-size: var(--font-38px);
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
 .bio {
-  font-size: var(--font-22px);
-  padding-left: 30px;
-  line-height: 1.6rem;
-  color: #333;
+  font-size: var(--font-18px);
+  line-height: 1.7rem;
+  color: #555;
+  font-weight: 400;
+
+  strong {
+    color: #333;
+    font-size: var(--font-20px);
+  }
 }
 
 /* 2. 기술 스택 */
 .profile-tech {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .tech-title {
   font-size: var(--font-20px);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
