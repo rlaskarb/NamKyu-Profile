@@ -1,465 +1,348 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        />
-        <!-- 아이폰 링크 전번막기 -->
-        <meta
-            name="format-detection"
-            content="telephone=no"
-        />
-        <title>커뮤니티-상품제안</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="../main_images/common/7-eleven-logo.ico"
-        />
-        <link
-            rel=" apple-touch-icon-precomposed"
-            href="../main_images/common/app_icon.png"
-        />
-        <link
-            rel="apple-touch-startup-image"
-            href="../main_images/common/startup.png"
-        />
-        <link
-            rel="stylesheet"
-            href="../main_css/common.css"
-        />
-        <link
-            rel="stylesheet"
-            href="./css/sub4common.css"
-        />
-        <link
-            rel="stylesheet"
-            href="./css/sub4_1.css"
-        />
 
-        <!-- Noto Sans Korean , Roboto 폰트링크 -->
-        <link
-            rel="preconnect"
-            href="https://fonts.googleapis.com"
-        />
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@1,100..900&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 아이폰 링크 전번막기 -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>커뮤니티-상품제안</title>
+    <link rel="icon" type="image/x-icon" href="../main_images/common/7-eleven-logo.ico" />
+    <link rel=" apple-touch-icon-precomposed" href="../main_images/common/app_icon.png" />
+    <link rel="apple-touch-startup-image" href="../main_images/common/startup.png" />
+    <link rel="stylesheet" href="../main_css/common.css" />
+    <link rel="stylesheet" href="./css/sub4common.css" />
+    <link rel="stylesheet" href="./css/sub4_1.css" />
 
-        <!-- 스와이퍼 css -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        />
+    <!-- Noto Sans Korean , Roboto 폰트링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@1,100..900&display=swap"
+        rel="stylesheet" />
 
-        <!-- 아이콘 링크 -->
-        <script
-            src="https://kit.fontawesome.com/347816e35e.js"
-            crossorigin="anonymous"
-        ></script>
+    <!-- 스와이퍼 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-        <!-- url 위로 올리는 스크립트 -->
-        <script>
-            // <![CDATA[
-            try {
-                window.addEventListener(
-                    "load",
-                    function () {
-                        setTimeout(scrollTo, 0, 0, 1);
-                    },
-                    false
-                );
-            } catch (e) {}
-            // ]]>
-        </script>
-    </head>
+    <!-- 아이콘 링크 -->
+    <script src="https://kit.fontawesome.com/347816e35e.js" crossorigin="anonymous"></script>
 
-    <body>
-        <!--리더기 접근성 향상 코드! 서비스 -->
-        <div id="skipNav">
-            <a href="#content">본문영역으로 바로가기</a>
-            <a href="#gnb">세븐일레븐 네비게이션 바로가기</a>
-        </div>
+    <!-- url 위로 올리는 스크립트 -->
+    <script>
+        // <![CDATA[
+        try {
+            window.addEventListener(
+                "load",
+                function () {
+                    setTimeout(scrollTo, 0, 0, 1);
+                },
+                false
+            );
+        } catch (e) { }
+        // ]]>
+    </script>
+</head>
 
-        <div id="wrap">
-            <header id="headerArea">
-                <div class="header_top">
-                    <h1><a href="../index.html">로고</a></h1>
-                    <a
-                        href="#"
-                        class="menu_ham"
-                    >
-                        <span>햄버거메뉴바</span>
-                    </a>
-                </div>
-                <div class="blind_box"></div>
-                <nav id="gnb">
-                    <h2 class="hidden">글로벌네비게이션영역</h2>
+<body>
+    <!--리더기 접근성 향상 코드! 서비스 -->
+    <div id="skipNav">
+        <a href="#content">본문영역으로 바로가기</a>
+        <a href="#gnb">세븐일레븐 네비게이션 바로가기</a>
+    </div>
 
-                    <ul class="main_menu">
-                        <li class="depth1">
-                            <h3>
-                                <a href="#">
-                                    회사소개
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                </a>
-                            </h3>
-
-                            <ul>
-                                <li><a href="../sub1/sub1_1.html">브랜드 스토리</a></li>
-                                <li><a href="../sub1/sub1_2.html">경영 스토리</a></li>
-                                <li><a href="../sub1/sub1_3.html">회사 연혁</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="depth2">
-                            <h3>
-                                <a href="#">
-                                    상품소개
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                </a>
-                            </h3>
-
-                            <ul>
-                                <li><a href="../sub2/sub2_1.html">세븐 카페</a></li>
-                                <li><a href="../sub2/sub2_2.html">이달의 신상</a></li>
-                                <li><a href="../sub2/sub2_3.html">차별화된 상품</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="depth3">
-                            <h3>
-                                <a href="#">
-                                    창업안내
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                </a>
-                            </h3>
-
-                            <ul>
-                                <li><a href="../sub3/sub3_1.html">창업 포인트</a></li>
-                                <li><a href="../sub3/sub3_2.html">창업 상담</a></li>
-                                <li><a href="../sub3/sub3_3.html">창업 설명회</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="depth4">
-                            <h3>
-                                <a href="#">
-                                    커뮤니티
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                </a>
-                            </h3>
-
-                            <ul>
-                                <li><a href="./sub4_1.html">상품제안</a></li>
-                                <li><a href="./sub4_2.html">나의 꿀조합</a></li>
-                                <li><a href="./sub4_3.html">신상품 후기</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="header_sns">
-                        <li>
-                            <a
-                                href="https://www.youtube.com/7elevenkorea"
-                                target="_blank"
-                            >
-                                <i class="fa-brands fa-youtube"></i
-                            ></a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.instagram.com/7elevenkorea/"
-                                target="_blank"
-                            >
-                                <i class="fa-brands fa-instagram"></i
-                            ></a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://facebook.com/7elevenkorea"
-                                target="_blank"
-                            >
-                                <i class="fa-brands fa-square-facebook"></i
-                            ></a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/rlaskarb"
-                                target="_blank"
-                            >
-                                <i class="fa-brands fa-square-github"></i
-                            ></a>
-                        </li>
-                    </ul>
-
-                    <ul class="login_menu">
-                        <li><a href="../login/login.html">로그인</a></li>
-                        <li><a href="../join/join.html">회원가입</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div class="visual">
-                <img
-                    src="./images/content1/CommunityVisual1.png"
-                    alt="커뮤니티 비주얼이미지"
-                />
-                <span>커뮤니티</span>
+    <div id="wrap">
+        <header id="headerArea">
+            <div class="header_top">
+                <h1><a href="../index.html">로고</a></h1>
+                <a href="#" class="menu_ham">
+                    <span>햄버거메뉴바</span>
+                </a>
             </div>
+            <div class="blind_box"></div>
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션영역</h2>
 
-            <div class="sub_nav">
-                <ul>
-                    <li><a href="./sub4_1.html">상품 제안</a></li>
-                    <li>
-                        <a href="./sub4_2.html">나의 꿀조합</a>
+                <ul class="main_menu">
+                    <li class="depth1">
+                        <h3>
+                            <a href="#">
+                                회사소개
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </a>
+                        </h3>
+
+                        <ul>
+                            <li><a href="../sub1/sub1_1.html">브랜드 스토리</a></li>
+                            <li><a href="../sub1/sub1_2.html">경영 스토리</a></li>
+                            <li><a href="../sub1/sub1_3.html">회사 연혁</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="./sub4_3.html">신상품 후기</a>
+
+                    <li class="depth2">
+                        <h3>
+                            <a href="#">
+                                상품소개
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </a>
+                        </h3>
+
+                        <ul>
+                            <li><a href="../sub2/sub2_1.html">세븐 카페</a></li>
+                            <li><a href="../sub2/sub2_2.html">이달의 신상</a></li>
+                            <li><a href="../sub2/sub2_3.html">차별화된 상품</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="depth3">
+                        <h3>
+                            <a href="#">
+                                창업안내
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </a>
+                        </h3>
+
+                        <ul>
+                            <li><a href="../sub3/sub3_1.html">창업 포인트</a></li>
+                            <li><a href="../sub3/sub3_2.html">창업 상담</a></li>
+                            <li><a href="../sub3/sub3_3.html">창업 설명회</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="depth4">
+                        <h3>
+                            <a href="#">
+                                커뮤니티
+                                <i class="fa-solid fa-chevron-up"></i>
+                            </a>
+                        </h3>
+
+                        <ul>
+                            <li><a href="./sub4_1.html">상품제안</a></li>
+                            <li><a href="./sub4_2.html">나의 꿀조합</a></li>
+                            <li><a href="./sub4_3.html">신상품 후기</a></li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
 
-            <article id="content">
-                <div class="title_area">
-                    <h2>상품 제안</h2>
-                    <p>새로운 아이디어부터, <br />우리 동네만 없는 상품 요청까지</p>
-                </div>
+                <ul class="header_sns">
+                    <li>
+                        <a href="https://www.youtube.com/7elevenkorea" target="_blank">
+                            <i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/7elevenkorea/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/7elevenkorea" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rlaskarb" target="_blank">
+                            <i class="fa-brands fa-square-github"></i></a>
+                    </li>
+                </ul>
 
-                <div class="content_area">
-                    <div class="suggestion_container">
-                        <div class="suggestion_image">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="./images/content1/diff18.jpg"
-                                            alt="상품 이미지 1"
-                                        />
-                                        <div class="overlay">
-                                            <div class="text">인천 구월동매장에도 <br />먹을수있게 입고시켜주세요!</div>
-                                            <div class="text">닉네임: 위궤양 개츠비</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="./images/content1/diff10.jpg"
-                                            alt="상품 이미지 2"
-                                        />
-                                        <div class="overlay">
-                                            <div class="text">품절되었는데 마셔보고싶어요!! ㅜㅜ</div>
-                                            <div class="text">닉네임: 니이모를 찾아서</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="./images/content1/diff13.jpg"
-                                            alt="상품 이미지 3"
-                                        />
-                                        <div class="overlay">
-                                            <div class="text">딸기 딸기 딸기 딸기는 없어요? 만들어주세요!!</div>
-                                            <div class="text">닉네임: 송해손잡고</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="./images/content1/diff7.jpg"
-                                            alt="상품 이미지 4"
-                                        />
-                                        <div class="overlay">
-                                            <div class="text">
-                                                경복국점에 근처에 못찾겠어요 먹고싶어요!!!! 입고시켜주세요!!"
-                                            </div>
-                                            <div class="text">닉네임: 연애한번 모태범</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img
-                                            src="./images/content1/diff4.jpg"
-                                            alt="상품 이미지 5"
-                                        />
-                                        <div class="overlay">
-                                            <div class="text">이 상품 단종되었나요?<br />다시 출시해주세요!</div>
-                                            <div class="text">닉네임: 오즈의 맙소사</div>
-                                        </div>
-                                    </div>
-                                </div>
+                <ul class="login_menu">
+                    <li><a href="../login/login.html">로그인</a></li>
+                    <li><a href="../join/join.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                        <div class="suggestion_form">
-                            <div class="email_box">
-                                <form
-                                    action="#"
-                                    method="post"
-                                    id="contact-form"
-                                >
-                                    <div>
-                                        <label for="user_name"> 📍 이름 & 닉네임 </label>
-                                        <input
-                                            type="text"
-                                            id="user_name"
-                                            name="user_name"
-                                            placeholder=" 곰탕재료푸우 등등."
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="user_email"> 📍 이메일 </label>
-                                        <input
-                                            type="text"
-                                            id="user_email"
-                                            name="user_email"
-                                            placeholder="rlaskarb20@gmail.com "
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="user_tel"> 📍 전화번호 : (-) 없이 입력해주세요</label>
-                                        <input
-                                            type="text"
-                                            id="user_tel"
-                                            name="user_tel"
-                                            placeholder="010-0000-0000"
-                                            required
-                                        />
-                                    </div>
-
-                                    <div>
-                                        <label for="message">📍 상품제안 </label>
-                                        <textarea
-                                            name="message"
-                                            id="message"
-                                            placeholder="예시:&#10;1. 홍대입구역 근처 세븐일레븐에'새우깡 신상' 없어서 서운해요 &#10;2. '버블티 맛 젤리' 만들어주세요! 마시는 버블티 말고 씹는젤리로!&#10;3. 딸기맛 도 추가해줘요!!? "
-                                        ></textarea>
-                                    </div>
-
-                                    <p class="agree_title">📍 서비스 지원을 위한개인정보 수집,이용동의(필수)</p>
-                                    <div class="agree_checkbox">
-                                        <dl>
-                                            <dt>1. 개인정보의 수집 및 이용 목적</dt>
-                                            <dd>
-                                                문의 및 요청사항에 대한 서비스를 지원하기 위해 개인정보를 수집하고
-                                                있으며, 수집된 개인정보는 정해진 목적 이외의 용도로는 이용되지 않으며
-                                                수집 목적이 변경될 경우 사전에 알리고 동의를 받을 예정입니다.
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2. 개인정보의 보유 및 이용기간</dt>
-                                            <dd>
-                                                원칙적으로 개인정보의 수집목적 또는 제공받은 목적이 달성된 때에는 귀하의
-                                                개인정보를 지체 없이 파기합니다. 다만 발송내역의 자료를 확인하기 위해
-                                                1년간 보유합니다. 다른 법령에 따라 보존하여야 하는 경우에는 보유 및
-                                                이용기간이 경과한 개인정보를 파기하지 아니하고 보유할 수 있습니다.
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>3. 수집하는 개인정보의 항목</dt>
-                                            <dd>항목 : 이름, 이메일, 전화번호</dd>
-
-                                            <dd>보유기간 : 1년간 보관 후 파기</dd>
-
-                                            <dd>보유목적 : 기업정보 관련 문의 및 요청사항에 대한 서비스 지원</dd>
-
-                                            <dd>자동수집항목 : IP, 쿠키(Cookie), 접속 로그</dd>
-
-                                            <dd class="agree_refusal">
-                                                ※ 귀하께서는 개인정보 수집 동의를 거부할 권리가 있으나 거부 시에는
-                                                요청하신 서비스가 제한될 수 있습니다.
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                    <div class="consent-checkbox">
-                                        <input
-                                            type="checkbox"
-                                            id="agree_checkbox"
-                                            name="agree_checkbox"
-                                        />
-                                        <label
-                                            for="agree_checkbox"
-                                            class="agree_text_check"
-                                        >
-                                            상기 내용을 읽고 수집 및 이용에 동의합니다.
-                                        </label>
-                                    </div>
-
-                                    <button type="submit">세븐일레븐에 제안보내기 버튼</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <footer id="footerArea">
-                <a
-                    class="top_move"
-                    href="#"
-                    >TOP</a
-                >
-                <div class="footer_inner">
-                    <img
-                        src="../main_images/common/mobile_logo_x2.png"
-                        alt="풋터로고"
-                    />
-                    <address>
-                        <p>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층</p>
-                        <p>세븐일레븐 고객센터 : 1577-0711</p>
-                        <p class="copy font-eng">
-                            Copyright &copy;2025 NamKyu Kim - Portfolio Project<br />
-                            <small>
-                                7-ELEVEn Clone Website<br />
-                                Inspired by convenience store brands & student works<br />
-                                Educational & Non-Commercial Purpose Only
-                            </small>
-                        </p>
-                    </address>
-
-                    <div class="family">
-                        <select
-                            name="footer_family"
-                            id="footer_family"
-                            class="select font-eng"
-                        >
-                            <option
-                                value="#"
-                                disabled
-                                selected
-                            >
-                                Family Site
-                            </option>
-                            <option value="https://www.lotte.co.kr/business/compDetail.do?compCd=L204">
-                                코리아세븐
-                            </option>
-                            <option value="https://www.lotte.co.kr/">롯데그룹</option>
-                            <option value="https://www.lottewellfood.com/">롯데웰푸드</option>
-                            <option value="https://www.lottechilsung.co.kr/">롯데칠성음료</option>
-                            <option value="https://www.lotteshopping.com/">롯데백화점</option>
-                            <option value="https://lottemartzetta.com/">롯데마트</option>
-                        </select>
-                    </div>
-                </div>
-            </footer>
+        <div class="visual">
+            <img src="./images/content1/CommunityVisual1.png" alt="커뮤니티 비주얼이미지" />
+            <span>커뮤니티</span>
         </div>
 
-        <!-- 프론트 이메일 보내는 스크립트 복사 이메일 js 주소 :  https://www.emailjs.com/ -->
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script src="../main_js/jquery-1.12.4.min.js"></script>
-        <script src="../main_js/jquery-migrate-1.4.1.min.js"></script>
-        <!-- 스와이퍼 라이브러리 연동 -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="../main_js/nav.js"></script>
-        <script src="../main_js/sub_nav.js"></script>
-        <script src="../main_js/top_button.js"></script>
-        <script src="./js/front_email.js"></script>
-        <script src="./js/sub4_swiper.js"></script>
-        <script src="../main_js/family_site.js"></script>
-    </body>
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub4_1.html">상품 제안</a></li>
+                <li>
+                    <a href="./sub4_2.html">나의 꿀조합</a>
+                </li>
+                <li>
+                    <a href="./sub4_3.html">신상품 후기</a>
+                </li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2>상품 제안</h2>
+                <p>새로운 아이디어부터, <br />우리 동네만 없는 상품 요청까지</p>
+            </div>
+
+            <div class="content_area">
+                <div class="suggestion_container">
+                    <div class="suggestion_image">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/content1/diff18.jpg" alt="상품 이미지 1" />
+                                    <div class="overlay">
+                                        <div class="text">인천 구월동매장에도 <br />먹을수있게 입고시켜주세요!</div>
+                                        <div class="text">닉네임: 위궤양 개츠비</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/content1/diff10.jpg" alt="상품 이미지 2" />
+                                    <div class="overlay">
+                                        <div class="text">품절되었는데 마셔보고싶어요!! ㅜㅜ</div>
+                                        <div class="text">닉네임: 니이모를 찾아서</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/content1/diff13.jpg" alt="상품 이미지 3" />
+                                    <div class="overlay">
+                                        <div class="text">딸기 딸기 딸기 딸기는 없어요? 만들어주세요!!</div>
+                                        <div class="text">닉네임: 송해손잡고</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/content1/diff7.jpg" alt="상품 이미지 4" />
+                                    <div class="overlay">
+                                        <div class="text">
+                                            경복국점에 근처에 못찾겠어요 먹고싶어요!!!! 입고시켜주세요!!"
+                                        </div>
+                                        <div class="text">닉네임: 연애한번 모태범</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/content1/diff4.jpg" alt="상품 이미지 5" />
+                                    <div class="overlay">
+                                        <div class="text">이 상품 단종되었나요?<br />다시 출시해주세요!</div>
+                                        <div class="text">닉네임: 오즈의 맙소사</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="suggestion_form">
+                        <div class="email_box">
+                            <form action="#" method="post" id="contact-form">
+                                <div>
+                                    <label for="user_name"> 📍 이름 & 닉네임 </label>
+                                    <input type="text" id="user_name" name="user_name" placeholder=" 곰탕재료푸우 등등."
+                                        required />
+                                </div>
+                                <div>
+                                    <label for="user_email"> 📍 이메일 </label>
+                                    <input type="text" id="user_email" name="user_email"
+                                        placeholder="rlaskarb20@gmail.com " required />
+                                </div>
+                                <div>
+                                    <label for="user_tel"> 📍 전화번호 : (-) 없이 입력해주세요</label>
+                                    <input type="text" id="user_tel" name="user_tel" placeholder="010-0000-0000"
+                                        required />
+                                </div>
+
+                                <div>
+                                    <label for="message">📍 상품제안 </label>
+                                    <textarea name="message" id="message"
+                                        placeholder="예시:&#10;1. 홍대입구역 근처 세븐일레븐에'새우깡 신상' 없어서 서운해요 &#10;2. '버블티 맛 젤리' 만들어주세요! 마시는 버블티 말고 씹는젤리로!&#10;3. 딸기맛 도 추가해줘요!!? "></textarea>
+                                </div>
+
+                                <p class="agree_title">📍 서비스 지원을 위한개인정보 수집,이용동의(필수)</p>
+                                <div class="agree_checkbox">
+                                    <dl>
+                                        <dt>1. 개인정보의 수집 및 이용 목적</dt>
+                                        <dd>
+                                            문의 및 요청사항에 대한 서비스를 지원하기 위해 개인정보를 수집하고
+                                            있으며, 수집된 개인정보는 정해진 목적 이외의 용도로는 이용되지 않으며
+                                            수집 목적이 변경될 경우 사전에 알리고 동의를 받을 예정입니다.
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2. 개인정보의 보유 및 이용기간</dt>
+                                        <dd>
+                                            원칙적으로 개인정보의 수집목적 또는 제공받은 목적이 달성된 때에는 귀하의
+                                            개인정보를 지체 없이 파기합니다. 다만 발송내역의 자료를 확인하기 위해
+                                            1년간 보유합니다. 다른 법령에 따라 보존하여야 하는 경우에는 보유 및
+                                            이용기간이 경과한 개인정보를 파기하지 아니하고 보유할 수 있습니다.
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>3. 수집하는 개인정보의 항목</dt>
+                                        <dd>항목 : 이름, 이메일, 전화번호</dd>
+
+                                        <dd>보유기간 : 1년간 보관 후 파기</dd>
+
+                                        <dd>보유목적 : 기업정보 관련 문의 및 요청사항에 대한 서비스 지원</dd>
+
+                                        <dd>자동수집항목 : IP, 쿠키(Cookie), 접속 로그</dd>
+
+                                        <dd class="agree_refusal">
+                                            ※ 귀하께서는 개인정보 수집 동의를 거부할 권리가 있으나 거부 시에는
+                                            요청하신 서비스가 제한될 수 있습니다.
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="consent-checkbox">
+                                    <input type="checkbox" id="agree_checkbox" name="agree_checkbox" />
+                                    <label for="agree_checkbox" class="agree_text_check">
+                                        상기 내용을 읽고 수집 및 이용에 동의합니다.
+                                    </label>
+                                </div>
+
+                                <button type="submit">세븐일레븐에 제안보내기 버튼</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer id="footerArea">
+            <a class="top_move" href="#">TOP</a>
+            <div class="footer_inner">
+                <img src="../main_images/common/mobile_logo_x2.png" alt="풋터로고" />
+                <address>
+                    <p>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층</p>
+                    <p>세븐일레븐 고객센터 : 1577-0711</p>
+                    <p class="copy font-eng">
+                        Copyright &copy;2025 NamKyu Kim - Portfolio Project<br />
+                        <small>
+                            7-ELEVEn Clone Website<br />
+                            Inspired by convenience store brands & student works<br />
+                            Educational & Non-Commercial Purpose Only
+                        </small>
+                    </p>
+                </address>
+
+                <div class="family">
+                    <label for="footer_family" class="hidden">패밀리 사이트 선택</label>
+                    <select name="footer_family" id="footer_family" class="select font-eng">
+                        <option value="#" disabled selected>
+                            Family Site
+                        </option>
+                        <option value="https://www.lotte.co.kr/business/compDetail.do?compCd=L204">
+                            코리아세븐
+                        </option>
+                        <option value="https://www.lotte.co.kr/">롯데그룹</option>
+                        <option value="https://www.lottewellfood.com/">롯데웰푸드</option>
+                        <option value="https://www.lottechilsung.co.kr/">롯데칠성음료</option>
+                        <option value="https://www.lotteshopping.com/">롯데백화점</option>
+                        <option value="https://lottemartzetta.com/">롯데마트</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 프론트 이메일 보내는 스크립트 복사 이메일 js 주소 :  https://www.emailjs.com/ -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../main_js/jquery-1.12.4.min.js"></script>
+    <script src="../main_js/jquery-migrate-1.4.1.min.js"></script>
+    <!-- 스와이퍼 라이브러리 연동 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../main_js/nav.js"></script>
+    <script src="../main_js/sub_nav.js"></script>
+    <script src="../main_js/top_button.js"></script>
+    <script src="./js/front_email.js"></script>
+    <script src="./js/sub4_swiper.js"></script>
+    <script src="../main_js/family_site.js"></script>
+</body>
+
 </html>

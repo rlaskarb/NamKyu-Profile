@@ -1,14 +1,21 @@
 $(document).ready(function () {
-    // Supabase 접속 정보 설정
+    // ========================================
+    // 1. Supabase 클라이언트 설정 (한 번만!)
+    // ========================================
     const supabaseUrl = "https://ozummxbytqiyzpljwbli.supabase.co";
     const supabaseKey =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im96dW1teGJ5dHFpeXpwbGp3YmxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ2Njg5NTksImV4cCI6MjA3MDI0NDk1OX0.s7SmnNVrasiE52xZD1ALRXOUzWkwMcIrLzUkfe18aeo";
 
-    // Supabase 클라이언트 초기화
     const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
-    let recipeSwiper; // 스와이퍼 인스턴스 저장용
+    // ========================================
+    // 2. 전역 변수 선언
+    // ========================================
+    let recipeSwiper = null; // 스와이퍼 인스턴스
 
+    // ========================================
+    // 3. 게시글 불러오기 함수
+    // ========================================
     async function loadLatestPosts() {
         const $swiperWrapper = $(".honey_recipe_swiper .swiper-wrapper");
 
@@ -70,11 +77,16 @@ $(document).ready(function () {
 
                 // 내용 자르기 
                 const truncatedContent =
-                    post.content.length > 28 ? post.content.substring(0, 28) + "..." : post.content;
+                    post.content.length > 28
+                        ? post.content.substring(0, 28) + "..."
+                        : post.content;
 
                 // 제목 자르기
-                const truncatedTitle = post.title.length > 10 ? post.title.substring(0, 10) + "..." : post.title;
-                
+                const truncatedTitle =
+                    post.title.length > 10
+                        ? post.title.substring(0, 10) + "..."
+                        : post.title;
+
                 const imageUrl = post.filePath || "./sub2/images/content2/ddddd.jpg";
 
                 // 스와이퍼 슬라이드 HTML 구조 생성
@@ -105,6 +117,7 @@ $(document).ready(function () {
 
             // 스와이퍼 초기화 (데이터 로드 후)
             initRecipeSwiper();
+
         } catch (error) {
             console.error("예상치 못한 오류 발생:", error);
             $swiperWrapper.html(`
@@ -118,7 +131,9 @@ $(document).ready(function () {
         }
     }
 
-    // 레시피 스와이퍼 초기화 함수
+    // ========================================
+    // 4. 스와이퍼 초기화 함수
+    // ========================================
     function initRecipeSwiper() {
         // 기존 스와이퍼가 있다면 제거
         if (recipeSwiper) {
@@ -129,12 +144,11 @@ $(document).ready(function () {
         recipeSwiper = new Swiper(".honey_recipe_swiper", {
             slidesPerView: 1,
             spaceBetween: 10,
-
             loop: true,
 
             autoplay: {
                 delay: 3500,
-                disableOnInteraction: false, // 사용자가 터치해도 자동재생 계속
+                disableOnInteraction: false,
             },
 
             // 터치/드래그 설정
@@ -142,20 +156,20 @@ $(document).ready(function () {
             touchAngle: 45,
             grabCursor: true,
 
-            // 효과 설정 (자연스러운 슬라이드)
+            // 효과 설정
             speed: 600,
             effect: "slide",
+
+            // 네비게이션 버튼 설정 (여기서 한 번에 처리)
+            navigation: {
+                nextEl: ".honey_swiper_next",
+                prevEl: ".honey_swiper_prev", // 이전 버튼도 있다면
+            },
         });
     }
 
-    // 페이지 로드 시 게시글 불러오기
+    // ========================================
+    // 5. 실행
+    // ========================================
     loadLatestPosts();
-    recipeSwiper = new Swiper(".honey_recipe_swiper", {});
-    $(".honey_swiper_next")
-        .off("click")
-        .on("click", function () {
-            if (recipeSwiper) {
-                recipeSwiper.slideNext();
-            }
-        });
 });
