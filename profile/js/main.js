@@ -22,7 +22,7 @@ const chatListData = [
     {
         id: "portfolio-intro",
         title: " 김남규의 포트폴리오",
-        lastMessage: "클릭 해 주실꺼죠?",
+        lastMessage: "찾아와 주셔서 감사합니다.",
         time: "방금",
         unread: 2,
         avatar: "./images/kyu.avif",
@@ -42,7 +42,7 @@ const chatListData = [
     {
         id: "7-eleven",
         title: "7-ELEVEn",
-        lastMessage: "프론트엔드 개발자가 서버 없이 백엔드를 구현했다니, Supabase 활용법이 궁금하네요.",
+        lastMessage: "서버 없이 백엔드를 구현했다니, Supabase 활용법이 궁금하네요.",
         time: "오전 12:30",
         unread: 0,
         avatar: "./images/2.avif",
@@ -81,7 +81,7 @@ const kakaotalkData = {
             speaker: '김남규',
             avatar: "./images/1.avif",
             mediaType: 'image',
-            message: '찾아와주셔서 정말 감사합니다!'
+            message: '찾아와주셔서 감사합니다!'
         },
 
         {
