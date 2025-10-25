@@ -892,11 +892,12 @@ section3 Web Project pc
 }
 
 .review-content img {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
   border-radius: 15px;
   object-fit: cover;
   flex-shrink: 0;
+  background: #fff;
   border: 0.5px solid #ccc;
 }
 
