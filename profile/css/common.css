@@ -40,22 +40,24 @@
 @keyframes scale {
     0% {
         color: #333;
-        background: #fff;
+        background: var(--color-sub1);
     }
 
-    30% {
+    25% {
         color: #fff;
         background: rgba(0, 125, 255, 0.7);
+        border-radius: 10px;
     }
 
-    60% {
+    75% {
         color: #fff;
         background: rgba(0, 125, 255, 0.7);
+        border-radius: 10px;
     }
 
     100% {
         color: #333;
-        background: #fff;
+        background: var(--color-sub1);
     }
 }
 

@@ -5,7 +5,6 @@
   width: 100%;
   z-index: 100 !important;
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 5px rgba(44, 0, 62, 0.1);
   transition: background-color 0.5s ease;
 }
 
@@ -49,9 +48,9 @@
 
 .chat-list-panel,
 .conversation-panel {
+  background: #fff;
+  border: 0.2px solid #ccc;
   border-radius: 20px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-  margin: 2%;
   transition: all 0.5s ease-in-out;
 }
 
@@ -124,7 +123,7 @@
 .chat-list .chat-item {
   width: 100%;
   margin: 0 auto;
-  padding: 17px 20px;
+  padding: 16px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -313,7 +312,7 @@
 }
 
 .kakaotalk-app-container.conversation-active .chat-list-panel {
-  width: 53%;
+  width: 58%;
   height: 78vh;
   margin-top: -2px;
 }
@@ -335,7 +334,6 @@
   font-size: var(--font-22px);
   font-weight: 500;
   background: var(--color-sub1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px 25px;
   border-radius: 20px;
 }
@@ -344,7 +342,7 @@
   width: 100%;
   max-width: 1400px;
   min-width: 1400px;
-  margin: 0 auto 30px;
+  margin: -3px auto 15px;
   display: flex;
   justify-content: end;
   gap: 30px;
@@ -352,6 +350,7 @@
 
 .profile-link li {
   background: #343a40;
+  border: 3px solid transparent;
   padding: 7px 20px 9px;
   border-radius: 10px;
   transition: background-color 0.3s ease;
@@ -365,19 +364,27 @@
 }
 
 .profile-link li:hover {
-  background: #495057;
+  background: var(--color-sub1);
+  border: 3px solid #343a40;
 }
+
+.profile-link li:hover a {
+  color: #343a40;
+  font-weight: 600;
+}
+
 
 .profile-main {
   width: 100%;
   max-width: 1400px;
   min-width: 1400px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 1px 15px;
   display: flex;
   align-items: center;
-  gap: 2%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  gap: 1%;
+  background: #fff;
+  border: 0.2px solid #ccc;
   border-radius: 20px;
 }
 
@@ -437,9 +444,16 @@
 }
 
 .tech-title {
+  width: 200px;
+  padding: 5px 10px;
+  font-family: "Roboto", "sans-serif";
   font-size: var(--font-20px);
-  font-weight: 500;
+  font-weight: 700;
+  text-align: center;
   margin-bottom: 15px;
+  color: var(--color-sub1);
+  background: #343a40;
+  border-radius: 8px;
 }
 
 .tech-category.--frontend {
@@ -447,7 +461,7 @@
   align-items: center;
   gap: 10px;
   padding: 15px;
-  background-color: var(--color-sub1);
+  background-color: rgba(163, 163, 163, 0.3);
   border-radius: 8px;
   margin-bottom: 10px;
   /* 아래 그리드와의 간격 */
@@ -464,7 +478,7 @@
   align-items: center;
   gap: 20px;
   padding: 15px;
-  background-color: var(--color-sub1);
+  background-color: rgba(163, 163, 163, 0.3);
   border-radius: 8px;
 }
 
@@ -491,6 +505,7 @@
 .github-caption {
   font-size: var(--font-16px);
   margin-bottom: 16px;
+  font-weight: 600;
   color: #444;
 }
 
@@ -517,7 +532,8 @@ section3 Web Project pc
   justify-content: center;
   align-items: center;
   gap: 30px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  border: 0.2px solid #ccc;
+  background: #fff;
   border-radius: 20px;
   position: relative;
 }
@@ -527,6 +543,7 @@ section3 Web Project pc
   padding-left: 10px;
   margin: 50px auto 0px;
   position: relative;
+
 }
 
 .pc-wrap .pc-video video {
@@ -536,7 +553,6 @@ section3 Web Project pc
   position: absolute;
   top: 5%;
   left: 5%;
-  z-index: -1;
 }
 
 .pc-wrap .mobile-video {
@@ -603,14 +619,14 @@ section3 Web Project pc
 
     a:nth-of-type(2) {
       width: 120px;
-      height: 47px;
-      padding: 6px 10px;
+      height: 50px;
+      padding: 7px 10px 9px;
       font-size: var(--font-18px);
-      font-weight: 600;
+      font-weight: 500;
       color: var(--color-sub1);
       text-align: center;
       background-color: var(--color-7main);
-      border-radius: 15px;
+      border-radius: 10px;
       border: 3px solid transparent;
     }
   }
@@ -651,9 +667,9 @@ section3 Web Project pc
 }
 
 .pc-main .pc-goto dt a:nth-of-type(2):hover {
-  background-color: var(--color-sub1);
-  border: 3px solid var(--color-7main);
-  color: var(--color-7point1);
+  background-color: var(--color-7point1);
+  border: 3px solid var(--color-7point1);
+  color: var(--color-sub1);
   font-weight: 700;
 }
 
@@ -821,6 +837,36 @@ section3 Web Project pc
   padding-top: 45px;
 }
 
+
+.section:nth-of-type(5) {
+
+
+  .pc-wrap {
+
+
+    dt {
+      span {
+        font-family: "Roboto", "sans-serif";
+        font-size: var(--font-36px);
+        font-weight: 600;
+      }
+
+      .kpop {
+        background: var(--color-main);
+        border: 2px solid var(--color-main);
+      }
+
+      .kpop:hover {
+        background: var(--color-point1);
+        border: 2px solid var(--color-point1);
+      }
+    }
+  }
+}
+
+
+
+
 /*  6section Review */
 
 .review-content {
@@ -831,7 +877,7 @@ section3 Web Project pc
   padding: 5px 30px;
   border-radius: 20px;
   background-color: #e3f2fd;
-  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+  border: 0.2px solid #ccc;
 }
 
 .review-content ul {
