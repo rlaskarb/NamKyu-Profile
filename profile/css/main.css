@@ -813,13 +813,13 @@ section3 Web Project pc
 }
 
 .media-imgs {
-  margin: 0 45px 10px;
+  margin: 0 20px 10px;
   position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
-  gap: 230px;
+  gap: 277px;
 }
 
 .media-imgs li:nth-of-type(1) img {
